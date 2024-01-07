@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+
+        body{
+            font-family: sans-serif;
+            background-color: #E7DFD8;
+            font-size: 20px;
+        }
+
+        ::-webkit-scrollbar{
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb{
+            background-color: #333333;
+        }
+
+        @media(min-width: 768px){
+            #mobile{
+                display: none;
+            }
+
+            main{
+                display: block;
+            }
+        }
+
+        @media(max-width: 768px){
+            #mobile{
+                display: block;
+                font-size: 15px;
+            }    
+
+            main{
+                display: none;
+            }
+        }
+        
+    </style>
+
+    <link rel="icon" type="png" href="img/icon.png">
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    
+    <main class="container">
+        
+        <nav class="mt-5 text-center">
+            <div class="row px-5">
+                <div class="col-3 text-center">
+                    <a href="index.html" class="text-dark"><b>ANA SAYFA</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="ozgecmis.html" class="text-dark"><b>ÖZ GEÇMİŞ</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="calismalar.html" class="text-dark"><b>ÇALIŞMALAR</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="iletisim.html" class="text-dark"><b>İLETİŞİM</b></a>
+                </div>
+            </div>
+        </nav>
+
+        <article class="mt-5 mb-5  mx-auto" style="border-style: solid; border-width: 1px;">
+            <div class="row m-5">
+                <div class="col-12">
+                    <h1 class="display-4 text-center" id="head">Bootstrap</h1>
+                    <div id="text" class="mt-5">
+                        <h2><b>BOOTSTRAP NEDİR?</b></h2>
+                        <p>
+                            Bootstrap yaygın bir CSS kütüphanesidir. CSS’te yaptığımız birçok şeyi Bootstrap ile daha hızlı ve pratik yapabiliriz. Sitelerimizi farklı cihazlarda uygun bir şekilde gösterebiliriz.
+                        </p>
+
+                        <h2 class="mt-5"><b>CONTAINER VE 12’LİK IZGARA SİSTEMİ</b></h2>
+                        <p>
+                            Günümüzde birçok farklı tasarımda web sitesi bulunmaktadır. Fakat birçoğu anlaşılır olması için belirli bir sistemle oluşturulurlar.<br><br>
+                            Birçok web sitesi hayali kutulardan oluşur. Bu kutular genelde sitenin merkezine yaklaştırılırlar ve bu kutular içerisine içerikler yazılırken yine var olmayan hayali kutuların içine yazılırlar. Bu kutulara container ismi verilir.<br><br>
+                            Bir diğer sistem ise ızgara sistemidir. Site tasarımları yapılırken genellikle eklenecek container’lar var olmayan 12’lik kolonlara bölünür. Eğer yanyana 2 container varsa 12/2=6’lık sistem, 3 container varsa 12/3=4’lük sistem veya 4 container varsa 12/4=3’lük sistem gibi.
+                        </p>
+                        <img src="img/bootstrap1.png" class="w-75 d-block m-auto rounded">
+
+                        <h2 class="mt-5"><b>CONTAINER, ROW VE GRID YAPISI VE UYGULAMASI</b></h2>
+                        <p>
+                            Containerlar daha önceden bahsettiğimiz üzere var olmayan hayali kutulardır ve içeriklerimizi, diğer kutularımızı bu genel kutular olan container’lara koyarız.<br><br>
+                            Row’lar ise bahsettiğimiz kolon yapısının bir satırını oluşturan kutulardır. Diyelimki bir satır boyunca 12/4=3’lük bir ızgara sistemi yaptık ve artık başka bir ızgara sistemi için aşağıya başka bir satıra geçmek istiyoruz. Bunun için row’lar kullanılır.<br><br>
+                            Kolon yani ızgara sistemi de bahsettiğimiz üzere bir satırın 12 adet kolona bölünmesi ve içeriklerimizi 2’şerli, 3’erli vb. kutulara bölmemizi sağlar.<br><br>
+                            Peki bunları öğrendik de kod olarak nasıl yazıyoruz? Öncelikle bootstrap kütüphanesini projemize eklememiz gereklidir. Bunun için bootstrapin sitesinden linkini kopyalamamız yeterlidir. Bu kodların içinde css ve javascript kodları yer alır.<br><br>
+                            Bootstrapin mantığı hazır class’lardır. CSS’te class’lara biz kendimiz özellik yazıp istediğimiz elementlere uyguluyorduk. Bootstrap’te başkaları tarafından yazılan hazır class’ları kullanıyoruz. Herhangi bir CSS kodu yazmadan direkt HTML etiketlerine hazır class’ları verince özellikler aktifleşiyor. Bu hazır class’lar projemize responsive özelliği de veriyor.
+                        </p>
+
+                        <h2 class="mt-5"><b>RESPONSIVE GRID KULLANIMI</b></h2>
+                        <p>
+                            Web sitemizde oluşturduğumuz kutular her cihaz için düzenli gözükmüyor olabilir. Bunun nedeni ekran çözünürlüğünün büyük ve küçük olmasıdır. Bunun için responsive, yani cihaza göre değişen tasarımlar kullanılır.<br><br>
+                            Bootstrapte farklı cihazlar için 5 farklı boyut vardır. Bunlar: xs(telefonlar), sm(tablet), md, lg, xl.<br><br>
+                            Biz kutularımızın sıralanmasını farklı boyutlara göre değiştirebiliriz:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="182.4000244140625" data-theme-id="dark" data-default-tab="html" data-slug-hash="Rwdbbqp" data-user="Alperen-Akta" style="height: 182.4000244140625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/Rwdbbqp">
+                                BS1</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            Görüldüğü gibi grid sistemlerimizi istediğimiz gibi değiştirebiliriz. Burada farkedilmesi gereken eğer her ekranı ayrı ayrı tanımlamazsak yazdığımız en büyük ekran boyutuna yazdığımız grid sistemi, ondan daha büyük ekranlar için de geçerli oluyor.<br><br>
+                            Diğer önemli husus xs(telefon) ekranları için grid sistemleri yazılmaz. Telefon ekranları küçük olduğu için her zaman 12’li grid sistemi yani blok kutuları kullanılır.
+                        </p>
+
+                        <h2 class="mt-5"><b>DETAYLI ROW KULLANIMI</b></h2>
+                        <p>
+                            Row yani satırlar bulunduğu kutuyu 12’lik sisteme böler. Yani o kutuda 12 tane kolon oluşturur. Diyelim ki bir satırı altı kolonlu 2 kısıma ayırdık ve içeriklerimizi buna göre oluşturuyoruz. İlk altılık kolona çok fazla içerik yazacağız ve 6 kolon bize yetmiyor. Bunun için iç içe row’lar oluşturabiliriz. Yani 6 kolonluk kısmın içinde yeni bir row oluşturup o kısmı 12’lik kolonlara bölebiliriz.
+                        </p>
+
+                        <h2 class="mt-5"><b>RENKLER, YAZILAR, MARGIN VE PADDING</b></h2>
+                        <p>
+                            Bootstrapte sitemizi biçimlendirmek için birçok özellik var. Burada önemli olanlardan bahsedeceğiz fakat önemli olan bunları ihtiyaç halinde araştırıp bulabilmemiz. Her kodu ezberlemek imkansızdır, yaygın olanları bilmemiz yeterlidir:
+                        </p>
+                        <ul>
+                            <li><b>Renk Özellikleri:</b> Arkaplan rengi ve metin rengi olarak 2’ye ayrılır.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="252.00003051757812" data-theme-id="dark" data-default-tab="html" data-slug-hash="MWxggLL" data-user="Alperen-Akta" style="height: 252.00003051757812px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/MWxggLL">
+                                BS2</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Yazı Boyutu:</b></li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="147.20001220703125" data-theme-id="dark" data-default-tab="html" data-slug-hash="gOEYYEG" data-user="Alperen-Akta" style="height: 147.20001220703125px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/gOEYYEG">
+                                BS3</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Yazı Tipleri:</b></li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="182.4000244140625" data-theme-id="dark" data-default-tab="html" data-slug-hash="RwdbbOV" data-user="Alperen-Akta" style="height: 182.4000244140625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/RwdbbOV">
+                                BS4</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Liste Özellikleri:</b></li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="146.4000244140625" data-theme-id="dark" data-default-tab="html" data-slug-hash="KKEPPYr" data-user="Alperen-Akta" style="height: 146.4000244140625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/KKEPPYr">
+                                BS5</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Margin:</b> 1-5 arası boşluk katsayısı vardır.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="163.99993896484375" data-theme-id="dark" data-default-tab="html" data-slug-hash="gOEYYJG" data-user="Alperen-Akta" style="height: 163.99993896484375px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/gOEYYJG">
+                                BS6</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Padding:</b> 1-5 arası boşluk katsayısı vardır.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="164" data-theme-id="dark" data-default-tab="html" data-slug-hash="QWoLLXZ" data-user="Alperen-Akta" style="height: 164px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/QWoLLXZ">
+                                BS7</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>DISPLAY ÖZELLİĞİ İLE RESPONSİVE YAPILAR</b></h2>
+                        <p>
+                            Bildiğimiz üzere Bootstrapte cihazlar boyutuna göre 5’e ayrılmıştı(xs-sm-md-lg-xl). Biz Bootstrap ile oluşturduğumuz kolonların farklı cihazlarda gözüküp gözükmeyeceğini ayarlayabiliriz. Bunun için display özelliği kullanılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="218.39993286132812" data-theme-id="dark" data-default-tab="html" data-slug-hash="RwdbbXg" data-user="Alperen-Akta" style="height: 218.39993286132812px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/RwdbbXg">
+                                BS8</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            Responsive grid konusunda anlatılan mevzu burada da geçerlidir. Eğer daha büyük cihazlarda, cihaz için bir tanımlama yapılmamışsa ondan küçük, en büyük cihazın özellikleri geçerlidir.<br><br>
+                            Yukarıda yapılan 1. işlemde d-none ile etiket her cihazda görünmezdir. Daha sonra yazılan 2. kod ile hangi cihazda gözükeceği tanımlanır. O cihazdan daha büyük cihazlar için tanımlama geçerli olmaması için 3. kodda tekrardan etiketler gizlenir.
+                        </p>
+
+                        <h2 class="mt-5"><b>OFFSET</b></h2>
+                        <p>
+                            Grid sisteminde 12 adet kolon oluştuğunu ve içeriklerimizi bu kolonlara paylaştırdığımızı öğrenmiştik. Peki her kolonu kullanmak zorunda mıyız? Hayır, bunun için ise offset yapısı kullanılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="128.80001831054688" data-theme-id="dark" data-default-tab="html" data-slug-hash="VwRZwZP" data-user="Alperen-Akta" style="height: 128.80001831054688px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/VwRZwZP">
+                                BS9</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>ORDER</b></h2>
+                        <p>
+                            Bir row oluşturduğumuzda bunun 12’lik kolonlardan oluştuğunu ve içeriklerimizi bu 12 kolona sığdırdığımızı öğrenmiştik. Order konusunda yan yana duran bu içeriklerin hangisinin sağda hangisinin solda olması gerektiğini ayarlayabiliyoruz.<br><br>
+                            Aynı zamanda order özelliğini responsive olarak cihaza göre değişiklik yapabilir hale getirebiliriz.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="253.60000610351562" data-theme-id="dark" data-default-tab="html" data-slug-hash="ExMYxxj" data-user="Alperen-Akta" style="height: 253.60000610351562px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/ExMYxxj">
+                                BS10</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            Yukarıdaki yapıda bir satıra yan yana 3 ve 9’luk kolonlara sahip 2 içerik yerleştirilmiştir. Biz bu 2 içerikten 3 kolonluk olanı order-2 özelliği ile 9 kolonluğun önüne itmiş oluruz. Yani solda 9’luk sağda 3’lük içerik bulunur.<br><br>
+                            Daha sonra ise sm ve daha büyük cihazlarda 3’lük kolonu sola, 9’luk kolonu sağa yerleştirmiş oluruz.
+                        </p>
+
+                        <h2 class="mt-5"><b>BOOTSTRAP BİLEŞENLERİ</b></h2>
+                        <p>
+                            Bootstrapin sitesinde birçok hazır içerik var. Bunları sitelerimize yerleştirebiliriz.
+                        </p>
+                        <ul>
+                            <li><b>Alerts:</b> Uyarı eklemek için kullanılır.</li>
+                            <li><b>Badges:</b> Kutu içerisine yazı eklemek için kullanılır.</li>
+                            <li><b>Breadcrumbs:</b> Lokasyon belirtmek için kullanılır.</li>
+                            <li><b>Buttons:</b> Buton ekler.</li>
+                            <li><b>Button Groups:</b> Yan yana butonlar ekler.</li>
+                            <li><b>Cards:</b> Kartlar ekler.</li>
+                            <li><b>Carousels:</b> Resim galerisi ekler.</li>
+                            <li><b>Collapses:</b> Açılan butonlar ekler.</li>
+                            <li><b>Dropdowns:</b> Açılan buton seçenekleri ekler.</li>
+                            <li><b>Forms:</b> Form yapılarını ekler.</li>
+                            <li><b>Input Groups:</b> Klavyeden veri girmemizi sağlayan yapılar ekler.</li>
+                            <li><b>Jumbotrons:</b> Büyük yazılar ekler.</li>
+                            <li><b>List Groups:</b> Liste grupları ekler.</li>
+                            <li><b>Media Objects:</b> Thumbnail ekler.</li>
+                            <li><b>Modals:</b> Siteye yukarıdan ekran açar.</li>
+                            <li><b>Navs:</b> Navigasyon ekler.</li>
+                            <li><b>Navbars:</b> Site başına navigasyon ekler.</li>
+                            <li><b>Paginations:</b> Sayfalar arası geçiş menüsü ekler.</li>
+                            <li><b>Popovers:</b> Basıldığında içerik çıkan menü ekler.</li>
+                            <li><b>Progress:</b> Aşama barı ekler.</li>
+                            <li><b>Scrollspys:</b> Sitede aşağı indikçe nerede olduğunuzu gösteren bir nav ekler.</li>
+                            <li><b>Spinners:</b> Yüklenme ikonu ekler.</li>
+                            <li><b>Toasts:</b> Sayfanın köşelerine bildirim ekler.</li>
+                            <li><b>Tooltips:</b> Sayfanın köşelerine butonlar ekler.</li>
+                        </ul>
+
+                        <h2 class="mt-5"><b>DİĞER CSS KÜTÜPHANELERİ</b></h2>
+                        <p>
+                            Bootstrapin sonuna geldik. Öğrendiğimiz konularla birçok proje yaparak pratik kazanma vakti. CSS konusunda anlatıldığı gibi önemli olan bilinmeyeni araştırmaktır. Bootstrap dışında kullanılabilecek diğer CSS kütüphaneleri:
+                        </p>
+                        <ul>
+                            <li>Foundation</li>
+                            <li>Semantic UI</li>
+                            <li>Tailwind</li>
+                            <li>Bulma</li>
+                            <li>UIKit</li>
+                            <li>Pure</li>
+                            <li>Skeleton</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>       
+
+    </main>
+
+    <main id="mobile" class="container">
+        
+        <nav class="text-center">
+            <div class="row mt-3" style="border-style: solid; border-width: 0px 0px 1px 0px;">
+                <div class="col-2">
+                    <div class="dropdown float-left">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
+                        </button>
+                        <div class="dropdown-menu" style="background-color: #E7DFD8;">
+                          <a class="dropdown-item" href="index.html">Ana Sayfa</a>
+                          <a class="dropdown-item" href="ozgecmis.html">Öz Geçmiş</a>
+                          <a class="dropdown-item" href="calismalar.html">Çalışmalar</a>
+                          <a class="dropdown-item" href="iletisim.html">İletişim</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 text-center">
+                    <h1><b>Çalışmalar</b></h1>
+                </div>
+            </div>
+        </nav>
+
+        <article class="mt-5 mb-5 mx-auto">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center" id="head"><b>Bootstrap</b></h1>
+                    <div id="text" class="mt-5">
+                        <h2><b>Bootstrap Nedir?</b></h2>
+                        <p>
+                            Bootstrap yaygın bir CSS kütüphanesidir. CSS’te yaptığımız birçok şeyi Bootstrap ile daha hızlı ve pratik yapabiliriz. Sitelerimizi farklı cihazlarda uygun bir şekilde gösterebiliriz.
+                        </p>
+
+                        <h2 class="mt-5"><b>Container ve 12'lik Izgara Sistemi</b></h2>
+                        <p>
+                            Günümüzde birçok farklı tasarımda web sitesi bulunmaktadır. Fakat birçoğu anlaşılır olması için belirli bir sistemle oluşturulurlar.<br><br>
+                            Birçok web sitesi hayali kutulardan oluşur. Bu kutular genelde sitenin merkezine yaklaştırılırlar ve bu kutular içerisine içerikler yazılırken yine var olmayan hayali kutuların içine yazılırlar. Bu kutulara container ismi verilir.<br><br>
+                            Bir diğer sistem ise ızgara sistemidir. Site tasarımları yapılırken genellikle eklenecek container’lar var olmayan 12’lik kolonlara bölünür. Eğer yanyana 2 container varsa 12/2=6’lık sistem, 3 container varsa 12/3=4’lük sistem veya 4 container varsa 12/4=3’lük sistem gibi.
+                        </p>
+                        <img src="img/bootstrap1.png" class="w-75 d-block m-auto rounded">
+
+                        <h2 class="mt-5"><b>Container, Row ve Grid Yapısı ve Uygulaması</b></h2>
+                        <p>
+                            Containerlar daha önceden bahsettiğimiz üzere var olmayan hayali kutulardır ve içeriklerimizi, diğer kutularımızı bu genel kutular olan container’lara koyarız.<br><br>
+                            Row’lar ise bahsettiğimiz kolon yapısının bir satırını oluşturan kutulardır. Diyelimki bir satır boyunca 12/4=3’lük bir ızgara sistemi yaptık ve artık başka bir ızgara sistemi için aşağıya başka bir satıra geçmek istiyoruz. Bunun için row’lar kullanılır.<br><br>
+                            Kolon yani ızgara sistemi de bahsettiğimiz üzere bir satırın 12 adet kolona bölünmesi ve içeriklerimizi 2’şerli, 3’erli vb. kutulara bölmemizi sağlar.<br><br>
+                            Peki bunları öğrendik de kod olarak nasıl yazıyoruz? Öncelikle bootstrap kütüphanesini projemize eklememiz gereklidir. Bunun için bootstrapin sitesinden linkini kopyalamamız yeterlidir. Bu kodların içinde css ve javascript kodları yer alır.<br><br>
+                            Bootstrapin mantığı hazır class’lardır. CSS’te class’lara biz kendimiz özellik yazıp istediğimiz elementlere uyguluyorduk. Bootstrap’te başkaları tarafından yazılan hazır class’ları kullanıyoruz. Herhangi bir CSS kodu yazmadan direkt HTML etiketlerine hazır class’ları verince özellikler aktifleşiyor. Bu hazır class’lar projemize responsive özelliği de veriyor.
+                        </p>
+
+                        <h2 class="mt-5"><b>Responsive Grid Kullanımı</b></h2>
+                        <p>
+                            Web sitemizde oluşturduğumuz kutular her cihaz için düzenli gözükmüyor olabilir. Bunun nedeni ekran çözünürlüğünün büyük ve küçük olmasıdır. Bunun için responsive, yani cihaza göre değişen tasarımlar kullanılır.<br><br>
+                            Bootstrapte farklı cihazlar için 5 farklı boyut vardır. Bunlar: xs(telefonlar), sm(tablet), md, lg, xl.<br><br>
+                            Biz kutularımızın sıralanmasını farklı boyutlara göre değiştirebiliriz:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="182.4000244140625" data-theme-id="dark" data-default-tab="html" data-slug-hash="Rwdbbqp" data-user="Alperen-Akta" style="height: 182.4000244140625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/Rwdbbqp">
+                                BS1</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            Görüldüğü gibi grid sistemlerimizi istediğimiz gibi değiştirebiliriz. Burada farkedilmesi gereken eğer her ekranı ayrı ayrı tanımlamazsak yazdığımız en büyük ekran boyutuna yazdığımız grid sistemi, ondan daha büyük ekranlar için de geçerli oluyor.<br><br>
+                            Diğer önemli husus xs(telefon) ekranları için grid sistemleri yazılmaz. Telefon ekranları küçük olduğu için her zaman 12’li grid sistemi yani blok kutuları kullanılır.
+                        </p>
+
+                        <h2 class="mt-5"><b>Detaylı Row Kullanımı</b></h2>
+                        <p>
+                            Row yani satırlar bulunduğu kutuyu 12’lik sisteme böler. Yani o kutuda 12 tane kolon oluşturur. Diyelim ki bir satırı altı kolonlu 2 kısıma ayırdık ve içeriklerimizi buna göre oluşturuyoruz. İlk altılık kolona çok fazla içerik yazacağız ve 6 kolon bize yetmiyor. Bunun için iç içe row’lar oluşturabiliriz. Yani 6 kolonluk kısmın içinde yeni bir row oluşturup o kısmı 12’lik kolonlara bölebiliriz.
+                        </p>
+
+                        <h2 class="mt-5"><b>Renkler, Yazılar, Margin ve Padding</b></h2>
+                        <p>
+                            Bootstrapte sitemizi biçimlendirmek için birçok özellik var. Burada önemli olanlardan bahsedeceğiz fakat önemli olan bunları ihtiyaç halinde araştırıp bulabilmemiz. Her kodu ezberlemek imkansızdır, yaygın olanları bilmemiz yeterlidir:
+                        </p>
+                        <ul>
+                            <li><b>Renk Özellikleri:</b> Arkaplan rengi ve metin rengi olarak 2’ye ayrılır.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="252.00003051757812" data-theme-id="dark" data-default-tab="html" data-slug-hash="MWxggLL" data-user="Alperen-Akta" style="height: 252.00003051757812px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/MWxggLL">
+                                BS2</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Yazı Boyutu:</b></li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="147.20001220703125" data-theme-id="dark" data-default-tab="html" data-slug-hash="gOEYYEG" data-user="Alperen-Akta" style="height: 147.20001220703125px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/gOEYYEG">
+                                BS3</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Yazı Tipleri:</b></li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="182.4000244140625" data-theme-id="dark" data-default-tab="html" data-slug-hash="RwdbbOV" data-user="Alperen-Akta" style="height: 182.4000244140625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/RwdbbOV">
+                                BS4</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Liste Özellikleri:</b></li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="146.4000244140625" data-theme-id="dark" data-default-tab="html" data-slug-hash="KKEPPYr" data-user="Alperen-Akta" style="height: 146.4000244140625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/KKEPPYr">
+                                BS5</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Margin:</b> 1-5 arası boşluk katsayısı vardır.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="163.99993896484375" data-theme-id="dark" data-default-tab="html" data-slug-hash="gOEYYJG" data-user="Alperen-Akta" style="height: 163.99993896484375px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/gOEYYJG">
+                                BS6</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Padding:</b> 1-5 arası boşluk katsayısı vardır.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="164" data-theme-id="dark" data-default-tab="html" data-slug-hash="QWoLLXZ" data-user="Alperen-Akta" style="height: 164px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/QWoLLXZ">
+                                BS7</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Display Özelliği ile Responsive Yapılar</b></h2>
+                        <p>
+                            Bildiğimiz üzere Bootstrapte cihazlar boyutuna göre 5’e ayrılmıştı(xs-sm-md-lg-xl). Biz Bootstrap ile oluşturduğumuz kolonların farklı cihazlarda gözüküp gözükmeyeceğini ayarlayabiliriz. Bunun için display özelliği kullanılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="218.39993286132812" data-theme-id="dark" data-default-tab="html" data-slug-hash="RwdbbXg" data-user="Alperen-Akta" style="height: 218.39993286132812px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/RwdbbXg">
+                                BS8</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            Responsive grid konusunda anlatılan mevzu burada da geçerlidir. Eğer daha büyük cihazlarda, cihaz için bir tanımlama yapılmamışsa ondan küçük, en büyük cihazın özellikleri geçerlidir.<br><br>
+                            Yukarıda yapılan 1. işlemde d-none ile etiket her cihazda görünmezdir. Daha sonra yazılan 2. kod ile hangi cihazda gözükeceği tanımlanır. O cihazdan daha büyük cihazlar için tanımlama geçerli olmaması için 3. kodda tekrardan etiketler gizlenir.
+                        </p>
+
+                        <h2 class="mt-5"><b>Offset</b></h2>
+                        <p>
+                            Grid sisteminde 12 adet kolon oluştuğunu ve içeriklerimizi bu kolonlara paylaştırdığımızı öğrenmiştik. Peki her kolonu kullanmak zorunda mıyız? Hayır, bunun için ise offset yapısı kullanılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="128.80001831054688" data-theme-id="dark" data-default-tab="html" data-slug-hash="VwRZwZP" data-user="Alperen-Akta" style="height: 128.80001831054688px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/VwRZwZP">
+                                BS9</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Order</b></h2>
+                        <p>
+                            Bir row oluşturduğumuzda bunun 12’lik kolonlardan oluştuğunu ve içeriklerimizi bu 12 kolona sığdırdığımızı öğrenmiştik. Order konusunda yan yana duran bu içeriklerin hangisinin sağda hangisinin solda olması gerektiğini ayarlayabiliyoruz.<br><br>
+                            Aynı zamanda order özelliğini responsive olarak cihaza göre değişiklik yapabilir hale getirebiliriz.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="253.60000610351562" data-theme-id="dark" data-default-tab="html" data-slug-hash="ExMYxxj" data-user="Alperen-Akta" style="height: 253.60000610351562px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/ExMYxxj">
+                                BS10</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            Yukarıdaki yapıda bir satıra yan yana 3 ve 9’luk kolonlara sahip 2 içerik yerleştirilmiştir. Biz bu 2 içerikten 3 kolonluk olanı order-2 özelliği ile 9 kolonluğun önüne itmiş oluruz. Yani solda 9’luk sağda 3’lük içerik bulunur.<br><br>
+                            Daha sonra ise sm ve daha büyük cihazlarda 3’lük kolonu sola, 9’luk kolonu sağa yerleştirmiş oluruz.
+                        </p>
+
+                        <h2 class="mt-5"><b>Bootstrap Bileşenleri</b></h2>
+                        <p>
+                            Bootstrapin sitesinde birçok hazır içerik var. Bunları sitelerimize yerleştirebiliriz.
+                        </p>
+                        <ul>
+                            <li><b>Alerts:</b> Uyarı eklemek için kullanılır.</li>
+                            <li><b>Badges:</b> Kutu içerisine yazı eklemek için kullanılır.</li>
+                            <li><b>Breadcrumbs:</b> Lokasyon belirtmek için kullanılır.</li>
+                            <li><b>Buttons:</b> Buton ekler.</li>
+                            <li><b>Button Groups:</b> Yan yana butonlar ekler.</li>
+                            <li><b>Cards:</b> Kartlar ekler.</li>
+                            <li><b>Carousels:</b> Resim galerisi ekler.</li>
+                            <li><b>Collapses:</b> Açılan butonlar ekler.</li>
+                            <li><b>Dropdowns:</b> Açılan buton seçenekleri ekler.</li>
+                            <li><b>Forms:</b> Form yapılarını ekler.</li>
+                            <li><b>Input Groups:</b> Klavyeden veri girmemizi sağlayan yapılar ekler.</li>
+                            <li><b>Jumbotrons:</b> Büyük yazılar ekler.</li>
+                            <li><b>List Groups:</b> Liste grupları ekler.</li>
+                            <li><b>Media Objects:</b> Thumbnail ekler.</li>
+                            <li><b>Modals:</b> Siteye yukarıdan ekran açar.</li>
+                            <li><b>Navs:</b> Navigasyon ekler.</li>
+                            <li><b>Navbars:</b> Site başına navigasyon ekler.</li>
+                            <li><b>Paginations:</b> Sayfalar arası geçiş menüsü ekler.</li>
+                            <li><b>Popovers:</b> Basıldığında içerik çıkan menü ekler.</li>
+                            <li><b>Progress:</b> Aşama barı ekler.</li>
+                            <li><b>Scrollspys:</b> Sitede aşağı indikçe nerede olduğunuzu gösteren bir nav ekler.</li>
+                            <li><b>Spinners:</b> Yüklenme ikonu ekler.</li>
+                            <li><b>Toasts:</b> Sayfanın köşelerine bildirim ekler.</li>
+                            <li><b>Tooltips:</b> Sayfanın köşelerine butonlar ekler.</li>
+                        </ul>
+
+                        <h2 class="mt-5"><b>Diğer CSS Kütüphaneleri</b></h2>
+                        <p>
+                            Bootstrapin sonuna geldik. Öğrendiğimiz konularla birçok proje yaparak pratik kazanma vakti. CSS konusunda anlatıldığı gibi önemli olan bilinmeyeni araştırmaktır. Bootstrap dışında kullanılabilecek diğer CSS kütüphaneleri:
+                        </p>
+                        <ul>
+                            <li>Foundation</li>
+                            <li>Semantic UI</li>
+                            <li>Tailwind</li>
+                            <li>Bulma</li>
+                            <li>UIKit</li>
+                            <li>Pure</li>
+                            <li>Skeleton</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>        
+
+    </main>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e562692f21.js" crossorigin="anonymous"></script>
+  </body>
+</html>

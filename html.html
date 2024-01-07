@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+
+        body{
+            font-family: sans-serif;
+            background-color: #E7DFD8;
+            font-size: 20px;
+        }
+
+        ::-webkit-scrollbar{
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb{
+            background-color: #333333;
+        }
+
+        @media(min-width: 768px){
+            #mobile{
+                display: none;
+            }
+
+            main{
+                display: block;
+            }
+        }
+
+        @media(max-width: 768px){
+            #mobile{
+                display: block;
+                font-size: 15px;
+            }    
+
+            main{
+                display: none;
+            }
+        }
+        
+    </style>
+
+    <link rel="icon" type="png" href="img/icon.png">
+    <title>HTML</title>
+  </head>
+  <body>
+    
+    <main class="container">
+        
+        <nav class="mt-5 text-center">
+            <div class="row px-5">
+                <div class="col-3 text-center">
+                    <a href="index.html" class="text-dark"><b>ANA SAYFA</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="ozgecmis.html" class="text-dark"><b>ÖZ GEÇMİŞ</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="calismalar.html" class="text-dark"><b>ÇALIŞMALAR</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="iletisim.html" class="text-dark"><b>İLETİŞİM</b></a>
+                </div>
+            </div>
+        </nav>
+
+        <article class="mt-5 mb-5 mx-auto" style="border-style: solid; border-width: 1px;">
+            <div class="row m-5">
+                <div class="col-12">
+                    <h1 class="display-4 text-center" id="head">HTML</h1>
+                    <div id="text" class="mt-5">
+                        <h2><b>HTML NEDİR?</b></h2>
+                        <p>
+                            Html bir metin işaretleme dilidir. Günümüzdeki web sitelerin iskeletlerini oluşturmakta kullanılır. Web sitelerine HTML sayesinde metinler, resimler, videolar, linkler koyabiliriz. Diğer dillerle sitemizi özelleştirebiliriz(CSS, JavaScript vb.).<br><br>
+                            HTML bir CERN çalışanı olan Tim Berners Lee tarafından yazılmıştır. Amacı bilgilerini bir ortamda paylaşma ihtiyacıdır. 1990 yılında ilk sürümü çıkmıştır.
+                        </p>
+
+                        <h2 class="mt-5"><b>ETİKET NEDİR?</b></h2>
+                        <p>
+                            HTML kodları bir etiket ile başlar ve bir etiket ile biter. İçerik ise bu etiketler arasına yazılır. Örneğin başlık etiketi olan h1, &lt;h1&gtBaşlık&lt;/h1&gt şeklinde kullanılır.<br><br>
+                            HTML dilinde bir çok etiket vardır fakat bunlardan bazıları çok önemlidir ve birçok işimizi halleder:
+                        </p>
+                        <ul>
+                            <li><b>Başlık Etiketi:</b> &lt;h1&gt, &lt;h2&gt, &lt;h3&gt (Numara büyüdükçe boyut azalır.)</li>
+                            <li><b>Metin Etiketi:</b> &lt;p&gt</li>
+                            <li><b>Link Etiketi:</b> &lt;a&gt</li>
+                            <li><b>Resim Etiketi:</b> &lt;img&gt</li>
+                            <li><b>Liste Etiketi:</b> &lt;li&gt (Sıralı Etiketler &lt;ol&gt, Sırasız Etiketler &lt;ul&gt)</li>
+                            <li><b>Tablo Etiketi:</b> &lt;table&gt</li>
+                            <li><b>Form Etiketi:</b> &lt;form&gt</li>
+                        </ul>
+
+                        <h2 class="mt-5"><b>BAŞLIK VE METİN</b></h2>
+                        <p>
+                            Başlık oluşturmak için &lt;h1&gt etiketini kullanırız. H1 en büyük başlık olurken h2, h3, h4… olarak başlıklar seçebiliriz. Sayılar arttıkça başlık boyutu küçülür.<br><br>
+                            Metin oluşturmak için ise &lt;p&gt etiketini kullanırız. Açılan her yeni &lt;p&gt bir alt satıra geçer. Alt satıra geçmek için metnin içine &lt;br&gt etiketini de koyabiliriz.
+                        </p>
+
+                        <h2 class="mt-5"><b>LİSTELER</b></h2>
+                        <p>
+                            Liste oluşturmak için 2 tane seçeneğimiz var: Sıralı ve sırasız listeler. Sıralı listeler maddenin başına sayılar eklerken, sırasız listeler maddenin başına nokta ekler.<br><br>
+                            Sıralı liste yapmak için &lt;ol&gt, sırasız liste yapmak için ise &lt;ul&gt etiketi kullanılır. Listeye madde eklemek için ise &lt;li&gt etiketi kullanılır.<br><br>
+                            İstersek maddenin başına eklenen simgeleri değiştirebiliriz. Bu bir CSS konusu olsa da burada kısa bir özet ekleyeceğiz. Sıralı listelerde &lt;ol type=""&gt kodu ile, sırasız listelerde &lt;ul style=""&gt koduyla simgeleri değiştirebiliriz.
+                        </p>
+
+                        <h2 class="mt-5"><b>EMMET</b></h2>
+                        <p>
+                            Emmet yapısı Visual Studio Code içerisinde hızlı bir şekilde kod yazmamızı sağlar. HTML kodları için hızlı kısayollar:
+                        </p>
+                        <ul>
+                            <li><b>Kardeş Öğe:</b> +</li>
+                            <li><b>Öğenin İçine Girme:</b> ></li>
+                            <li><b>Öğenin Yukarısına Çıkma: </b> ^</li>
+                            <li><b>Birden Fazla Öğe Oluşturma:</b> *</li>
+                            <li><b>Rastgele Metin Oluşturma:</b> lorem</li>
+                            <li><b>Class Oluşturma:</b> .</li>
+                            <li><b>ID Oluşturma:</b> #</li>
+                        </ul>
+                        <p>
+                            Bu tuşlar ile çok hızlı bir iskelet yapısı kurulabilir. Örneğin:<br>
+                            h1>Lorem4^p>Lorem10^ul>li*5>Lorem2<br> kodunu yazdığımızda içerisinde 4 kelime bulunduran bir başlık, içerisinde 10 kelime bulunduran bir paragraf, içerisinde 5 adet eleman ve bunların içinde 2 kelime bulunan sırasız liste oluştururuz.
+                        </p>
+
+                        <h2 class="mt-5"><b>GÖRSELLER</b></h2>
+                        <p>
+                            Bir görsel oluşturmak için &lt;img&gt etiketi kullanılır. Tabii ki resmin yolunu eklemek için bir etiket daha lazımdır. Bunun için &lt;img src=""&gt kodu kullanılır. Tırnakların içerisine de resim yolu girilir. Burada dikkat edilmesi gereken resmin uzantısı ve içinde bulunduğu klasör belirtilmelidir.<br><br>
+                            Diyelim ki resim eklerken işler ters gitti. Bu durumda HTML sayfasında geçici bir resim ikonu konur. Bu ikona bir metin atayabiliriz. Bunun için &lt;img src="" alt=""&gt kodu kullanılır.<br><br>
+                            Resimlerin boyutu değiştirilebilir. Bu CSS ile ilgili bir konudur fakat ufak bir bilgilendirme yapılacaktır. Bunun için &lt;img src="" height="" width=""&gt kodu kullanılır. Burada önemli olan width ve height değerlerini verirken resmin orantısının bozulmasıdır. Bunun yaşanmaması için ikisinden birine değer verebiliriz. Bu sayede oran korunacaktır.
+                        </p>
+                        
+                        <h2 class="mt-5"><b>LİNKLER</b></h2>
+                        <p>
+                            Link oluşturmak için &lt;a&gt etiketi kullanılır. Yine resimde olduğu gibi linkin yolunu yazmalıyız. Bunun için &lt;a href=""&gt kodu kullanılır. Etiketin içerisine linkin nasıl gözükmesi gerektiğini yazarız. Bir metin veya bir görsel olabilir.<br><br>
+                            Linkler birkaç çeşitten oluşur:
+                        </p>
+                        <ul>
+                            <li>Başka bir web sitesine götüren linkler</li>
+                            <li>Başka bir sayfaya götüren linkler</li>
+                            <li>Aynı sayfa içinde hareket etmemizi sağlayan linkler</li>
+                            <li>Mail atma linkleri</li>
+                            <li>Telefon etme linkleri</li>
+                        </ul>
+                        <p>
+                            Linkler açıldığında yeni bir sekmede mi yoksa mevcut sayfada mı açılacağını belirleyebiliriz. Bunun için &lt;a href="" target=""&gt kodunu kullanırız.
+                        </p>
+
+                        <h2 class="mt-5"><b>BLOCK VE INLINE ETİKETLER</b></h2>
+                        <p>
+                            HTML dilinde etiketler kapladığı alan bakımından ikiye ayrılır: Block ve inline. Block elementler bulunduğu satırın tamamını kaplarken inline elementler sadece kendi bulunduğu yeri kaplar.<br><br>
+                            Henüz etiketlerimizi özelleştiremiyoruz fakat ileride CSS dilinde etiketleri yer değiştirirken bu bilgiler önem kazacak.<br><br>
+                            Şu ana kadar öğrendiğimiz etiketlerin kapladığı alan türleri:
+                        </p>
+                        <ul>
+                            <li><b>Block:</b> &lt;h1&gt, &lt;p&gt, &lt;li&gt, &lt;div&gt</li>
+                            <li><b>Inline:</b> &lt;img&gt, &lt;a&gt, &lt;b&gt, &lt;i&gt, &lt;span&gt</li>
+                        </ul>
+
+                        <h2 class="mt-5"><b>DIV, SPAN, HR, B VE I ETİKETLERİ</b></h2>
+                        <p>
+                            &lt;div&gt etiketi, boş şeffaf bir kutudur. Block elementtir. Boş bir kutu CSS dilinde etiketleri kümelendirirken çok işimize yarar.<br><br>
+                            &lt;span&gt etiketi, boş şeffaf bir kutudur. Tek farkı inline olmasıdır. &lt;div&gt ve &lt;span&gt etiketlerinin içerisine yazılan etiketler, ortak özelleştirilebilir.<br><br>
+                            &lt;hr&gt etiketi, sayfaya bir satır boyunca çizgi çeker. &lt;b&gt etiketi içerisinde yazan yazıyı kalın, &lt;i&gt etiketi ise italik yapar.      
+                        </p>
+
+                        <h2 class="mt-5"><b>ID VE CLASS ÖZELLİKLERİ</b></h2>
+                        <p>
+                            HTML etiketlerini özelleştirirken id ve class yapılarını kullanırız. ID, etiketlere birer kimlik kazandırır. Class ise daha önce yazılmış belli özelleştirmeleri istediğimiz etikete kazandırmak için kullanılır.<br><br>
+                            ID ve class, etiketin içine yazılır. ID oluştururken boşluk kullanılmaz, aynısı class için de geçerlidir fakat birden fazla class eklemek için boşluk konabilir. Örneğin:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="146.39996337890625" data-theme-id="dark" data-default-tab="html" data-slug-hash="VwgoeYV" data-user="Alperen-Akta" style="height: 146.39996337890625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/VwgoeYV">
+                                Untitled</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>HTML İSKELETİ</b></h2>
+                        <p>
+                            HTML sayfaları en başta &lt;!doctype html&gt koduyla başlar. Bu sayfanın HTML dilinde olduğunu gösterir. Daha sonrasında HTML sayfaları 3 parçaya ayrılır: &lt;html&gt, &lt;head&gt, &lt;body&gt.
+                        </p>
+                        <ul>
+                            <li><b>&lt;html&gt Etiketi:</b> Her şeyin içerisinde bulunduğu etikettir.</li>
+                            <li><b>&lt;head&gt Etiketi:</b> Sayfa ile ilgili açıklamaların bulunduğu, sayfanın dilinin belirlendiği, CSS kodlarının bulunduğu kısımdır.</li>
+                            <li><b>&lt;body&gt Etiketi:</b> Sayfa ile ilgili tüm içeriğin bulunduğu kısımdır. En uzun parça &lt;body&gt etiketidir.</li>
+                        </ul>
+
+                        <h2 class="mt-5"><b>SEMANTİK ETİKETLER</b></h2>
+                        <p>
+                            Bir sayfa tasarladığımızda sayfanın birer başlık kısmı, onun altında menüler, daha sonra sitenin içeriği, isteğe bağlı olarak yan menü ve en sonda iletişim bilgilerinin yazıldığını varsayalım. Bu sitede göründüğü gibi sayfa parçalara bölünmüş durumda ve biz bunları kutular halinde yerleştirirsek çok sayıda &lt;div&gt ve &lt;span&gt etiketi kullanırız.<br><br>
+                            Semantik etiketler, dışarıdan bakıldığında kodun okunurluğunu arttıran isimlere sahiptir. Mesela &lt;img&gt, &lt;table&gt etiketleri gibi. Bu yüzden sayfa tasarlarken oluşturduğumuz parçaları anlamlandıran etiketler türemiştir. Bunların &lt;div&gt etiketlerinden farkı yoktur.     
+                        </p>
+                        <ul>
+                            <li><b>&lt;header&gt Etiketi:</b> Sayfanın başlık kısmını oluşturur.</li>
+                            <li><b>&lt;nav&gt Etiketi:</b> Sayfanın menülerini oluşturur.</li>
+                            <li><b>&lt;article&gt Etiketi:</b> Sayfanın içerik kısmını oluşturur.</li>
+                            <li><b>&lt;aside&gt Etiketi:</b> Sayfanın yan menüsünü oluşturur.</li>
+                            <li><b>&lt;footer&gt Etiketi:</b> Sayfanın en alt bölümünü oluşturur.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>       
+
+    </main>
+
+    <main id="mobile" class="container">
+        
+        <nav class="text-center">
+            <div class="row mt-3" style="border-style: solid; border-width: 0px 0px 1px 0px;">
+                <div class="col-2">
+                    <div class="dropdown float-left">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
+                        </button>
+                        <div class="dropdown-menu" style="background-color: #E7DFD8;">
+                          <a class="dropdown-item" href="index.html">Ana Sayfa</a>
+                          <a class="dropdown-item" href="ozgecmis.html">Öz Geçmiş</a>
+                          <a class="dropdown-item" href="calismalar.html">Çalışmalar</a>
+                          <a class="dropdown-item" href="iletisim.html">İletişim</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 text-center">
+                    <h1><b>Çalışmalar</b></h1>
+                </div>
+            </div>
+        </nav>
+
+        <article class="mt-5 mb-5 mx-auto">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-4 text-center" id="head">HTML</h1>
+                    <div id="text" class="mt-5">
+                        <h2><b>HTML Nedir?</b></h2>
+                        <p>
+                            Html bir metin işaretleme dilidir. Günümüzdeki web sitelerin iskeletlerini oluşturmakta kullanılır. Web sitelerine HTML sayesinde metinler, resimler, videolar, linkler koyabiliriz. Diğer dillerle sitemizi özelleştirebiliriz(CSS, JavaScript vb.).<br><br>
+                            HTML bir CERN çalışanı olan Tim Berners Lee tarafından yazılmıştır. Amacı bilgilerini bir ortamda paylaşma ihtiyacıdır. 1990 yılında ilk sürümü çıkmıştır.
+                        </p>
+
+                        <h2 class="mt-5"><b>Etiket Nedir?</b></h2>
+                        <p>
+                            HTML kodları bir etiket ile başlar ve bir etiket ile biter. İçerik ise bu etiketler arasına yazılır. Örneğin başlık etiketi olan h1, &lt;h1&gtBaşlık&lt;/h1&gt şeklinde kullanılır.<br><br>
+                            HTML dilinde bir çok etiket vardır fakat bunlardan bazıları çok önemlidir ve birçok işimizi halleder:
+                        </p>
+                        <ul>
+                            <li><b>Başlık Etiketi:</b> &lt;h1&gt, &lt;h2&gt, &lt;h3&gt (Numara büyüdükçe boyut azalır.)</li>
+                            <li><b>Metin Etiketi:</b> &lt;p&gt</li>
+                            <li><b>Link Etiketi:</b> &lt;a&gt</li>
+                            <li><b>Resim Etiketi:</b> &lt;img&gt</li>
+                            <li><b>Liste Etiketi:</b> &lt;li&gt (Sıralı Etiketler &lt;ol&gt, Sırasız Etiketler &lt;ul&gt)</li>
+                            <li><b>Tablo Etiketi:</b> &lt;table&gt</li>
+                            <li><b>Form Etiketi:</b> &lt;form&gt</li>
+                        </ul>
+
+                        <h2 class="mt-5"><b>Başlık ve Metin</b></h2>
+                        <p>
+                            Başlık oluşturmak için &lt;h1&gt etiketini kullanırız. H1 en büyük başlık olurken h2, h3, h4… olarak başlıklar seçebiliriz. Sayılar arttıkça başlık boyutu küçülür.<br><br>
+                            Metin oluşturmak için ise &lt;p&gt etiketini kullanırız. Açılan her yeni &lt;p&gt bir alt satıra geçer. Alt satıra geçmek için metnin içine &lt;br&gt etiketini de koyabiliriz.
+                        </p>
+
+                        <h2 class="mt-5"><b>Listeler</b></h2>
+                        <p>
+                            Liste oluşturmak için 2 tane seçeneğimiz var: Sıralı ve sırasız listeler. Sıralı listeler maddenin başına sayılar eklerken, sırasız listeler maddenin başına nokta ekler.<br><br>
+                            Sıralı liste yapmak için &lt;ol&gt, sırasız liste yapmak için ise &lt;ul&gt etiketi kullanılır. Listeye madde eklemek için ise &lt;li&gt etiketi kullanılır.<br><br>
+                            İstersek maddenin başına eklenen simgeleri değiştirebiliriz. Bu bir CSS konusu olsa da burada kısa bir özet ekleyeceğiz. Sıralı listelerde &lt;ol type=""&gt kodu ile, sırasız listelerde &lt;ul style=""&gt koduyla simgeleri değiştirebiliriz.
+                        </p>
+
+                        <h2 class="mt-5"><b>Emmet</b></h2>
+                        <p>
+                            Emmet yapısı Visual Studio Code içerisinde hızlı bir şekilde kod yazmamızı sağlar. HTML kodları için hızlı kısayollar:
+                        </p>
+                        <ul>
+                            <li><b>Kardeş Öğe:</b> +</li>
+                            <li><b>Öğenin İçine Girme:</b> ></li>
+                            <li><b>Öğenin Yukarısına Çıkma: </b> ^</li>
+                            <li><b>Birden Fazla Öğe Oluşturma:</b> *</li>
+                            <li><b>Rastgele Metin Oluşturma:</b> lorem</li>
+                            <li><b>Class Oluşturma:</b> .</li>
+                            <li><b>ID Oluşturma:</b> #</li>
+                        </ul>
+                        <p>
+                            Bu tuşlar ile çok hızlı bir iskelet yapısı kurulabilir. Örneğin:<br>
+                            h1>Lorem4^p>Lorem10^ul>li*5>Lorem2<br> kodunu yazdığımızda içerisinde 4 kelime bulunduran bir başlık, içerisinde 10 kelime bulunduran bir paragraf, içerisinde 5 adet eleman ve bunların içinde 2 kelime bulunan sırasız liste oluştururuz.
+                        </p>
+
+                        <h2 class="mt-5"><b>Görseller</b></h2>
+                        <p>
+                            Bir görsel oluşturmak için &lt;img&gt etiketi kullanılır. Tabii ki resmin yolunu eklemek için bir etiket daha lazımdır. Bunun için &lt;img src=""&gt kodu kullanılır. Tırnakların içerisine de resim yolu girilir. Burada dikkat edilmesi gereken resmin uzantısı ve içinde bulunduğu klasör belirtilmelidir.<br><br>
+                            Diyelim ki resim eklerken işler ters gitti. Bu durumda HTML sayfasında geçici bir resim ikonu konur. Bu ikona bir metin atayabiliriz. Bunun için &lt;img src="" alt=""&gt kodu kullanılır.<br><br>
+                            Resimlerin boyutu değiştirilebilir. Bu CSS ile ilgili bir konudur fakat ufak bir bilgilendirme yapılacaktır. Bunun için &lt;img src="" height="" width=""&gt kodu kullanılır. Burada önemli olan width ve height değerlerini verirken resmin orantısının bozulmasıdır. Bunun yaşanmaması için ikisinden birine değer verebiliriz. Bu sayede oran korunacaktır.
+                        </p>
+                        
+                        <h2 class="mt-5"><b>Linkler</b></h2>
+                        <p>
+                            Link oluşturmak için &lt;a&gt etiketi kullanılır. Yine resimde olduğu gibi linkin yolunu yazmalıyız. Bunun için &lt;a href=""&gt kodu kullanılır. Etiketin içerisine linkin nasıl gözükmesi gerektiğini yazarız. Bir metin veya bir görsel olabilir.<br><br>
+                            Linkler birkaç çeşitten oluşur:
+                        </p>
+                        <ul>
+                            <li>Başka bir web sitesine götüren linkler</li>
+                            <li>Başka bir sayfaya götüren linkler</li>
+                            <li>Aynı sayfa içinde hareket etmemizi sağlayan linkler</li>
+                            <li>Mail atma linkleri</li>
+                            <li>Telefon etme linkleri</li>
+                        </ul>
+                        <p>
+                            Linkler açıldığında yeni bir sekmede mi yoksa mevcut sayfada mı açılacağını belirleyebiliriz. Bunun için &lt;a href="" target=""&gt kodunu kullanırız.
+                        </p>
+
+                        <h2 class="mt-5"><b>Block ve Inline Elementler</b></h2>
+                        <p>
+                            HTML dilinde etiketler kapladığı alan bakımından ikiye ayrılır: Block ve inline. Block elementler bulunduğu satırın tamamını kaplarken inline elementler sadece kendi bulunduğu yeri kaplar.<br><br>
+                            Henüz etiketlerimizi özelleştiremiyoruz fakat ileride CSS dilinde etiketleri yer değiştirirken bu bilgiler önem kazacak.<br><br>
+                            Şu ana kadar öğrendiğimiz etiketlerin kapladığı alan türleri:
+                        </p>
+                        <ul>
+                            <li><b>Block:</b> &lt;h1&gt, &lt;p&gt, &lt;li&gt, &lt;div&gt</li>
+                            <li><b>Inline:</b> &lt;img&gt, &lt;a&gt, &lt;b&gt, &lt;i&gt, &lt;span&gt</li>
+                        </ul>
+
+                        <h2 class="mt-5"><b>Div, Span, Hr, B ve I Etiketleri</b></h2>
+                        <p>
+                            &lt;div&gt etiketi, boş şeffaf bir kutudur. Block elementtir. Boş bir kutu CSS dilinde etiketleri kümelendirirken çok işimize yarar.<br><br>
+                            &lt;span&gt etiketi, boş şeffaf bir kutudur. Tek farkı inline olmasıdır. &lt;div&gt ve &lt;span&gt etiketlerinin içerisine yazılan etiketler, ortak özelleştirilebilir.<br><br>
+                            &lt;hr&gt etiketi, sayfaya bir satır boyunca çizgi çeker. &lt;b&gt etiketi içerisinde yazan yazıyı kalın, &lt;i&gt etiketi ise italik yapar.      
+                        </p>
+
+                        <h2 class="mt-5"><b>ID ve Class Özellikleri</b></h2>
+                        <p>
+                            HTML etiketlerini özelleştirirken id ve class yapılarını kullanırız. ID, etiketlere birer kimlik kazandırır. Class ise daha önce yazılmış belli özelleştirmeleri istediğimiz etikete kazandırmak için kullanılır.<br><br>
+                            ID ve class, etiketin içine yazılır. ID oluştururken boşluk kullanılmaz, aynısı class için de geçerlidir fakat birden fazla class eklemek için boşluk konabilir. Örneğin:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html" data-slug-hash="VwgoeYV" data-user="Alperen-Akta" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/VwgoeYV">
+                                Untitled</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>HTML İskeleti</b></h2>
+                        <p>
+                            HTML sayfaları en başta &lt;!doctype html&gt koduyla başlar. Bu sayfanın HTML dilinde olduğunu gösterir. Daha sonrasında HTML sayfaları 3 parçaya ayrılır: &lt;html&gt, &lt;head&gt, &lt;body&gt.
+                        </p>
+                        <ul>
+                            <li><b>&lt;html&gt Etiketi:</b> Her şeyin içerisinde bulunduğu etikettir.</li>
+                            <li><b>&lt;head&gt Etiketi:</b> Sayfa ile ilgili açıklamaların bulunduğu, sayfanın dilinin belirlendiği, CSS kodlarının bulunduğu kısımdır.</li>
+                            <li><b>&lt;body&gt Etiketi:</b> Sayfa ile ilgili tüm içeriğin bulunduğu kısımdır. En uzun parça &lt;body&gt etiketidir.</li>
+                        </ul>
+
+                        <h2 class="mt-5"><b>Semantik Etiketler</b></h2>
+                        <p>
+                            Bir sayfa tasarladığımızda sayfanın birer başlık kısmı, onun altında menüler, daha sonra sitenin içeriği, isteğe bağlı olarak yan menü ve en sonda iletişim bilgilerinin yazıldığını varsayalım. Bu sitede göründüğü gibi sayfa parçalara bölünmüş durumda ve biz bunları kutular halinde yerleştirirsek çok sayıda &lt;div&gt ve &lt;span&gt etiketi kullanırız.<br><br>
+                            Semantik etiketler, dışarıdan bakıldığında kodun okunurluğunu arttıran isimlere sahiptir. Mesela &lt;img&gt, &lt;table&gt etiketleri gibi. Bu yüzden sayfa tasarlarken oluşturduğumuz parçaları anlamlandıran etiketler türemiştir. Bunların &lt;div&gt etiketlerinden farkı yoktur.     
+                        </p>
+                        <ul>
+                            <li><b>&lt;header&gt Etiketi:</b> Sayfanın başlık kısmını oluşturur.</li>
+                            <li><b>&lt;nav&gt Etiketi:</b> Sayfanın menülerini oluşturur.</li>
+                            <li><b>&lt;article&gt Etiketi:</b> Sayfanın içerik kısmını oluşturur.</li>
+                            <li><b>&lt;aside&gt Etiketi:</b> Sayfanın yan menüsünü oluşturur.</li>
+                            <li><b>&lt;footer&gt Etiketi:</b> Sayfanın en alt bölümünü oluşturur.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>       
+
+    </main>
+
+    <script src="js/html.js"></script>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e562692f21.js" crossorigin="anonymous"></script>
+  </body>
+</html>

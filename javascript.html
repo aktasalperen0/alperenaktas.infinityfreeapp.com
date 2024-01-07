@@ -1,0 +1,1349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+
+        body{
+            font-family: sans-serif;
+            background-color: #E7DFD8;
+            font-size: 20px;
+        }
+
+        ::-webkit-scrollbar{
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb{
+            background-color: #333333;
+        }
+
+        @media(min-width: 768px){
+            #mobile{
+                display: none;
+            }
+
+            main{
+                display: block;
+            }
+        }
+
+        @media(max-width: 768px){
+            #mobile{
+                display: block;
+                font-size: 15px;
+            }    
+
+            main{
+                display: none;
+            }
+        }
+        
+    </style>
+
+    <link rel="icon" type="png" href="img/icon.png">
+    <title>Javascript</title>
+  </head>
+  <body>
+    
+    <main class="container">
+        
+        <nav class="mt-5 text-center">
+            <div class="row px-5">
+                <div class="col-3 text-center">
+                    <a href="index.html" class="text-dark"><b>ANA SAYFA</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="ozgecmis.html" class="text-dark"><b>ÖZ GEÇMİŞ</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="calismalar.html" class="text-dark"><b>ÇALIŞMALAR</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="iletisim.html" class="text-dark"><b>İLETİŞİM</b></a>
+                </div>
+            </div>
+        </nav>
+
+        <article class="mt-5 mb-5 mx-auto" style="border-style: solid; border-width: 1px;">
+            <div class="row m-5">
+                <div class="col-12">
+                    <h1 class="display-4 text-center" id="head">Javascript</h1>
+                    <div id="text" class="mt-5">
+                        <h2><b>HELLO WORLD</b></h2>
+                        <p>
+                            Her programlama dilinin olmazsa olmaz ilk konusu Hello World yazmaktır. Javascript’te hello world yazmak için ise 3 seçenek vardır:
+                        </p>
+                        <ol>
+                            <li><b>Console.log(“Merhaba Dunya”):</b> Javascript’i konsolda çalıştırmak için bu kod kullanılır ve genel olarak bu kodu kullanacağız.</li>
+                            <li><b>Alert(“Merhaba Dunya”):</b> Bu kod siteye bir uyarı olarak Merhaba Dunya yazdırır.</li>
+                            <li><b>Document.write():</b> Bu kod ise direkt HTML gibi siteye yazdırır.</li>
+                        </ol>
+                        <p>
+                            Javascript’te yaptığımız içeriği en son kullanıcıya göstereceğimiz için 3. seçenek çok kullanılmaz. Genel olarak konsolda çalışılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="216.7999267578125" data-theme-id="dark" data-default-tab="js" data-slug-hash="mdobyYy" data-user="Alperen-Akta" style="height: 216.7999267578125px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/mdobyYy">
+                                JS1</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>DEĞİŞKENLER</b></h2>
+                        <p>
+                            Bilgilerimizi tutmak için değişkenlere ihtiyaç duyarız. Javascript’te ise 3 farklı değişken türü vardır:
+                        </p>
+                        <ul>
+                            <li><b>Var:</b> Günümüzde pek kullanılmayan değişken türüdür.</li>
+                            <li><b>Let:</b> En yaygın kullanılan değişken türüdür.</li>
+                            <li><b>Const:</b> Sadece bir kere atama yapılabilir türdür.</li>
+                        </ul>
+                        <p>
+                            Değişken oluşturmak için değişkenin türü, daha sonra da adı yazılır. Veri ekleme işlemi değişken oluşturulurken ya da daha sonra yapılabilir. Veri atamak için “=” operatörü kullanılır.<br><br>
+                            Yazdırmak için ise console.log(değişken) ile değişkeni ekrana yazdırabiliriz. İçine atama yapılmamış bir değişken tanımsız gözükür.<br><br>
+                            Bir değişkene ekleme yapmak için değişken=değişken+eklenecekVeri şeklinde yapılabilir. Burada + operatörü ekleme işlemine yarar.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="550.4000244140625" data-theme-id="dark" data-default-tab="js" data-slug-hash="GReKJgo" data-user="Alperen-Akta" style="height: 550.4000244140625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/GReKJgo">
+                                JS2</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>DEĞİŞKEN TANIMLAMA KURALLARI</b></h2>
+                        <p>
+                            Değişken tanımlarken kod okunurluğunun artması için insanlar bazı kurallar oluşturmuştur. Bunlar zorunlu değil ama kod kalitesini arttıracak kurallardır:
+                        </p>
+                        <ul>
+                            <li><b>Let Değişken İsimleri:</b> Camel case ile yazılır. Camel case, kelimelerin baş harfinin büyük, diğerlerinin küçük olmasıdır. Ayrıca ilk kelimenin baş harfi de küçük yazılır.</li>
+                            <li><b>Const Değişken İsimleri:</b> Değişmez olduklarını belli etmek için bütün harfleri büyük yazılır ve kelimeler arasına “_” konur.</li>
+                            <li>Değişken isimlerinin anlamsız ifadeler (x, y, z) olmaması gerekir. Çünkü başka insanların bu değişkenin ne olduğunu anlaması için anlamlı ifadeler yazılması gerekir.</li>
+                            <li>Boolean değişkenlerin başında is veya has gibi soru ifadesi olması gerekir ki insanlar bunun true veya false içerdiğini bilmeli.</li>
+                            <li>Kodların satır uzunluğunun 80 harften fazla olmaması tavsiye edilir.</li>
+                            <li>Değişken isimlerinin türkçe harf veya anlam içermemesi kodun uluslararası okunurluğunun artması için tavsiye edilir.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="322.3999938964844" data-theme-id="dark" data-default-tab="js" data-slug-hash="poYzJjp" data-user="Alperen-Akta" style="height: 322.3999938964844px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/poYzJjp">
+                                JS3</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>ARİTMETİK İŞLEMLER</b></h2>
+                        <ul>
+                            <li><b>Dört İşlem:</b> Değişkenleri +, -, *, / operatörleri ile işleme sokabiliriz. Bu işlemleri yeni bir değişekene de atayabiliriz.</li>
+                            <li><b>Arttırma-Azaltma İşlemleri:</b> Bunun için 3 yöntem var: <ul>
+                                <li><b>Değişken=değişken+arttırmaSayısı:</b> En uzun yöntem</li>
+                                <li><b>Değişken+=arttırmaSayısı:</b> Orta uzunluktaki yöntem</li>
+                                <li><b>Değişken++:</b> En kısa yöntem ama sadece 1 ekler veya azaltır.</li>
+                            </ul></li>
+                            <li><b>İşlem Önceliği:</b> Parantezler ile işlemin gidişatını değiştirebiliriz.</li>
+                            <li><b>Mod Alma:</b> % operatörü ile 2 sayının bölümünden kalanı bulabiliriz.</li>
+                            <li><b>Üs Alma:</b> ** operatörü ile üs alabiliriz.</li>
+                            <li><b>Yuvarlama:</b> Math.floor(aşağı yuvarlama), Math.ceil(yukarı yuvarlama), Math.rounded(yakına yuvarlama) metotları ile yuvarlama yapabiliriz.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="604.0000305175781" data-theme-id="dark" data-default-tab="js" data-slug-hash="GReKJqZ" data-user="Alperen-Akta" style="height: 604.0000305175781px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/GReKJqZ">
+                                JS4</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>BOOLEAN VERİ TÜRÜ</b></h2>
+                        <p>
+                            True ya da false döndüren veri tipine boolean denir. Boolean ile kodun gidişatını değiştirebiliriz.<br><br>
+                            Eğer bir değişkeni oluşturup içine veri atamadıysak içinde veri olmadığı için false döndürür. Aynı şekilde 0, “”, null vb.’de false döndürür. Bunların dışında herhangi bir veriye true döndürür.<br><br>
+                            Javascript’in içinde bulunan Boolean fonksiyonu ile bazı kısa sorgulamaları direkt yapabiliriz.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="359.2000732421875" data-theme-id="dark" data-default-tab="js" data-slug-hash="BabBNLW" data-user="Alperen-Akta" style="height: 359.2000732421875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/BabBNLW">
+                                JS5</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>DEĞİŞKEN TÜRÜ DEĞİŞTİRME</b></h2>
+                        <p>
+                            Bir değişkenin türünü öğrenmek için typeof(değişkenAdı) metotu kullanılır.<br><br>
+                            Eğer bir String’i int’e çevirmek istiyorsak parseInt(değişkenAdı), float’a çevirmek istiyorsak parseFloat(değişkenAdı) metotu kullanılır.<br><br>
+                            Eğer bir int’i ya da float’ı stringe çevirmek istiyorsak toString() metodu kullanılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="409.5999755859375" data-theme-id="dark" data-default-tab="js" data-slug-hash="MWxgwbX" data-user="Alperen-Akta" style="height: 409.5999755859375px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/MWxgwbX">
+                                JS6</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>TEMPLATE LITERALS</b></h2>
+                        <p>
+                            Konsola veya ekrana bir şeyler yazarken her değişken geçişinde tekrar “” açılımı, virgül kullanımı gibi işlemle yapıyoruz ve uzun bir metin yazarken çok vaktimizi alabilir.<br><br>
+                            Template literals, `` ile oluşturulur ve içine istediğimiz kadar metin yazabiliriz. Eğer içinde bir değişken veya bir fonksiyon çağırmak istiyorsak ${} ile metnin içine yazabiliriz. Hatta ve hatta HTML kodu bile yazabiliriz.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="375.1999816894531" data-theme-id="dark" data-default-tab="js" data-slug-hash="RwdbPpa" data-user="Alperen-Akta" style="height: 375.1999816894531px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/RwdbPpa">
+                                JS7</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>STRING VERİ TİPİ</b></h2>
+                        <p>
+                            String olarak girilen verilerimizin özelliklerine erişmek ya da farklı biçimlere dönüştürmek için birçok metot bulunur:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="550.4000854492188" data-theme-id="dark" data-default-tab="js" data-slug-hash="gOEYpWL" data-user="Alperen-Akta" style="height: 550.4000854492188px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/gOEYpWL">
+                                JS8</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>DOM</b></h2>
+                        <p>
+                            Document Object Model yapısı bizim javascript ile html sayfasında değişiklik yapmamıza olanak sağlayan bir yapıdır.<br><br>
+                            Bu yapı sayesinde javascript’in karar yapıları ile belirli şartlara göre değişen siteler yapabilir veya başka dinamik yapılar kurabiliriz:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="357.6000671386719" data-theme-id="dark" data-default-tab="js" data-slug-hash="XWGrbRo" data-user="Alperen-Akta" style="height: 357.6000671386719px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/XWGrbRo">
+                                JS9</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>DOM İÇERİSİNDEN ETİKET VE ID’YE ULAŞMAK</b></h2>
+                        <p>
+                            DOM içerisinden html etiketlerine ve onların id’sine ulaşarak etiketlerin özelliklerini değiştirebiliriz:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="340.8000183105469" data-theme-id="dark" data-default-tab="js" data-slug-hash="wvOwaee" data-user="Alperen-Akta" style="height: 340.8000183105469px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/wvOwaee">
+                                JS10</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>PROMPT</b></h2>
+                        <p>
+                            Bir alert ekranında kullanıcıdan bilgi almak için kullanılır. Bu bilgiyi daha sonra kullanabiliriz.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="181.60000610351562" data-theme-id="dark" data-default-tab="js" data-slug-hash="zYbOGzb" data-user="Alperen-Akta" style="height: 181.60000610351562px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/zYbOGzb">
+                                JS11</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>DOM İLE LİSTE İÇİNE ERİŞMEK</b></h2>
+                        <p>
+                            DOM ile bir listenin öğelerini değiştirebiliriz, eleman ekleyebiliriz, ilk ve son iteme erişebiliriz.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="375.1999816894531" data-theme-id="dark" data-default-tab="js" data-slug-hash="WNmevEd" data-user="Alperen-Akta" style="height: 375.1999816894531px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/WNmevEd">
+                                JS12</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>DOM İLE CLASS EKLEME VEYA ÇIKARMA</b></h2>
+                        <p>
+                            DOM ile etiketlere class ekleyebilir veya silebiliriz. Bootstrap classlar yoluyla çalıştığı için etiket özellleştirmelerini istediğimiz zaman ekleme ve istediğimiz zamanda çıkarma işimize yarar.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="202.39999389648438" data-theme-id="dark" data-default-tab="js" data-slug-hash="ExMYjvJ" data-user="Alperen-Akta" style="height: 202.39999389648438px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/ExMYjvJ">
+                                JS13</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>KARŞILAŞTIRMA OPERATÖRLERİ</b></h2>
+                        <p>
+                            Programlama yaparken değişkenlerin durumuna göre kodun gidişatını değiştirebiliriz. Bunun için değişkenler karşılaştırılır ve 2 durum ortaya çıkar: eğer şart sağlanıyorsa true, sağlanmıyorsa false. Bu 2 şarta göre kodun nasıl şekilleneceğini belirtebiliriz. İşte bu durumları karşılaştırmamıza yarayan yapılara karşılaştırma operatörleri denir.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="517.5999145507812" data-theme-id="dark" data-default-tab="js" data-slug-hash="jOJNPGz" data-user="Alperen-Akta" style="height: 517.5999145507812px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/jOJNPGz">
+                                JS14</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>IF — ELSE YAPISI</b></h2>
+                        <p>
+                            Karşılaştırma durumundan sonra kodun gidişatını yazacağımız yapılar if–else yapılarıdır. Eğer if parantezinin içindeki şart gerçekleşirse if bloğunun içindeki kodlar çalışır, gerçekleşmezse else bloğunun içindeki kodlar çalışır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="252" data-theme-id="dark" data-default-tab="js" data-slug-hash="poYzJdK" data-user="Alperen-Akta" style="height: 252px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/poYzJdK">
+                                JS15</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>ÇOKLU KOŞULLAR</b></h2>
+                        <p>
+                            Eğer karşılaştırılacak veya kontrol edilecek birden fazla durum varsa if yapısından sonra else if yapıları kullanılır. Çalışma mantıkları if gibidir.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="343.20001220703125" data-theme-id="dark" data-default-tab="js" data-slug-hash="XWGrbVG" data-user="Alperen-Akta" style="height: 343.20001220703125px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/XWGrbVG">
+                                JS16</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>TERNARY OPERATÖR</b></h2>
+                        <p>
+                            Short if olarak da geçen bu yapı tek satırlık kısa if yapıları için kullanılır. Öncelikle değişken ile ilgili koşul yazılır ve ? konulur, daha sonra koşul sağlanırsa gerçekleşecek tek satırlık kod yazılır ve : konulur, daha sonra da koşul sağlanmazsa gerçekleşecek tek satırlık kod yazılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="181.60000610351562" data-theme-id="dark" data-default-tab="js" data-slug-hash="ZEPzGrm" data-user="Alperen-Akta" style="height: 181.60000610351562px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/ZEPzGrm">
+                                JS17</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>FONKSİYONLAR</b></h2>
+                        <p>
+                            Belirli bir işlevi yerine getiren yapılara fonksiyon denir. Bir işlemler zincirini her seferinde tekrar tekrar yazmaktansa bu işlemleri bir fonksiyon adı altında yaparsak artık bu fonksiyonu her çalıştırdığımızda bu işlemleri yapıp sonucu bize verecektir.<br><br>
+                            Fonksiyon tanımlamak için function kelimesi kullanılır ve fonksiyona bir isim verilir. Fonksiyonun parametresi için () konulur (Parametre bir sonraki ders anlatılacak) ve {} parantezleri içerisine kodlar yazılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="270.3999938964844" data-theme-id="dark" data-default-tab="js" data-slug-hash="bGZbdvY" data-user="Alperen-Akta" style="height: 270.3999938964844px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/bGZbdvY">
+                                JS18</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>FONKSİYON, PARAMETRE VE GERİ DÖNÜŞ</b></h2>
+                        <p>
+                            Yukarıda fonksiyon tanımlarken () içine parametre yazılabileceğini söylemiştik. Parametreler o fonksiyon için değer verilebilen değişkenler olarak adlandırılabilir. Bağlı olduğu fonksiyon dışında çalışmazlar. Aslında bir fonksiyon dışarıdaki global değişkenleri kullanabilir fakat fonksiyonların sağlıklı çalışabilmesi için bağımsız olması gerekir. Bu yüzden parametreler kulllanılır. Fonksiyonu çalıştırırken parametreler () içine yazılır.<br><br>
+                            Geri dönüş ise bir fonksiyonun içindeki işlemler sonucunda ürettiği çıktıyı vermesidir. Geri dönüş olmayan fonksiyonlarda çıktıyı görebilmek için console.log() kullanıyorduk fakat geri dönüş ile o çıktıyı bir değişkene atayabiliriz. Geri dönüş yapmak için return kelimesi kullanılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="410.4000244140625" data-theme-id="dark" data-default-tab="js" data-slug-hash="wvOwajP" data-user="Alperen-Akta" style="height: 410.4000244140625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/wvOwajP">
+                                JS19</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>ARROW FUNCTİON</b></h2>
+                        <p>
+                            Arrow function’lar kısa fonksiyonlar olarak tanımlanabilir. Bu fonksiyonlar birer değişken gibi tanımlanır ve türü const’tur. Arrow function oluştururken dikkat edilmesi gerekenler:
+                        </p>
+                        <ul>
+                            <li>Tek parametre ve tek işlem var ise parametreleri () içine koymaya ve işlemleri {} içine yazmaya gerek yoktur.</li>
+                            <li>Aksi takdirde çok parametre ve çok kod var ise () ve {} kullanılır.</li>
+                        </ul>
+                        <p>
+                            Arrow function oluşturma adımları:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="428.0000305175781" data-theme-id="dark" data-default-tab="js" data-slug-hash="mdobJKR" data-user="Alperen-Akta" style="height: 428.0000305175781px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/mdobJKR">
+                                JS20</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>DOM İLE FONKSİYONLAR</b></h2>
+                        <p>
+                            HTML etiketlerini bir değişkene nasıl atayacağımızı ve içeriğini nasıl değiştireceğimizi öğrenmiştik. Şimdi ise HTML etiketlerine uygulanacak etkilere karşı nelerin çalışacağını öğreneceğiz.<br><br>
+                            Bunun için addEventListener() fonksiyonu kullanılır ve bu fonksiyona gönderilecek parametrelerin listesi internette mevcuttur. İmleçin değmesinden dokunmasına, mouse tekerleğinin hareketlerine kadar bir çok etkiye karşı yaşanacak olaylar düzenlenebilir. Bir diğer parametre ise bizim bu etkiye karşı nelerin olmasını istediğimiz parametredir ve bunu bir fonksiyon ile yazabiliriz.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="357.6000061035156" data-theme-id="dark" data-default-tab="js" data-slug-hash="RwdbPBo" data-user="Alperen-Akta" style="height: 357.6000061035156px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/RwdbPBo">
+                                JS21</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>LOCAL STORAGE</b></h2>
+                        <p>
+                            Normal şartlarda bir web sitesini her açtığımızda o sayfanın javascript kodları baştan çalışır ve değerler ilk haline döner. Fakat biz bunu istemiyorsak ve istediğimiz verilerin kaybolmamasını istiyorsak local storage kullanabiliriz. Bu sayede verilerimiz kaydedilir ve siteyi tekrar açtığımızda silinmez.<br><br>
+                            Local storage ekleme, düzenleme, getirme ve silme işlemleri:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="322.3999938964844" data-theme-id="dark" data-default-tab="js" data-slug-hash="vYPBOzy" data-user="Alperen-Akta" style="height: 322.3999938964844px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/vYPBOzy">
+                                JS22</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>LOCAL STORAGE VE FARKLI TÜRDE VERİLER</b></h2>
+                        <p>
+                            Local Storage’e string, int, double gibi verileri nasıl ekleyeceğimizi öğrendik. Şimdi ise ilerideki konularımız olan objeler ve listeleri nasıl local storage’e ekleyeceğimizi göreceğiz.<br><br>
+                            Öncelikle objenin kısa bir tanımını yaparsak, içerisinde birden fazla değişkeni ve fonksiyonları bulundurabilen yapılardır. İstediğimiz zaman bir objenin içindeki veriyi kullanabiliriz.<br><br>
+                            Bir objeyi içindeki veriler ile birlikte bir local storage’e eklemek için JSON.stringfy fonksiyonu kullanılır(JSON daha sonra anlatılacak). Bu fonksiyon objenin içindeki verileri stringe çevirerek local storage’e ekler. Objeyi local storage’den almak için ise JSON.parse fonksiyonu kullanılır. Bu fonksiyon stringe dönmüş veriyi tekrar objeye çevirir.<br><br>
+                            Listenin kısa bir tanımını yaparsak, içerisinde elemanlara sahip ve bu elemanlarda da veri tutulan yapılara denir. İstediğimiz zaman bir listenin elemanının tuttuğu veriyi öğrenebiliriz.<br><br>
+                            Bir listeyi içindeki elemanlarla birlikte bir local storage’e eklemek için yine JSON.stringfy fonksiyonu kullanılır ve local storage’den bir listeyi almak için ise yine JSON.parse fonksiyonu kullanılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="341.5999755859375" data-theme-id="dark" data-default-tab="js" data-slug-hash="NWJKqOY" data-user="Alperen-Akta" style="height: 341.5999755859375px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/NWJKqOY">
+                                JS23</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>FORM</b></h2>
+                        <p>
+                            Kullanıcıdan bilgi almak için kullanılan bir HTML elementidir. İçerisinde bir input elementi ve button elementi bulunur.<br><br>
+                            Input elementinin birçok giriş tipi bulunur(text, password, number, date, url vb.). Girilen bilgi name’de tutulur ve Javascript’te kullanılmak için ise bir id eklenir.<br><br>
+                            Button elementi de birçok giriş tipi bulundurur(submit, reset vb.). Yine aynı şekilde Javascript’te kullanılmak için bir id eklenir.<br><br>
+                            Bir formda normal şartlar altında her butona basıldığında sayfa yenilenir. Biz bunun olmasını istemediğimiz için default seçeneği kaldırırız. Bir formun Javascript’te DOM ile seçilmesi ve default ayarının kaldırılması:<br><br>
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="js" data-slug-hash="bGZbdQL" data-user="Alperen-Akta" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/bGZbdQL">
+                                JS24</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>INPUT VERİSİNİ ALMAK</b></h2>
+                        <p>
+                            Bir form içerisindeki input verisi almak ve bu veriyi kullanmak aşağıdaki gibidir:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="288.8000793457031" data-theme-id="dark" data-default-tab="js" data-slug-hash="VwRZLqK" data-user="Alperen-Akta" style="height: 288.8000793457031px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/VwRZLqK">
+                                JS26</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>DİZİLER</b></h2>
+                        <p>
+                            Elimizde number, string, boolean gibi birçok veri tipinde değişkenler olduğunu düşünelim. Bu değişkenleri belirli bir sıraya göre bir diziye atamak için diziler kullanılır.<br><br>
+                            Diziler elemanlara sahip birer objedir ve bu elemanların içerisine herhangi bir veri tipinde değişkeni ekleyebiliriz, düzenleyebiliriz veya silebiliriz. İstersek daha sonra kullanacağımız boş bir dizi de tanımlayabiliriz.<br><br>
+                            Dizilerin birçok özelliğine erişebiliriz:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="375.1999206542969" data-theme-id="dark" data-default-tab="js" data-slug-hash="ZEPzGVP" data-user="Alperen-Akta" style="height: 375.1999206542969px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/ZEPzGVP">
+                                JS26</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>DİZİ İŞLEMLERİ</b></h2>
+                        <p>
+                            Dizilere ekleme, silme ve düzenleme işlemleri yapılabilir:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="427.1999816894531" data-theme-id="dark" data-default-tab="js" data-slug-hash="MWxgwLL" data-user="Alperen-Akta" style="height: 427.1999816894531px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/MWxgwLL">
+                                JS27</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>DİZİ FONKSİYONLARI</b></h2>
+                        <p>
+                            Diziler üzerinde işlem yapılabilecek birçok fonksiyon vardır:
+                        </p>
+                        <ul>
+                            <li>Dizi İçine Dizi Ekleme</li>
+                            <li>Dizi İçerisinden Eleman Ayırma</li>
+                            <li>Dizi Elemanının Index’ini Bulma</li>
+                            <li>Dizi Kopyalama</li>
+                            <li>Dizi İçeriğini String Olarak Yazdırma</li>
+                            <li>İki Diziyi Birleştirme</li>
+                            <li>Dizinin İstediğimiz Yerine Eleman Ekleme</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="848.7999572753906" data-theme-id="dark" data-default-tab="js" data-slug-hash="LYaPVvN" data-user="Alperen-Akta" style="height: 848.7999572753906px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/LYaPVvN">
+                                JS28</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>FOR DÖNGÜSÜ</b></h2>
+                        <p>
+                            Belirli bir olayın tekrar etmesini sağlayan yapılara döngüler denir. Birçok döngü çeşidi vardır. Bu konuda for döngüsü işlenecektir.<br><br>
+                            For döngülerini tanımlamak için for kelimesi kullanılır ve () içine bir döngü değişkeni atanır. Bu döngü değişkeninin bir başlangıç değeri, bir bitiş değeri ve değişim miktarı belirtilir. Daha sonra döngünün içinde olmasını istediğimiz kodlar {} içine yazılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="340" data-theme-id="dark" data-default-tab="js" data-slug-hash="XWGrbQv" data-user="Alperen-Akta" style="height: 340px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/XWGrbQv">
+                                JS29</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>BREAK VE CONTİNUE</b></h2>
+                        <p>
+                            Break kodu içerisinde bulunduğu döngüyü durdurur ve döngü biter. Continue kodu ise içerisinde bulunduğu döngüyü bir adım ilerletir.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="479.9999694824219" data-theme-id="dark" data-default-tab="js" data-slug-hash="GReKJav" data-user="Alperen-Akta" style="height: 479.9999694824219px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/GReKJav">
+                                JS30</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>WHILE DÖNGÜSÜ</b></h2>
+                        <p>
+                            Bir diğer döngü çeşidi olan while () içindeki şart gerçekleştiği sürece çalışan döngülerdir. Bu sayede içindeki şart sağlandığı sürece sonsuza dek çalışabilir. Şart sağlanmadığında ise döngü biter.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="323.199951171875" data-theme-id="dark" data-default-tab="js" data-slug-hash="ExMYjBx" data-user="Alperen-Akta" style="height: 323.199951171875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/ExMYjBx">
+                                JS31</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>FOREACH DÖNGÜSÜ</b></h2>
+                        <p>
+                            Sadece dizilere özgü bir döngü çeşididir ve bir dizinin fonksiyonu şeklinde tanımlanır. Tanımlandıktan sonra genellikle () içine dizinin her dönüşünde ne olacağı ile ilgili fonksiyon eklenir. Bu fonksiyon 3 tane parametre alır.Bu parametreler sırasıyla:
+                        </p>
+                        <ol>
+                            <li>Dizinin elemanı</li>
+                            <li>O elemanın index’i</li>
+                            <li>Dizinin kendisi</li>
+                        </ol>
+                        <p>
+                            ForEach her döndüğünde dizinin bir sonraki elemanına geçer ve parametreler buna göre değer alır. Fonksiyonlar karışıklık olmaması için genellikle arrow function şeklinde de yazılır:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="398.3999328613281" data-theme-id="dark" data-default-tab="js" data-slug-hash="QWoLbXV" data-user="Alperen-Akta" style="height: 398.3999328613281px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/QWoLbXV">
+                                JS32</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>FILTER DÖNGÜSÜ</b></h2>
+                        <p>
+                            Bu döngü de dizilere özgü bir döngü çeşidirir ve çalışma mantığı foreach ile aynıdır. Amacı () içindeki fonksiyonda belirtilen şartları sağlayan elemanları bulur.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="342.3999938964844" data-theme-id="dark" data-default-tab="js" data-slug-hash="LYaPVwZ" data-user="Alperen-Akta" style="height: 342.3999938964844px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/LYaPVwZ">
+                                JS33</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>MAP DÖNGÜSÜ</b></h2>
+                        <p>
+                            Bu döngü de dizilere özgü bir döngü çeşididir ve çalışma mantığı foreach ile aynıdır. Amacı ise dizideki elemanları hızlı bir şekilde düzenleyebilmesi/değiştirebilmesidir.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="324" data-theme-id="dark" data-default-tab="js" data-slug-hash="abMovoO" data-user="Alperen-Akta" style="height: 324px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/abMovoO">
+                                JS34</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>NESNE</b></h2>
+                        <p>
+                            Nesneler içerisinde birden fazla değer atanabilen yapılardır. Bu değerler string, number, boolean vb. olabilir. Daha sonra istediğimiz zaman bu nesnenin değerlerine ulaşabiliriz. Nesne oluşturma, içine değer atama ve bu değerleri çağırma işlemleri:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="375.20001220703125" data-theme-id="dark" data-default-tab="js" data-slug-hash="VwRZvZP" data-user="Alperen-Akta" style="height: 375.20001220703125px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/VwRZvZP">
+                                JS35</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p>Not: Diziler de birer nesnedir.</p>
+
+                        <h2 class="mt-5"><b>KEY-VALUE</b></h2>
+                        <p>
+                            Nesneler içindeki değerlerin tutulduğu değişkene key, değerlere ise value denir. Nesne içinde key-value tanımlamanın bazı kuralları vardır:
+                        </p>
+                        <ul>
+                            <li>Key’ler normal veya string şekilde tanımlanabilir.</li>
+                            <li>Key sayı ile başlayamaz, başlaması için string şekilde tanımlanmalıdır.</li>
+                            <li>Key-value’lar arasında virgül olmalıdır.</li>
+                            <li>Key’ler tek kelime olmalıdır, arasında boşluk,- ile tanımlanamaz.</li>
+                            <li>Key’ler çağırılırken nesne.key veya nesne[“key”] şeklinde çağırılır.</li>
+                            <li>Key string olarak tanımlanmışsa sadece nesne[“key”] şeklinde çağırılabilir.</li>
+                            <li>Nesneye daha sonradan key-value eklenebilir.</li>
+                            <li>Nesnenin key’lerini ve value’larını görmek için hazır fonksiyonlar vardır.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="621.6000671386719" data-theme-id="dark" data-default-tab="js" data-slug-hash="QWoLjWZ" data-user="Alperen-Akta" style="height: 621.6000671386719px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/QWoLjWZ">
+                                JS36</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>NESNEYE FONKSİYON EKLEME</b></h2>
+                        <p>
+                            Nesnelerin içerisine sadece string, number veya boolean veri türü eklenmez. Aynı zamanda diziler, fonksiyonlar hatta nesnenin içinde nesneler bile tanımlanabilir.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="393.5999755859375" data-theme-id="dark" data-default-tab="js" data-slug-hash="YzgKyPV" data-user="Alperen-Akta" style="height: 393.5999755859375px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/YzgKyPV">
+                                JS37</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>NESNE VE DİZİLERİ DÜZENLEME</b></h2>
+                        <p>
+                            Nesne ve dizilerin içindeki değerleri nesne veya diziden çıkarıp ayrı bir değişkene atayabiliriz. Kalan değerleri de yeni bir nesne veya diziye atabiliriz. Ayrıca nesne ve dizileri kopyalayabiliriz.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="919.2001037597656" data-theme-id="dark" data-default-tab="js" data-slug-hash="zYbOvGx" data-user="Alperen-Akta" style="height: 919.2001037597656px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/zYbOvGx">
+                                JS38</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>TRY-CATCH</b></h2>
+                        <p>
+                            Programlama dilleri bir kod sayfasını çalıştırırken kodları satır satır çalıştırır. Eğer bir hata ile karşılaşırsa program hata verir ve durur. Hatalı koddan sonraki düzgün yazılmış kodlara bakılmaz.<br><br>
+                            Fakat diyelim ki biz belirli şartlarda çalışan ve belirli şartlarda da hata veren bir program yaptık ve program hata verdiğinde programın durmasını istemiyoruz, geri kalan kodların çalışmasını istiyoruz. Bunun için try-catch yapısı kullanılır.<br><br>
+                            Try {} içine hata verebilecek kodlar yazılır ve catch {} içine de program hata verdiği takdirde neler olmasını istediğimiz kodları yazarız. Program hata verdiğinde hata yakalanır, program durmaz ve catch bloğu çalışır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="308" data-theme-id="dark" data-default-tab="js" data-slug-hash="XWGrmmW" data-user="Alperen-Akta" style="height: 308px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/XWGrmmW">
+                                JS39</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>FETCH-API</b></h2>
+                        <p>
+                            Bir sunucudan veri çekmek için kullanılan yapılardır. Bu veriler bir JSON dosyasında tutulur ve daha sonra bu veriler hakkında işlem yapılabilir.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="552" data-theme-id="dark" data-default-tab="js" data-slug-hash="rNRBOxN" data-user="Alperen-Akta" style="height: 552px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/rNRBOxN">
+                                JS40</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>       
+
+    </main>
+
+    <main id="mobile" class="container">
+        
+        <nav class="text-center">
+            <div class="row mt-3" style="border-style: solid; border-width: 0px 0px 1px 0px;">
+                <div class="col-2">
+                    <div class="dropdown float-left">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
+                        </button>
+                        <div class="dropdown-menu" style="background-color: #E7DFD8;">
+                          <a class="dropdown-item" href="index.html">Ana Sayfa</a>
+                          <a class="dropdown-item" href="ozgecmis.html">Öz Geçmiş</a>
+                          <a class="dropdown-item" href="calismalar.html">Çalışmalar</a>
+                          <a class="dropdown-item" href="iletisim.html">İletişim</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 text-center">
+                    <h1><b>Çalışmalar</b></h1>
+                </div>
+            </div>
+        </nav>
+
+        <article class="mt-5 mb-5 mx-auto">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-4 text-center" id="head">Javascript</h1>
+                    <div id="text" class="mt-5">
+                        <h2><b>Hello World</b></h2>
+                        <p>
+                            Her programlama dilinin olmazsa olmaz ilk konusu Hello World yazmaktır. Javascript’te hello world yazmak için ise 3 seçenek vardır:
+                        </p>
+                        <ol>
+                            <li><b>Console.log(“Merhaba Dunya”):</b> Javascript’i konsolda çalıştırmak için bu kod kullanılır ve genel olarak bu kodu kullanacağız.</li>
+                            <li><b>Alert(“Merhaba Dunya”):</b> Bu kod siteye bir uyarı olarak Merhaba Dunya yazdırır.</li>
+                            <li><b>Document.write():</b> Bu kod ise direkt HTML gibi siteye yazdırır.</li>
+                        </ol>
+                        <p>
+                            Javascript’te yaptığımız içeriği en son kullanıcıya göstereceğimiz için 3. seçenek çok kullanılmaz. Genel olarak konsolda çalışılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="216.7999267578125" data-theme-id="dark" data-default-tab="js" data-slug-hash="mdobyYy" data-user="Alperen-Akta" style="height: 216.7999267578125px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/mdobyYy">
+                                JS1</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Değişkenler</b></h2>
+                        <p>
+                            Bilgilerimizi tutmak için değişkenlere ihtiyaç duyarız. Javascript’te ise 3 farklı değişken türü vardır:
+                        </p>
+                        <ul>
+                            <li><b>Var:</b> Günümüzde pek kullanılmayan değişken türüdür.</li>
+                            <li><b>Let:</b> En yaygın kullanılan değişken türüdür.</li>
+                            <li><b>Const:</b> Sadece bir kere atama yapılabilir türdür.</li>
+                        </ul>
+                        <p>
+                            Değişken oluşturmak için değişkenin türü, daha sonra da adı yazılır. Veri ekleme işlemi değişken oluşturulurken ya da daha sonra yapılabilir. Veri atamak için “=” operatörü kullanılır.<br><br>
+                            Yazdırmak için ise console.log(değişken) ile değişkeni ekrana yazdırabiliriz. İçine atama yapılmamış bir değişken tanımsız gözükür.<br><br>
+                            Bir değişkene ekleme yapmak için değişken=değişken+eklenecekVeri şeklinde yapılabilir. Burada + operatörü ekleme işlemine yarar.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="550.4000244140625" data-theme-id="dark" data-default-tab="js" data-slug-hash="GReKJgo" data-user="Alperen-Akta" style="height: 550.4000244140625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/GReKJgo">
+                                JS2</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Değişken Tanımlama Kuralları</b></h2>
+                        <p>
+                            Değişken tanımlarken kod okunurluğunun artması için insanlar bazı kurallar oluşturmuştur. Bunlar zorunlu değil ama kod kalitesini arttıracak kurallardır:
+                        </p>
+                        <ul>
+                            <li><b>Let Değişken İsimleri:</b> Camel case ile yazılır. Camel case, kelimelerin baş harfinin büyük, diğerlerinin küçük olmasıdır. Ayrıca ilk kelimenin baş harfi de küçük yazılır.</li>
+                            <li><b>Const Değişken İsimleri:</b> Değişmez olduklarını belli etmek için bütün harfleri büyük yazılır ve kelimeler arasına “_” konur.</li>
+                            <li>Değişken isimlerinin anlamsız ifadeler (x, y, z) olmaması gerekir. Çünkü başka insanların bu değişkenin ne olduğunu anlaması için anlamlı ifadeler yazılması gerekir.</li>
+                            <li>Boolean değişkenlerin başında is veya has gibi soru ifadesi olması gerekir ki insanlar bunun true veya false içerdiğini bilmeli.</li>
+                            <li>Kodların satır uzunluğunun 80 harften fazla olmaması tavsiye edilir.</li>
+                            <li>Değişken isimlerinin türkçe harf veya anlam içermemesi kodun uluslararası okunurluğunun artması için tavsiye edilir.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="322.3999938964844" data-theme-id="dark" data-default-tab="js" data-slug-hash="poYzJjp" data-user="Alperen-Akta" style="height: 322.3999938964844px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/poYzJjp">
+                                JS3</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Aritmetik İşlemler</b></h2>
+                        <ul>
+                            <li><b>Dört İşlem:</b> Değişkenleri +, -, *, / operatörleri ile işleme sokabiliriz. Bu işlemleri yeni bir değişekene de atayabiliriz.</li>
+                            <li><b>Arttırma-Azaltma İşlemleri:</b> Bunun için 3 yöntem var: <ul>
+                                <li><b>Değişken=değişken+arttırmaSayısı:</b> En uzun yöntem</li>
+                                <li><b>Değişken+=arttırmaSayısı:</b> Orta uzunluktaki yöntem</li>
+                                <li><b>Değişken++:</b> En kısa yöntem ama sadece 1 ekler veya azaltır.</li>
+                            </ul></li>
+                            <li><b>İşlem Önceliği:</b> Parantezler ile işlemin gidişatını değiştirebiliriz.</li>
+                            <li><b>Mod Alma:</b> % operatörü ile 2 sayının bölümünden kalanı bulabiliriz.</li>
+                            <li><b>Üs Alma:</b> ** operatörü ile üs alabiliriz.</li>
+                            <li><b>Yuvarlama:</b> Math.floor(aşağı yuvarlama), Math.ceil(yukarı yuvarlama), Math.rounded(yakına yuvarlama) metotları ile yuvarlama yapabiliriz.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="604.0000305175781" data-theme-id="dark" data-default-tab="js" data-slug-hash="GReKJqZ" data-user="Alperen-Akta" style="height: 604.0000305175781px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/GReKJqZ">
+                                JS4</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Boolean Veri Türü</b></h2>
+                        <p>
+                            True ya da false döndüren veri tipine boolean denir. Boolean ile kodun gidişatını değiştirebiliriz.<br><br>
+                            Eğer bir değişkeni oluşturup içine veri atamadıysak içinde veri olmadığı için false döndürür. Aynı şekilde 0, “”, null vb.’de false döndürür. Bunların dışında herhangi bir veriye true döndürür.<br><br>
+                            Javascript’in içinde bulunan Boolean fonksiyonu ile bazı kısa sorgulamaları direkt yapabiliriz.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="359.2000732421875" data-theme-id="dark" data-default-tab="js" data-slug-hash="BabBNLW" data-user="Alperen-Akta" style="height: 359.2000732421875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/BabBNLW">
+                                JS5</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Değişken Türü Değiştirme</b></h2>
+                        <p>
+                            Bir değişkenin türünü öğrenmek için typeof(değişkenAdı) metotu kullanılır.<br><br>
+                            Eğer bir String’i int’e çevirmek istiyorsak parseInt(değişkenAdı), float’a çevirmek istiyorsak parseFloat(değişkenAdı) metotu kullanılır.<br><br>
+                            Eğer bir int’i ya da float’ı stringe çevirmek istiyorsak toString() metodu kullanılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="409.5999755859375" data-theme-id="dark" data-default-tab="js" data-slug-hash="MWxgwbX" data-user="Alperen-Akta" style="height: 409.5999755859375px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/MWxgwbX">
+                                JS6</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Template Literals</b></h2>
+                        <p>
+                            Konsola veya ekrana bir şeyler yazarken her değişken geçişinde tekrar “” açılımı, virgül kullanımı gibi işlemle yapıyoruz ve uzun bir metin yazarken çok vaktimizi alabilir.<br><br>
+                            Template literals, `` ile oluşturulur ve içine istediğimiz kadar metin yazabiliriz. Eğer içinde bir değişken veya bir fonksiyon çağırmak istiyorsak ${} ile metnin içine yazabiliriz. Hatta ve hatta HTML kodu bile yazabiliriz.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="375.1999816894531" data-theme-id="dark" data-default-tab="js" data-slug-hash="RwdbPpa" data-user="Alperen-Akta" style="height: 375.1999816894531px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/RwdbPpa">
+                                JS7</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>String Veri Tipi</b></h2>
+                        <p>
+                            String olarak girilen verilerimizin özelliklerine erişmek ya da farklı biçimlere dönüştürmek için birçok metot bulunur:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="550.4000854492188" data-theme-id="dark" data-default-tab="js" data-slug-hash="gOEYpWL" data-user="Alperen-Akta" style="height: 550.4000854492188px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/gOEYpWL">
+                                JS8</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>DOM</b></h2>
+                        <p>
+                            Document Object Model yapısı bizim javascript ile html sayfasında değişiklik yapmamıza olanak sağlayan bir yapıdır.<br><br>
+                            Bu yapı sayesinde javascript’in karar yapıları ile belirli şartlara göre değişen siteler yapabilir veya başka dinamik yapılar kurabiliriz:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="357.6000671386719" data-theme-id="dark" data-default-tab="js" data-slug-hash="XWGrbRo" data-user="Alperen-Akta" style="height: 357.6000671386719px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/XWGrbRo">
+                                JS9</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>DOM İçerisinden Etiket ve ID'ye Ulaşmak</b></h2>
+                        <p>
+                            DOM içerisinden html etiketlerine ve onların id’sine ulaşarak etiketlerin özelliklerini değiştirebiliriz:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="340.8000183105469" data-theme-id="dark" data-default-tab="js" data-slug-hash="wvOwaee" data-user="Alperen-Akta" style="height: 340.8000183105469px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/wvOwaee">
+                                JS10</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Prompt</b></h2>
+                        <p>
+                            Bir alert ekranında kullanıcıdan bilgi almak için kullanılır. Bu bilgiyi daha sonra kullanabiliriz.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="181.60000610351562" data-theme-id="dark" data-default-tab="js" data-slug-hash="zYbOGzb" data-user="Alperen-Akta" style="height: 181.60000610351562px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/zYbOGzb">
+                                JS11</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>DOM ile Liste İçine Erişmek</b></h2>
+                        <p>
+                            DOM ile bir listenin öğelerini değiştirebiliriz, eleman ekleyebiliriz, ilk ve son iteme erişebiliriz.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="375.1999816894531" data-theme-id="dark" data-default-tab="js" data-slug-hash="WNmevEd" data-user="Alperen-Akta" style="height: 375.1999816894531px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/WNmevEd">
+                                JS12</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>DOM ile Class Ekleme veya Çıkarma</b></h2>
+                        <p>
+                            DOM ile etiketlere class ekleyebilir veya silebiliriz. Bootstrap classlar yoluyla çalıştığı için etiket özellleştirmelerini istediğimiz zaman ekleme ve istediğimiz zamanda çıkarma işimize yarar.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="202.39999389648438" data-theme-id="dark" data-default-tab="js" data-slug-hash="ExMYjvJ" data-user="Alperen-Akta" style="height: 202.39999389648438px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/ExMYjvJ">
+                                JS13</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Karşılaştırma Operatörleri</b></h2>
+                        <p>
+                            Programlama yaparken değişkenlerin durumuna göre kodun gidişatını değiştirebiliriz. Bunun için değişkenler karşılaştırılır ve 2 durum ortaya çıkar: eğer şart sağlanıyorsa true, sağlanmıyorsa false. Bu 2 şarta göre kodun nasıl şekilleneceğini belirtebiliriz. İşte bu durumları karşılaştırmamıza yarayan yapılara karşılaştırma operatörleri denir.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="517.5999145507812" data-theme-id="dark" data-default-tab="js" data-slug-hash="jOJNPGz" data-user="Alperen-Akta" style="height: 517.5999145507812px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/jOJNPGz">
+                                JS14</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>If - Else Yapısı</b></h2>
+                        <p>
+                            Karşılaştırma durumundan sonra kodun gidişatını yazacağımız yapılar if–else yapılarıdır. Eğer if parantezinin içindeki şart gerçekleşirse if bloğunun içindeki kodlar çalışır, gerçekleşmezse else bloğunun içindeki kodlar çalışır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="252" data-theme-id="dark" data-default-tab="js" data-slug-hash="poYzJdK" data-user="Alperen-Akta" style="height: 252px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/poYzJdK">
+                                JS15</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Çoklu Koşullar</b></h2>
+                        <p>
+                            Eğer karşılaştırılacak veya kontrol edilecek birden fazla durum varsa if yapısından sonra else if yapıları kullanılır. Çalışma mantıkları if gibidir.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="343.20001220703125" data-theme-id="dark" data-default-tab="js" data-slug-hash="XWGrbVG" data-user="Alperen-Akta" style="height: 343.20001220703125px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/XWGrbVG">
+                                JS16</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Ternary Operatör</b></h2>
+                        <p>
+                            Short if olarak da geçen bu yapı tek satırlık kısa if yapıları için kullanılır. Öncelikle değişken ile ilgili koşul yazılır ve ? konulur, daha sonra koşul sağlanırsa gerçekleşecek tek satırlık kod yazılır ve : konulur, daha sonra da koşul sağlanmazsa gerçekleşecek tek satırlık kod yazılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="181.60000610351562" data-theme-id="dark" data-default-tab="js" data-slug-hash="ZEPzGrm" data-user="Alperen-Akta" style="height: 181.60000610351562px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/ZEPzGrm">
+                                JS17</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Fonksiyonlar</b></h2>
+                        <p>
+                            Belirli bir işlevi yerine getiren yapılara fonksiyon denir. Bir işlemler zincirini her seferinde tekrar tekrar yazmaktansa bu işlemleri bir fonksiyon adı altında yaparsak artık bu fonksiyonu her çalıştırdığımızda bu işlemleri yapıp sonucu bize verecektir.<br><br>
+                            Fonksiyon tanımlamak için function kelimesi kullanılır ve fonksiyona bir isim verilir. Fonksiyonun parametresi için () konulur (Parametre bir sonraki ders anlatılacak) ve {} parantezleri içerisine kodlar yazılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="270.3999938964844" data-theme-id="dark" data-default-tab="js" data-slug-hash="bGZbdvY" data-user="Alperen-Akta" style="height: 270.3999938964844px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/bGZbdvY">
+                                JS18</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Fonksiyon, Parametre ve Geri Dönüş</b></h2>
+                        <p>
+                            Yukarıda fonksiyon tanımlarken () içine parametre yazılabileceğini söylemiştik. Parametreler o fonksiyon için değer verilebilen değişkenler olarak adlandırılabilir. Bağlı olduğu fonksiyon dışında çalışmazlar. Aslında bir fonksiyon dışarıdaki global değişkenleri kullanabilir fakat fonksiyonların sağlıklı çalışabilmesi için bağımsız olması gerekir. Bu yüzden parametreler kulllanılır. Fonksiyonu çalıştırırken parametreler () içine yazılır.<br><br>
+                            Geri dönüş ise bir fonksiyonun içindeki işlemler sonucunda ürettiği çıktıyı vermesidir. Geri dönüş olmayan fonksiyonlarda çıktıyı görebilmek için console.log() kullanıyorduk fakat geri dönüş ile o çıktıyı bir değişkene atayabiliriz. Geri dönüş yapmak için return kelimesi kullanılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="410.4000244140625" data-theme-id="dark" data-default-tab="js" data-slug-hash="wvOwajP" data-user="Alperen-Akta" style="height: 410.4000244140625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/wvOwajP">
+                                JS19</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Arrow Function</b></h2>
+                        <p>
+                            Arrow function’lar kısa fonksiyonlar olarak tanımlanabilir. Bu fonksiyonlar birer değişken gibi tanımlanır ve türü const’tur. Arrow function oluştururken dikkat edilmesi gerekenler:
+                        </p>
+                        <ul>
+                            <li>Tek parametre ve tek işlem var ise parametreleri () içine koymaya ve işlemleri {} içine yazmaya gerek yoktur.</li>
+                            <li>Aksi takdirde çok parametre ve çok kod var ise () ve {} kullanılır.</li>
+                        </ul>
+                        <p>
+                            Arrow function oluşturma adımları:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="428.0000305175781" data-theme-id="dark" data-default-tab="js" data-slug-hash="mdobJKR" data-user="Alperen-Akta" style="height: 428.0000305175781px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/mdobJKR">
+                                JS20</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>DOM ile Fonksiyonlar</b></h2>
+                        <p>
+                            HTML etiketlerini bir değişkene nasıl atayacağımızı ve içeriğini nasıl değiştireceğimizi öğrenmiştik. Şimdi ise HTML etiketlerine uygulanacak etkilere karşı nelerin çalışacağını öğreneceğiz.<br><br>
+                            Bunun için addEventListener() fonksiyonu kullanılır ve bu fonksiyona gönderilecek parametrelerin listesi internette mevcuttur. İmleçin değmesinden dokunmasına, mouse tekerleğinin hareketlerine kadar bir çok etkiye karşı yaşanacak olaylar düzenlenebilir. Bir diğer parametre ise bizim bu etkiye karşı nelerin olmasını istediğimiz parametredir ve bunu bir fonksiyon ile yazabiliriz.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="357.6000061035156" data-theme-id="dark" data-default-tab="js" data-slug-hash="RwdbPBo" data-user="Alperen-Akta" style="height: 357.6000061035156px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/RwdbPBo">
+                                JS21</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Local Storage</b></h2>
+                        <p>
+                            Normal şartlarda bir web sitesini her açtığımızda o sayfanın javascript kodları baştan çalışır ve değerler ilk haline döner. Fakat biz bunu istemiyorsak ve istediğimiz verilerin kaybolmamasını istiyorsak local storage kullanabiliriz. Bu sayede verilerimiz kaydedilir ve siteyi tekrar açtığımızda silinmez.<br><br>
+                            Local storage ekleme, düzenleme, getirme ve silme işlemleri:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="322.3999938964844" data-theme-id="dark" data-default-tab="js" data-slug-hash="vYPBOzy" data-user="Alperen-Akta" style="height: 322.3999938964844px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/vYPBOzy">
+                                JS22</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Local Storage ve Farklı Türde Veriler</b></h2>
+                        <p>
+                            Local Storage’e string, int, double gibi verileri nasıl ekleyeceğimizi öğrendik. Şimdi ise ilerideki konularımız olan objeler ve listeleri nasıl local storage’e ekleyeceğimizi göreceğiz.<br><br>
+                            Öncelikle objenin kısa bir tanımını yaparsak, içerisinde birden fazla değişkeni ve fonksiyonları bulundurabilen yapılardır. İstediğimiz zaman bir objenin içindeki veriyi kullanabiliriz.<br><br>
+                            Bir objeyi içindeki veriler ile birlikte bir local storage’e eklemek için JSON.stringfy fonksiyonu kullanılır(JSON daha sonra anlatılacak). Bu fonksiyon objenin içindeki verileri stringe çevirerek local storage’e ekler. Objeyi local storage’den almak için ise JSON.parse fonksiyonu kullanılır. Bu fonksiyon stringe dönmüş veriyi tekrar objeye çevirir.<br><br>
+                            Listenin kısa bir tanımını yaparsak, içerisinde elemanlara sahip ve bu elemanlarda da veri tutulan yapılara denir. İstediğimiz zaman bir listenin elemanının tuttuğu veriyi öğrenebiliriz.<br><br>
+                            Bir listeyi içindeki elemanlarla birlikte bir local storage’e eklemek için yine JSON.stringfy fonksiyonu kullanılır ve local storage’den bir listeyi almak için ise yine JSON.parse fonksiyonu kullanılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="341.5999755859375" data-theme-id="dark" data-default-tab="js" data-slug-hash="NWJKqOY" data-user="Alperen-Akta" style="height: 341.5999755859375px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/NWJKqOY">
+                                JS23</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Form</b></h2>
+                        <p>
+                            Kullanıcıdan bilgi almak için kullanılan bir HTML elementidir. İçerisinde bir input elementi ve button elementi bulunur.<br><br>
+                            Input elementinin birçok giriş tipi bulunur(text, password, number, date, url vb.). Girilen bilgi name’de tutulur ve Javascript’te kullanılmak için ise bir id eklenir.<br><br>
+                            Button elementi de birçok giriş tipi bulundurur(submit, reset vb.). Yine aynı şekilde Javascript’te kullanılmak için bir id eklenir.<br><br>
+                            Bir formda normal şartlar altında her butona basıldığında sayfa yenilenir. Biz bunun olmasını istemediğimiz için default seçeneği kaldırırız. Bir formun Javascript’te DOM ile seçilmesi ve default ayarının kaldırılması:<br><br>
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="js" data-slug-hash="bGZbdQL" data-user="Alperen-Akta" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/bGZbdQL">
+                                JS24</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Input Verisi Almak</b></h2>
+                        <p>
+                            Bir form içerisindeki input verisi almak ve bu veriyi kullanmak aşağıdaki gibidir:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="288.8000793457031" data-theme-id="dark" data-default-tab="js" data-slug-hash="VwRZLqK" data-user="Alperen-Akta" style="height: 288.8000793457031px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/VwRZLqK">
+                                JS26</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Diziler</b></h2>
+                        <p>
+                            Elimizde number, string, boolean gibi birçok veri tipinde değişkenler olduğunu düşünelim. Bu değişkenleri belirli bir sıraya göre bir diziye atamak için diziler kullanılır.<br><br>
+                            Diziler elemanlara sahip birer objedir ve bu elemanların içerisine herhangi bir veri tipinde değişkeni ekleyebiliriz, düzenleyebiliriz veya silebiliriz. İstersek daha sonra kullanacağımız boş bir dizi de tanımlayabiliriz.<br><br>
+                            Dizilerin birçok özelliğine erişebiliriz:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="375.1999206542969" data-theme-id="dark" data-default-tab="js" data-slug-hash="ZEPzGVP" data-user="Alperen-Akta" style="height: 375.1999206542969px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/ZEPzGVP">
+                                JS26</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Dizi İşlemleri</b></h2>
+                        <p>
+                            Dizilere ekleme, silme ve düzenleme işlemleri yapılabilir:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="427.1999816894531" data-theme-id="dark" data-default-tab="js" data-slug-hash="MWxgwLL" data-user="Alperen-Akta" style="height: 427.1999816894531px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/MWxgwLL">
+                                JS27</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Dizi Fonksiyonları</b></h2>
+                        <p>
+                            Diziler üzerinde işlem yapılabilecek birçok fonksiyon vardır:
+                        </p>
+                        <ul>
+                            <li>Dizi İçine Dizi Ekleme</li>
+                            <li>Dizi İçerisinden Eleman Ayırma</li>
+                            <li>Dizi Elemanının Index’ini Bulma</li>
+                            <li>Dizi Kopyalama</li>
+                            <li>Dizi İçeriğini String Olarak Yazdırma</li>
+                            <li>İki Diziyi Birleştirme</li>
+                            <li>Dizinin İstediğimiz Yerine Eleman Ekleme</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="848.7999572753906" data-theme-id="dark" data-default-tab="js" data-slug-hash="LYaPVvN" data-user="Alperen-Akta" style="height: 848.7999572753906px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/LYaPVvN">
+                                JS28</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>For Döngüsü</b></h2>
+                        <p>
+                            Belirli bir olayın tekrar etmesini sağlayan yapılara döngüler denir. Birçok döngü çeşidi vardır. Bu konuda for döngüsü işlenecektir.<br><br>
+                            For döngülerini tanımlamak için for kelimesi kullanılır ve () içine bir döngü değişkeni atanır. Bu döngü değişkeninin bir başlangıç değeri, bir bitiş değeri ve değişim miktarı belirtilir. Daha sonra döngünün içinde olmasını istediğimiz kodlar {} içine yazılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="340" data-theme-id="dark" data-default-tab="js" data-slug-hash="XWGrbQv" data-user="Alperen-Akta" style="height: 340px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/XWGrbQv">
+                                JS29</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Break ve Continue</b></h2>
+                        <p>
+                            Break kodu içerisinde bulunduğu döngüyü durdurur ve döngü biter. Continue kodu ise içerisinde bulunduğu döngüyü bir adım ilerletir.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="479.9999694824219" data-theme-id="dark" data-default-tab="js" data-slug-hash="GReKJav" data-user="Alperen-Akta" style="height: 479.9999694824219px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/GReKJav">
+                                JS30</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>While Döngüsü</b></h2>
+                        <p>
+                            Bir diğer döngü çeşidi olan while () içindeki şart gerçekleştiği sürece çalışan döngülerdir. Bu sayede içindeki şart sağlandığı sürece sonsuza dek çalışabilir. Şart sağlanmadığında ise döngü biter.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="323.199951171875" data-theme-id="dark" data-default-tab="js" data-slug-hash="ExMYjBx" data-user="Alperen-Akta" style="height: 323.199951171875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/ExMYjBx">
+                                JS31</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>ForEach Döngüsü</b></h2>
+                        <p>
+                            Sadece dizilere özgü bir döngü çeşididir ve bir dizinin fonksiyonu şeklinde tanımlanır. Tanımlandıktan sonra genellikle () içine dizinin her dönüşünde ne olacağı ile ilgili fonksiyon eklenir. Bu fonksiyon 3 tane parametre alır.Bu parametreler sırasıyla:
+                        </p>
+                        <ol>
+                            <li>Dizinin elemanı</li>
+                            <li>O elemanın index’i</li>
+                            <li>Dizinin kendisi</li>
+                        </ol>
+                        <p>
+                            ForEach her döndüğünde dizinin bir sonraki elemanına geçer ve parametreler buna göre değer alır. Fonksiyonlar karışıklık olmaması için genellikle arrow function şeklinde de yazılır:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="398.3999328613281" data-theme-id="dark" data-default-tab="js" data-slug-hash="QWoLbXV" data-user="Alperen-Akta" style="height: 398.3999328613281px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/QWoLbXV">
+                                JS32</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Filter Döngüsü</b></h2>
+                        <p>
+                            Bu döngü de dizilere özgü bir döngü çeşidirir ve çalışma mantığı foreach ile aynıdır. Amacı () içindeki fonksiyonda belirtilen şartları sağlayan elemanları bulur.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="342.3999938964844" data-theme-id="dark" data-default-tab="js" data-slug-hash="LYaPVwZ" data-user="Alperen-Akta" style="height: 342.3999938964844px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/LYaPVwZ">
+                                JS33</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Map Döngüsü</b></h2>
+                        <p>
+                            Bu döngü de dizilere özgü bir döngü çeşididir ve çalışma mantığı foreach ile aynıdır. Amacı ise dizideki elemanları hızlı bir şekilde düzenleyebilmesi/değiştirebilmesidir.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="324" data-theme-id="dark" data-default-tab="js" data-slug-hash="abMovoO" data-user="Alperen-Akta" style="height: 324px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/abMovoO">
+                                JS34</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Nesne</b></h2>
+                        <p>
+                            Nesneler içerisinde birden fazla değer atanabilen yapılardır. Bu değerler string, number, boolean vb. olabilir. Daha sonra istediğimiz zaman bu nesnenin değerlerine ulaşabiliriz. Nesne oluşturma, içine değer atama ve bu değerleri çağırma işlemleri:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="375.20001220703125" data-theme-id="dark" data-default-tab="js" data-slug-hash="VwRZvZP" data-user="Alperen-Akta" style="height: 375.20001220703125px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/VwRZvZP">
+                                JS35</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p>Not: Diziler de birer nesnedir.</p>
+
+                        <h2 class="mt-5"><b>Key-Value</b></h2>
+                        <p>
+                            Nesneler içindeki değerlerin tutulduğu değişkene key, değerlere ise value denir. Nesne içinde key-value tanımlamanın bazı kuralları vardır:
+                        </p>
+                        <ul>
+                            <li>Key’ler normal veya string şekilde tanımlanabilir.</li>
+                            <li>Key sayı ile başlayamaz, başlaması için string şekilde tanımlanmalıdır.</li>
+                            <li>Key-value’lar arasında virgül olmalıdır.</li>
+                            <li>Key’ler tek kelime olmalıdır, arasında boşluk,- ile tanımlanamaz.</li>
+                            <li>Key’ler çağırılırken nesne.key veya nesne[“key”] şeklinde çağırılır.</li>
+                            <li>Key string olarak tanımlanmışsa sadece nesne[“key”] şeklinde çağırılabilir.</li>
+                            <li>Nesneye daha sonradan key-value eklenebilir.</li>
+                            <li>Nesnenin key’lerini ve value’larını görmek için hazır fonksiyonlar vardır.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="621.6000671386719" data-theme-id="dark" data-default-tab="js" data-slug-hash="QWoLjWZ" data-user="Alperen-Akta" style="height: 621.6000671386719px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/QWoLjWZ">
+                                JS36</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Nesneye Fonksiyon Ekleme</b></h2>
+                        <p>
+                            Nesnelerin içerisine sadece string, number veya boolean veri türü eklenmez. Aynı zamanda diziler, fonksiyonlar hatta nesnenin içinde nesneler bile tanımlanabilir.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="393.5999755859375" data-theme-id="dark" data-default-tab="js" data-slug-hash="YzgKyPV" data-user="Alperen-Akta" style="height: 393.5999755859375px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/YzgKyPV">
+                                JS37</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Nesne ve Dizileri Düzenleme</b></h2>
+                        <p>
+                            Nesne ve dizilerin içindeki değerleri nesne veya diziden çıkarıp ayrı bir değişkene atayabiliriz. Kalan değerleri de yeni bir nesne veya diziye atabiliriz. Ayrıca nesne ve dizileri kopyalayabiliriz.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="919.2001037597656" data-theme-id="dark" data-default-tab="js" data-slug-hash="zYbOvGx" data-user="Alperen-Akta" style="height: 919.2001037597656px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/zYbOvGx">
+                                JS38</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Try-Catch</b></h2>
+                        <p>
+                            Programlama dilleri bir kod sayfasını çalıştırırken kodları satır satır çalıştırır. Eğer bir hata ile karşılaşırsa program hata verir ve durur. Hatalı koddan sonraki düzgün yazılmış kodlara bakılmaz.<br><br>
+                            Fakat diyelim ki biz belirli şartlarda çalışan ve belirli şartlarda da hata veren bir program yaptık ve program hata verdiğinde programın durmasını istemiyoruz, geri kalan kodların çalışmasını istiyoruz. Bunun için try-catch yapısı kullanılır.<br><br>
+                            Try {} içine hata verebilecek kodlar yazılır ve catch {} içine de program hata verdiği takdirde neler olmasını istediğimiz kodları yazarız. Program hata verdiğinde hata yakalanır, program durmaz ve catch bloğu çalışır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="308" data-theme-id="dark" data-default-tab="js" data-slug-hash="XWGrmmW" data-user="Alperen-Akta" style="height: 308px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/XWGrmmW">
+                                JS39</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Fetch-API</b></h2>
+                        <p>
+                            Bir sunucudan veri çekmek için kullanılan yapılardır. Bu veriler bir JSON dosyasında tutulur ve daha sonra bu veriler hakkında işlem yapılabilir.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="552" data-theme-id="dark" data-default-tab="js" data-slug-hash="rNRBOxN" data-user="Alperen-Akta" style="height: 552px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/rNRBOxN">
+                                JS40</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>        
+
+    </main>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e562692f21.js" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+
+        body{
+            font-family: sans-serif;
+            background-color: #E7DFD8;
+            font-size: 20px;
+        }
+
+        ::-webkit-scrollbar{
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb{
+            background-color: #333333;
+        }
+
+        @media(min-width: 768px){
+            #mobile{
+                display: none;
+            }
+
+            main{
+                display: block;
+            }
+        }
+
+        @media(max-width: 768px){
+            #mobile{
+                display: block;
+                font-size: 15px;
+            }    
+
+            main{
+                display: none;
+            }
+        }
+        
+    </style>
+
+    <link rel="icon" type="png" href="img/icon.png">
+    <title>Veri Yapıları</title>
+  </head>
+  <body>
+    
+    <main class="container">
+        
+        <nav class="mt-5 text-center">
+            <div class="row px-5">
+                <div class="col-3 text-center">
+                    <a href="index.html" class="text-dark"><b>ANA SAYFA</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="ozgecmis.html" class="text-dark"><b>ÖZ GEÇMİŞ</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="calismalar.html" class="text-dark"><b>ÇALIŞMALAR</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="iletisim.html" class="text-dark"><b>İLETİŞİM</b></a>
+                </div>
+            </div>
+        </nav>
+
+        <article class="mt-5 mb-5 mx-auto" style="border-style: solid; border-width: 1px;">
+            <div class="row m-5">
+                <div class="col-12">
+                    <h1 class="display-4 text-center" id="head">Veri Yapıları</h1>
+                    <div id="text" class="mt-5">
+                        <h2><b>ALGORİTMA</b></h2>
+                        <p>
+                            Günlük hayatta yaşadığımız problemlerin çözümünü adım adım gerçekleştirmemize algoritma denir. Örneğin masadaki bir bardak suyu almak için:
+                        </p>
+                        <ul>
+                            <li>Masaya doğru yürü</li>
+                            <li>Elini uzat</li>
+                            <li>Bardağı avucuna getir</li>
+                            <li>Elini sık</li>
+                            <li>Bardağı kaldır</li>
+                        </ul>
+                        <p>
+                            İşlemlerinin yapılması bir algoritmadır.
+                        </p>
+
+                        <h2 class="mt-5"><b>BİLGİNİN BİLGİSAYARDA İFADESİ</b></h2>
+                        <p>
+                            İnsanlar kendilerini ifade etmek için diller icat etmiştir ve her coğrafyada başka şekilde diller bulunur.<br><br>
+                            Bu da demekki bir bilgi başka şekillerde ifade edilebilir. Elma meyvesi türkçede “e,l,m,a” harfleriyle ifade edilirken, ingilizcede “a,p,p,l,e” harfleriyle ifade edilir.<br><br>
+                            Bilginin bilgisayarda ifade edilmesi için ise 2’lik sayı sistemi kullanılır. Bunun sebebi bilgisayarların anlayacağı dilin elektriğin açık veya kapalı olmasından ibarettir. Bunun için transistör denilen devre elemanları kullanılır.<br><br>
+                            Burada elektriğin varolması 1, olmaması 0’ı ifade eder. Sadece bu 2 ifadeyi farklı uzunluk ve şekillerle kullanmamız sınırsız bilgiyi depolamamıza olanak sunar.
+                        </p>
+
+                        <h2 class="mt-5"><b>SAYI SİSTEMLERİ</b></h2>
+                        <p>
+                            Bilgisayarların 2’lik sayı sistemini kullandığını öğrendik. Peki sayı sistemleri nasıl çalışıyor?
+                        </p>
+                        <h3 class="mt-3"><b>10’luk Sayı Sistemi:</b></h3>
+                        <p>
+                            İnsanların günlük hayatta kullandığı sayı sistemine denir. Bir sayıyı ifade ederken basamaklar kullanılırız. Bulunduğumuz sayı sistemi ne ise bir basamakta o kadar ifade yapılabilir. Daha fazla şeyi ifade etmek için ise yeni bir basamak açılır ve o yeni basamak kendisinden önceki olan basamağın bulunduğu sayı sistemi katıdır. Örnekle açıklayalım: <br><br>
+                            10’luk sayı sisteminde bir basamağa 0’dan 9’a kadar 10 tane rakam yazabiliriz. Eğer 9’dan daha fazla bir değer yazmak istiyorsak yeni bir basamak açarız ve önceki basamağımızı tekrar saymaya başlarız. Bu noktada 9’dan bir sonraki sayı 10’dur. 10’dan ileri sayarsak: 11, 12, 13, …, 19 ve birler basamağı yine dolduğunda solundaki basamak artar kendisi ise tekrar 0’a geri döner. Sayımızı 20 oldu. Bu böyle 99’a kadar gittiğinde onlar basamağı da dolar ve 3. Basamak olan yüzler basamağı açılır, kendinden önceki basamak sıfırlanır ve sayımız 100 olur. Bu böyle devam eder.<br><br>
+                            Her sayı sisteminde basamakları üstel olarak ifade edebiliriz. Örneğin:
+                        </p>
+                        <ul>
+                            <li><b>Birler Basamağı:</b> 10⁰*n=1*n</li>
+                            <li><b>Onlar Basamağı:</b> 10¹*n=10*n</li>
+                            <li><b>Yüzler Basamağı:</b> 10²*n=100*n gibi (n=basamaktaki rakam)</li>
+                        </ul>
+                        <img src="img/dataStructures1.png" class="w-75 d-block m-auto rounded">
+                        <h3 class="mt-3"><b>2’lik Sayı Sistemi:</b></h3>
+                        <p>
+                            Sayı sistemlerinin mantığını yukarıda belirttik. Bu mantık her sayı sisteminde geçerlidir. Şimdi bu işlemleri 2’lik sayı sisteminde gösterelim.<br><br>
+                            2’lik sayı sisteminde bir basamağa 2 rakam yazılabilir: 0 veya 1. Eğer 1’den daha fazla şey ifade etmek istersek yeni bir basamak açılır ve bir önceki basamak sıfırlanır. Sayımız 10 oldu. Daha sonrasında 11, 100, 101, 110, 111, 1000 diye gider. Sayı sistemi ne kadar düşükse ifadeler o kadar uzar.
+                        </p>
+                        <h3 class="mt-3"><b>2’lik Sayı Sistemini 10’luk Sayı Sistemine Çevirme</b></h3>
+                        <p>
+                            Bunun için 2’lik sayı sistemini üstel olarak ifade etmek yeterlidir. Örneğin:
+                        </p>
+                        <ul>
+                            <li><b>Birlik Basamak:</b> 2⁰*n=1*n</li>
+                            <li><b>İkilik Basamak:</b> 2¹*n=2*n</li>
+                            <li><b>Dörtlük Basamak:</b> 2²*n=4*n gibi (n=basamaktaki rakam)</li>
+                        </ul>
+                        <img src="img/dataStructures2.png" class="w-75 d-block m-auto rounded">
+                        <p>
+                            Burada (101)2 ifadesi (5)10 ‘e eşittir.
+                        </p>
+                        <h3 class="mt-3"><b>10’lik Sayı Sistemini 2’luk Sayı Sistemine Çevirme</b></h3>
+                        <p>
+                            Bunun için 10’luk sistemdeki sayının içinde 2’nin üstel ifadelerine bakılır. Eğer varsa o basamağa 1 konulur, yoksa 0 konulur:
+                        </p>
+                        <img src="img/dataStructures3.png" class="w-75 d-block m-auto rounded">
+                        <p>
+                            Burada (135)10 ifadesi (10000111)2’e eşittir.
+                        </p>
+
+                        <h2 class="mt-5"><b>SAYISAL OLMAYAN VERİLERİN TUTULMASI</b></h2>
+                        <p>
+                            Bilgisayarlarda sayıların 2’lik sistem ile ifade edildiğini öğrendik peki ya harfler?<br><br>
+                            İnsanlar harfleri ifade edebilmek için bazı sayıları harflerle ilişkilendirmiştir. En yaygın kullanılan alfabelendirme ASCII’dir. Örneğin ASCII’ye göre A harfi 65 sayısına denktir.
+                        </p>
+
+                        <h2 class="mt-5"><b>VERİLERİN TUTULMASI</b></h2>
+                        <p>
+                            Bilgisayar dilinin 0 ve 1’lerden oluştuğunu öğrendik. Yani bu bizim her türlü verimizin 0 ve 1’lerden oluştuğunu gösteriyor. Peki bu veriler nasıl tutuluyor?<br><br>
+                            Bildiğimiz gibi bilgisayarlarımızın bir depolama alanı var ve verilerimizi bu alanlarda saklıyoruz. Verilerimiz arttıkça bu alan azalıyor.<br><br>
+                            Verilerimizin anlamlı olması için 0 ve 1’lerin sayısının fazla olması gerekir. Bu verilerin en küçük yapı taşı bitlerdir. Her bit bir tane 0 veya 1’e denktir. Yani bir bitin 2 olası sonucu vardır.<br><br>
+                            8 bitin yan yana gelmesiyle bir byte oluşur. Buradan bir byte’ın 2⁸=256 farklı ifadesi olduğu anlamına gelir.
+                        </p>
+
+                        <h2 class="mt-5"><b>ÖZYİNELEME</b></h2>
+                        <p>
+                            Özyineleme, bir problemin tekrar tekrar küçük parçalara bölünerek çözülmesine denir. Problem küçüle küçüle bir noktada bitecek ve sonuç oluşacaktır.<br><br>
+                            En yaygın özyineleme örneği faktöriyel konusudur. Örneğin 5!’i hesaplamak istersek 5*4*3*2*1 işlemini hesaplamalıyız. Fakat bu soru özyinelemeli şekilde çözülürse aşağıdaki gibi olur:
+                        </p>
+                        <ul>
+                            <li>5*4!</li>
+                            <li>5*4*3!</li>
+                            <li>5*4*3*2!</li>
+                            <li>5*4*3*2*1!</li>
+                        </ul>
+                        <p>
+                            Burada 5! küçüle küçüle en son 1!’e inmiş ve 1!’den sonra küçülecek başka parça kalmayınca problem çözülmüştür.<br><br>
+                            Bunun günlük hayatta ne önemi var diyebilirsiniz fakat programlamada özyinelemeli fonksiyonlar yani kendi kendini çağıran fonksiyonlar zamandan tasarruf etmemizi sağlar.
+                        </p>
+
+                        <h2 class="mt-5"><b>DİZİLER</b></h2>
+                        <p>
+                            Elimizde birbiriyle alakalı veriler olsun ve bu verileri toplu şekilde tutmak istiyoruz. Bunun için 2 tür yapımız vardır: diziler ve listeler<br><br>
+                            Örneğin bir sinemadaki arkadaş grubunun koltuk numaralarını toplu bir şekilde tutmak istiyoruz. Bu numaraları bir dizide tutabiliriz. Bu dizinin elemanları hafızada yan yana durur ve bu elemanlara direkt ulaşılabilir.<br><br>
+                            İşin dezavantajı ise diyelim ki gruba yeni bir arkadaş geldi. Dizilerde dizinin boyutu aşılamaz çünkü elemanlar hafızada yan yana dizilmiştir ve etrafında yer kalmamıştır. Bu yüzden bütün grup dizisinin yeni ve daha büyük bir diziye aktarılması ve yeni gelen arkadaşın da bu yeni diziye eklenmesi gerekir. Bu bir zaman kaybıdır.<br><br>
+                            Bu sorunu çözmek için dinamik diziler kullanılabilir. Fakat dinamik dizilerin de dezavantajları vardır. Dinamik diziler yeni bir eleman gelmesine hazırlanmak için boş elemanlara sahiptir. Yeni bir eleman geldiğinde boş yere tutulan elemanlara yerleşir ama yeni bir eleman gelmezse boş yere alan kaplar. Bu da bir alan kaybıdır.
+                        </p>
+
+                        <h2 class="mt-5"><b>BAĞLI LİSTELER</b></h2>
+                        <p>
+                            Bağlı listeler, dizilerin dezavantajına farklı bir bakış açısı sağlar. Bağlı listelerde listenin elemanları yan yana durmak zorunda değildir. Örneğimizden devam edersek sinemaya yeni gelen arkadaş salonda istediği boş bir yere oturabilir.<br><br>
+                            Peki bu dizinin elemanlarına nasıl ulaşılır? Sonuçta bütün elemanlar farklı yerdedir. Bunun için listenin elemanları kendisinden bir sonraki elemanın yer bilgisini tutar. Bu sayede bağ kopmaz.
+                        </p>
+
+                        <h2 class="mt-5"><b>DİZİLER VS LİSTELER</b></h2>
+                        <ul>
+                            <li>Dizilerde her elemana eşit sürede erişilirken listelerde herhangi bir elemana ulaşmak için 1. Elemandan başlayıp istenen elemana kadar tek tek ilerlenmelidir. Çünkü herkes sadece önündeki elemanın yerini bilir.</li>
+                            <li>Diziler sadece elemanlardan oluştuğu için daha az yer kaplar. Listeler hem elemanları hem de elemanların yer bilgisini tuttuğu için daha fazla alan kaplar.</li>
+                            <li>Eğer çok fazla ekleme, silme, taşıma işlemi yapılmıyorsa diziler kullanılır fakat tam tersi durumlarda listeler kullanılır.</li>
+                        </ul>
+
+                        <h2 class="mt-5"><b>LİSTELERDE ELEMAN EKLEME VE ÇIKARMA</b></h2>
+                        <p>
+                            Listelerde her elemanın önündeki elemanın yerini tuttuğunu öğrenmiştik. Liste 1. Elemandan başlayıp sonuncu elemana kadar böyle tren gibi birbirine bağlıdır. Sonuncu elemanın önünde bir şey olmadığı için adres değişkeni null’dır.<br><br>
+                            Eğer bu listenin sonuna bir eleman eklemek istersek sonuncu elemanın null olan adres değişkenine eklenecek olan elemanın adresi yazılır. Bu sayede listeye yeni bir eleman eklenmiş olur. Yeni eleman artık sonuncu eleman olduğu için adres değişkeni null’dır.<br><br>
+                            Peki listenin ortasına yeni bir eleman nasıl eklenir? Mantıken bu yeni eleman, 2 elemanın arasına yerleşmelidir. Bunun için gerideki elemanın adres değişkeni yeni elemanın adresi ile değiştirilir. Yeni elemanın adres değişkeni ise öndeki elemanı gösterir.<br><br>
+                            Listede silme işlemi yapmak için silinecek elemanı gösteren bir önceki elemanın adres değişkeni, silinecek elemanın bir önündeki elemanı göstermelidir. Bu sayede silinecek eleman açıkta kalır ve kullanılamaz hale gelir.
+                        </p>
+
+                        <h2 class="mt-5"><b>STACK (YIĞIN)</b></h2>
+                        <p>
+                            Stack yapısı diziler veya listeler ile yapılan bir eleman topluluğudur. Bu yapının mantığı LIFO(last in first out) ile gösterilir. Yani bu yapıda son giren eleman ilk çıkar.<br><br>
+                            Örnek olarak bir koliye konulan kitaplara bakarsak ilk konulan kitap en aşağıda kalır ve ulaşılamaz. Fakat koli dolduğunda son giren kitap daha sonra koli açıldığında ilk çıkan kitaptır.<br><br>
+                            Bu yapıda eleman sadece baştan eklenir, ortadan veya sondan eleman eklenemez. Eleman ekleme işlemine push, çıkarma işlemine pop denir.
+                        </p>
+
+                        <h2 class="mt-5"><b>QUEUE (KUYRUK)</b></h2>
+                        <p>
+                            Kuyruk yapısı da diziler ve listeler ile oluşturulan eleman topluluğudur. Bu yapının mantığı ise FIFO(first in first out) ile gösterilir. Yani ilk giren ilk çıkar.<br><br>
+                            Örnek olarak bir banka kuyruğu verilebilir. Sırayı oluşturan yani ilk eleman işini bitirince yapıdan çıkan ilk insandır.<br><br>
+                            Bu yapıda da ortadan eleman ekleme veya silme yapılamaz. Eleman sondan eklenirken, baştan silinir. Eleman ekleme işlemine enqueue, silme işlemine dequeue denir.
+                        </p>
+
+                        <h2 class="mt-5"><b>HASH TABLE</b></h2>
+                        <p>
+                            Diyelim ki elimizde ürünler ve fiyat listesi var ve bunlara hızlıca erişmek istiyoruz. Bunun için key-value yapısı kullanılır.<br><br>
+                            Key-value prensibine sahip yapılarda elimizdeki verilerin değerini hızlıca bulmak için veri bir fonksiyondan geçer ve bir index(eleman yeri) numarası verir. Bu index ile verinin değeri dizide hızlıca bulunur.<br><br>
+                            Burada verinin girdiği fonksiyona Hash Function, verilerin değerlerinin bulunduğu diziye ise Hash Table denir.
+                        </p>
+                        <img src="img/dataStructures4.png" class="w-75 d-block m-auto rounded">
+
+                        <h2 class="mt-5"><b>HASH FUNCTION</b></h2>
+                        <p>
+                            Yukarıda denildiği gibi verinin girdiği fonksiyona Hash Function denir. Hash Function’ın geçerli bir index numarası vermesi için bazı kurallar vardır:
+                        </p>
+                        <ul>
+                            <li>Her verinin index numarası farklı olmalıdır.</li>
+                            <li>Bir verinin bir index numarası olmalıdır.</li>
+                            <li>Index numarasının Hash Table uzunluğundan fazla olmamalıdır.</li>
+                        </ul>
+
+                        <h2 class="mt-5"><b>HASH COLLISION</b></h2>
+                        <p>
+                            Yukarıdaki şartların gerçekleşmesi için Hash Function’ın kaliteli olması gerekir. Aksi takdirde hatalar meydana gelir. Örneğin farklı verilerin aynı değere karşılık gelmesine Hash Collision denir. Yani 2 farklı veri fonksiyona giriyor ama sonuç aynı çıkıyor.<br><br>
+                            Bu duruma çare olarak aynı index numarasını bir listeye dönüştürebiliriz ve bu index numarasına birden fazla veri atayabiliriz. Fakat bu Hash Table konusunun temeli olan hız faktörünü es geçiyor. Çünkü listelerde elemanlara ulaşmak yavaştı.<br><br>
+                            Bunun için Hash Function’ın aynı index numarasını vermeyecek şekilde tasarlanması önemlidir.
+                        </p>
+
+                        <h2 class="mt-5"><b>ALGORİTMA ANALİZİ</b></h2>
+                        <p>
+                            Elimizde bir problem var ve çözülmesi gerek. Bu problemlerin çözüm aşamalarına algoritma denir. Fakat her insan probleme farklı çözümler geliştirebilir. Bu noktada hangi çözümün daha iyi çalıştığını belirlemeye algoritma analizi denir.<br><br>
+                            Bilgisayarda bir problemi çözen algoritmayı tasarlamak için 3 etkene bakılır:
+                        </p>
+                        <ul>
+                            <li>Algoritmanın kurulması için gereken zaman</li>
+                            <li>Kurulan algoritmanın uzunluğu</li>
+                            <li>Algoritmanın çalışma süresi</li>
+                        </ul>
+                        <p>
+                            Bu esnada en iyi algoritmayı seçmek için bazı faktörlerin bağımsız olmasına dikkat edilmesi gerekir.<br><br>
+                            Örneğin bir algoritma her cihazda farklı hızda çalışabilir. Bunun için algoritma geliştirilirken çalışma süresinin aynı cihazda test edilmesi önemlidir.<br><br>
+                            Ya da bir algoritma farklı programlama dillerinde daha uzun veya daha kısa yazılabilir ya da çalıştırılabilir. Bu faktöre de dikkat edilmelidir.<br><br>
+                            Bu 2 faktörden bağımsız algoritma kurmak için büyüme hızına bakılabiliir. Yani aynı cihazda ve aynı programlama dilinde çalışan algoritmaların farklı değerlerde çalışma süresine bakmak en iyi algoritmayı seçmek için bir seçenek olabilir.
+                        </p>
+
+                        <h2 class="mt-5"><b>RAM MODELİ</b></h2>
+                        <p>
+                            Algoritmaların her cihazda farklı sürede çalıştığını öğrendik ve bunun bir algoritma analizi olamayacağını söyledik. Peki ya bütün algoritmaları aynı cihazda kullansaydık?<br><br>
+                            Bu cihaz algoritmaları karşılaştırmak için bir araç olabilirdi. Algoritmada gerçekleşen işlemlere birer birim zaman tanımlasarsak algoritmaları birbiriyle karşılaştıracak ölçüye sahip olurduk. İşte buna RAM Modeli denir.
+                        </p>
+
+                        <h2 class="mt-5"><b>ZAMAN KARMAŞIKLIĞI</b></h2>
+                        <p>
+                            Bir problemi çözmek için algoritmalar geliştirilir ve algoritma sürecinde bu problem çözülür. Fakat bu algoritmaya farklı problemler verildiğinde çözme süresi probleme göre değişiklik gösterir. Bazı problemleri daha uzun sürede çözerken bazılarını daha kısa sürede çözer. Algoritma tasarlanırken bu durum dikkate alınır.<br>
+                            Algoritma çalışma süresine göre 3’ ayrılır: En iyi zaman, ortalama zaman ve en kötü zaman.
+                        </p>
+                        <ul>
+                            <li><b>En İyi Zaman:</b> Bu durumda algoritma problemi en hızlı şekilde çözer.</li>
+                            <li><b>Ortalama Zaman:</b> Bu durumda algoritmaya sunulan problemlerin çözüm süresinin ortalaması alınır. Burada dikkat edilen ortalama zamanın en iyi ve en kötü zamanın ortası olmamasıdır. Çünkü bazen problemlerde kolay olanlar çoğunluktayken bazen zor olanlar çoğunluktadır. Bu durumda ortalama zamanı bulmak zorlaşır ve önemleşir.</li>
+                            <li><b>En Kötü Zaman:</b> Bu durum yaşanacak en uzun zamandır ve şirketler algoritma tasarlarken bu duruma en çok dikkat eder.</li>
+                        </ul>
+
+                        <h2 class="mt-5"><b>Big O Notation</b></h2>
+                        <p>
+                            Bir algoritmanın problemleri çözme süresine göre sınıflandığını gördük. Peki ya çözme şekli?<br><br>
+                            Algoritma bir problemi farklı şekillerde çözebilir. Buna Big O Notation denir. Bu yapıda algoritmanın çözüm şekli denklem şeklinde yazılır ve O(n) ile gösterilir. Burada n parametredir.<br><br>
+                            Örneğin bir sözlükte z harflerine sayfa sayfa gitmek en kötü zaman ve O(n) yani doğrusal olurken, önce sözlüğü ortadan açmak daha sonra z’nin sağda mı solda mı olduğunu kontrol etmek ve z’nin olduğu kısmın tekrar yarısını açmak ve bu şekilde gitmek daha hızlı bir çözüm şeklidir. Bu yöntem logaritmik olarak gittiği için O(logn) ile gösterilir.<br><br>
+                            Farklı O grafikleri:
+                        </p>
+                        <img src="img/dataStructures5.png" class="w-75 d-block m-auto rounded">
+                        <p>
+                            O denklemi çizilirken denklemde parametre, en büyük üs seçilir. Örneğin x²+x+5 denklemi O(n²) olarak çizilir. Diğer terimler görmezden gelinir.
+                        </p>
+
+                        <h2 class="mt-5"><b>SORTING (SIRALAMA)</b></h2>
+                        <p>
+                            Bir dizi veya listede verilerin belirli bir kurala göre sıralanması verilere erişimi kolaylaştırır. En popüler sıralama çeşitleri büyükten küçüğe, küçükten büyüğe veya alfabeye göre sıralamalardır. Sıralama yapmanın faydaları:
+                        </p>
+                        <ul>
+                            <li><b>Arama:</b> Bir veriyi aramak için dizileri veya listeleri sıralamak işleri hızlandırır.</li>
+                            <li><b>Birbirine Yakın Elemanları Bulmak:</b> Eğer art arda olan verileri bulmak istiyorsak diziyi veya listeyi sıralayabiliriz.</li>
+                            <li><b>Aynı Elemanları Bulmak:</b> Eğer birden fazla aynı veriyi bulmak istiyorsak diziyi veya listeyi sıraladığımızda otomatik veriler ortaya çıkacaktır.</li>
+                            <li><b>Mod Bulma:</b> Dizide veya listede en çok bulunan elemanları bulmak için sıralama yapmak işleri hızlandırır.</li>
+                        </ul>
+                        <h3 class="mt-3"><b>SELECTION SORT</b></h3>
+                        <p>
+                            En basit sıralama algoritmalarından biridir. Bir dizideki elemanları küçükten büyüğe sıralamak için kullanılır. Aşağıdaki örneğe bakalım:
+                        </p>
+                        <img src="img/dataStructures6.png" class="w-50 d-block m-auto rounded">
+                        <p class="mt-3">
+                            Elimizde bir dizi ve içinde rastgele elemanlar var. Bu elemanları sıralamak için:
+                        </p>
+                        <ol>
+                            <li>Dizideki en küçük eleman bulunur ve yeri ilk sıradaki eleman ile değiştirilir.</li>
+                            <li>Artık ilk sırada en küçük eleman olduğu bilindiğinden ilk elemana bakılmaz. İlk eleman hariç dizideki en küçük eleman 2. Sıradaki elemanla yer değiştirir.</li>
+                            <li>Bu böyle devam eder ve bütün dizi sıralanır.</li>
+                        </ol>
+                        <p>
+                            Bu algoritmadaki işlem sayısına bakarsak 1. Aşamada en küçük elemanı bulmak için bütün dizi taranır. Yani dizinin eleman sayısı(n) kadar işlem yapılır. Daha sonra ilk elemana bakılmadığı için n-1 tane, daha sonra n-2 tane ve böyle son elemana kadar işlem yapılır. Bu işlemleri toplamak için 1’den n’e kadar sayılar toplanır yani (n*(n+1))/2=(n²+n)/2. Bu da O(n²) ile gösterilir.
+                        </p>
+                        <h3 class="mt-3"><b>MERGE SORT</b></h3>
+                        <p>
+                            Selection sort algoritmasının O(n²) ile çalıştığını öğrenmiştik. Bu dizinin eleman sayısı arttığında her seferinde dizi tekrar tarandığı için büyük bir zaman kaybıdır.<br><br>
+                            Merge sort algoritmasının temeli ise diziyi önce parçala ve sonra sıraladır. Aşağıdaki örneğe bakalım:
+                        </p>
+                        <img src="img/dataStructures7.png" class="w-50 d-block m-auto rounded">
+                        <p class="mt-3">
+                            Elimizdeki dizide rastgele elemanlar var. Bunun selection sort ile nasıl sıralandığını öğrendik. Merge sort’ta ise 2 aşama vardır:
+                        </p>
+                        <ol>
+                            <li>Dizinin elemanları tek haneye gelecek şekilde hep 2’ye bölünür. En sonda her eleman tek kalır.</li>
+                            <li>Tek kalan elemanlar önceki kümeleriyle sıralanmaya başlar. Dizi aynı bölündüğü gibi toplanmaya başlar fakat toplanırken sıralanır.</li>
+                        </ol>
+                        <p>
+                            Böyle bakıldığında selection sort çok daha kolay gibi gözüküyor fakat verim olarak merge sort daha verimlidir. Çünkü dizi toplanmaya başlayıp sıralanırken eleman çok daha az veriyle karşılaştırılır. Oysaki selection sort’ta her eleman için dizi sona kadar karşılaştırılırdı.<br><br>
+                            İşlem sayısına bakarsak dizi sürekli 2’ye bölündüğü için logaritmik bir artış olur. Ayrıca dizi her birleştiğinde n kadar işlem yapılır. Yani bu algoritma O(n*logn) ile gösterilir. Bu O(n²)’den çok daha hızlıdır.
+                        </p>
+                        <h3 class="mt-3"><b>QUICK SORT</b></h3>
+                        <p>
+                            Quick sort mantık olarak merge sort’a benzerdir. Önce diziyi parçalar, sonra birleştirirken sıralar. Farkı ise diziyi rastgele ortadan 2’ye parçalamaz.<br><br>
+                            Önce dizide bir eleman seçelir ve ortaya konulur. Bu elemandan küçük olanlar sola, büyük olanlar sağa yerleştirilir. Daha sonra oluşan dizilerden yine elemanlar seçilir ve küçükler sola, büyükler sağa şeklinde diziler oluşur. Bu böyle herkes tek eleman kalacak şekilde devam eder. Dizide herkes tek eleman kaldığında zaten herkes sıralanmış olur. Aşağıdaki örneğe bakalım:
+                        </p>
+                        <img src="img/dataStructures8.png" class="w-50 d-block m-auto rounded">
+                        <p class="mt-3">
+                            Elimizdeki dizide rastgele elemanlar var. Bunu quick sort ile sıralamak için önce bir eleman seçilir. Buna pivot denir. Bu örnekte 3 seçilmiş. Daha sonra 3’ten küçük olanlar solda, büyük olanlar sağda bir dizi oluşturur. Bu diziler de kendi arasında bir pivot seçer ve aynı işlem tekrar eder. Herkes tek kaldığında zaten dizi otomatik sıralanmış olur.<br><br>
+                            Quick sort’un işlem sayısı değişkenlik gösterir. Çünkü seçilen pivot ortada olmaz ise dizi ortadan 2’ye bölünemez. Bir taraf daha uzun olur.<br><br>
+                            Dizilerin tam ortadan bölündüğü durumlarda algoritma O(n*logn) ile ifade edilirken ortadan bölünemediği zaman O(n²) ile ifade edilir.<br><br>
+                            Quick sort, ortalama olarak merge sort’tan daha hızlıdır. İkisi de O(n*logn) ile ifade edilse de katsayı farkından dolayı quick sort daha hızlıdır.
+                        </p>
+
+                        <h2 class="mt-5"><b>SEARCHING (ARAMA)</b></h2>
+                        <p>
+                            Gün geçtikçe bilgisayarlarımızda daha çok veriyi depolamaya başladık. Bu büyük veri havuzunda istediğimiz verileri bulmak ise güçleşti. Bu problemi çözmek için ise searching(arama) algoritmaları geliştirildi.
+                        </p>
+                        <h3 class="mt-3"><b>LINEAR SEARCH</b></h3>
+                        <p>
+                            En basit arama algoritmalarından birisidir. Dizinin 1. elemanından başlayıp istenilen veriye ulaşıncaya kadar arama yapan bir algoritmadır.
+                        </p>
+                        <img src="img/dataStructures9.png" class="w-75 d-block m-auto rounded">
+                        <p class="mt-3">
+                            Dizide içeriği 30 olan elemanı bulmak için 1. Elemandan başlanıp ilerlenmiştir. İstenen eleman 3. Eleman olduğu için eleman bulunmuştur.<br><br>
+                            İşlem sayısına bakacak olursak algoritmanın adından da anlaşılacağı gibi O(n) ile ifade edilir.
+                        </p>
+                        <h3 class="mt-3"><b>BINARY SEARCH</b></h3>
+                        <p>
+                            Bu arama algoritmasını uygulamak için dizimizin sıralı olması gerekiyor. Sıralanmış dizide istediğimiz eleman ile dizinin ortasındaki eleman karşılaştırılır. Eğer istediğimiz eleman daha küçükse dizinin sol yarısına, değilse sağ yarısına bakılır. Yeni dizide tekrar ortadaki eleman ile istediğimiz eleman karşılaştırılır ve buna göre dizi yarıya ayrılır. Bu şekilde istediğimiz elemana gelene dek devam eder. Aşağıdaki örneğe bakalım:
+                        </p>
+                        <img src="img/dataStructures10.png" class="w-75 d-block m-auto rounded">
+                        <p class="mt-3">
+                            Yukarıdaki dizide 2 elemanını aranıyor. Bunun için ortadaki eleman yani 5 ile bir karşılaştırma yapılır. 2, 5’ten küçük olduğu için sol yarıya bakılır. Daha sonra ortadaki eleman 3 ile karşılaştırma yapılır. 2, 3’ten küçük olduğu için sol yarıya bakılır. Ortanca eleman, aradığımız eleman olduğunda ise algoritma sonlanır.<br><br>
+                            İşlem sayısına bakılırsa dizi her seferinde 2’ye bölündüğünden algoritma O(logn) ile ifade edilir.
+                        </p>
+                        <h3 class="mt-3"><b>BINARY SEARCH TREE</b></h3>
+                        <p>
+                            Bu yapı ağaç şeklinde bir listeden oluşuyor. Bu yapı sayesinde hem searching yapılırken hem de eleman ekleme gibi işlemler aynı anda yapılabiliyor. Aşağıdaki örneğe bakalım:
+                        </p>
+                        <img src="img/dataStructures11.png" class="w-75 d-block m-auto rounded">
+                        <p class="mt-3">
+                            Yukarıdaki yapıya bakıldığında listenin 1. Elemanı kök olarak adlandırılıyor. Kökten büyük elemanlar sağa kök salarken, küçük elemanlar sola kök salıyor. Mantık aşağıdaki elemanlar için de geçerlidir. Kendinden büyük elemanlar sağa, küçük elemanlar sola uzar.<br><br>
+                            Bir eleman eklenmek istendiğinde 1. Elemandan başlayıp aşağıya kendine bir yer buluncaya kadar devam eder ve yerleşir.<br><br>
+                            Bir eleman aranmak istendiğinde de 1. Elemandan başlayıp aşağıya doğru o eleman bulunana kadar sorgulama yapılır.<br><br>
+                            İşlem sayısına bakarsak eğer ağaç simetrik bir şekilde 2’ye ayrılarak aşağı inmişsse O(logn) ile ifade edilir. Eğer simetrik olmazsa ve bir tarafa doğru yoğunluk varsa O(n) ile ifade edilir.<br><br>
+                            Binary Search Tree bir liste gibi çalıştığından elemanlara erişim diziler kadar hızlı olmaz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>       
+
+    </main>
+
+    <main id="mobile" class="container">
+        
+        <nav class="text-center">
+            <div class="row mt-3" style="border-style: solid; border-width: 0px 0px 1px 0px;">
+                <div class="col-2">
+                    <div class="dropdown float-left">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
+                        </button>
+                        <div class="dropdown-menu" style="background-color: #E7DFD8;">
+                          <a class="dropdown-item" href="index.html">Ana Sayfa</a>
+                          <a class="dropdown-item" href="ozgecmis.html">Öz Geçmiş</a>
+                          <a class="dropdown-item" href="calismalar.html">Çalışmalar</a>
+                          <a class="dropdown-item" href="iletisim.html">İletişim</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 text-center">
+                    <h1><b>Çalışmalar</b></h1>
+                </div>
+            </div>
+        </nav>
+
+        <article class="mt-5 mb-5 mx-auto">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-4 text-center" id="head">Veri Yapıları</h1>
+                    <div id="text" class="mt-5">
+                        <h2><b>Algoritma</b></h2>
+                        <p>
+                            Günlük hayatta yaşadığımız problemlerin çözümünü adım adım gerçekleştirmemize algoritma denir. Örneğin masadaki bir bardak suyu almak için:
+                        </p>
+                        <ul>
+                            <li>Masaya doğru yürü</li>
+                            <li>Elini uzat</li>
+                            <li>Bardağı avucuna getir</li>
+                            <li>Elini sık</li>
+                            <li>Bardağı kaldır</li>
+                        </ul>
+                        <p>
+                            İşlemlerinin yapılması bir algoritmadır.
+                        </p>
+
+                        <h2 class="mt-5"><b>Bilginin Bilgisayarda İfadesi</b></h2>
+                        <p>
+                            İnsanlar kendilerini ifade etmek için diller icat etmiştir ve her coğrafyada başka şekilde diller bulunur.<br><br>
+                            Bu da demekki bir bilgi başka şekillerde ifade edilebilir. Elma meyvesi türkçede “e,l,m,a” harfleriyle ifade edilirken, ingilizcede “a,p,p,l,e” harfleriyle ifade edilir.<br><br>
+                            Bilginin bilgisayarda ifade edilmesi için ise 2’lik sayı sistemi kullanılır. Bunun sebebi bilgisayarların anlayacağı dilin elektriğin açık veya kapalı olmasından ibarettir. Bunun için transistör denilen devre elemanları kullanılır.<br><br>
+                            Burada elektriğin varolması 1, olmaması 0’ı ifade eder. Sadece bu 2 ifadeyi farklı uzunluk ve şekillerle kullanmamız sınırsız bilgiyi depolamamıza olanak sunar.
+                        </p>
+
+                        <h2 class="mt-5"><b>Sayı Sistemleri</b></h2>
+                        <p>
+                            Bilgisayarların 2’lik sayı sistemini kullandığını öğrendik. Peki sayı sistemleri nasıl çalışıyor?
+                        </p>
+                        <h3 class="mt-3"><b>10’luk Sayı Sistemi:</b></h3>
+                        <p>
+                            İnsanların günlük hayatta kullandığı sayı sistemine denir. Bir sayıyı ifade ederken basamaklar kullanılırız. Bulunduğumuz sayı sistemi ne ise bir basamakta o kadar ifade yapılabilir. Daha fazla şeyi ifade etmek için ise yeni bir basamak açılır ve o yeni basamak kendisinden önceki olan basamağın bulunduğu sayı sistemi katıdır. Örnekle açıklayalım: <br><br>
+                            10’luk sayı sisteminde bir basamağa 0’dan 9’a kadar 10 tane rakam yazabiliriz. Eğer 9’dan daha fazla bir değer yazmak istiyorsak yeni bir basamak açarız ve önceki basamağımızı tekrar saymaya başlarız. Bu noktada 9’dan bir sonraki sayı 10’dur. 10’dan ileri sayarsak: 11, 12, 13, …, 19 ve birler basamağı yine dolduğunda solundaki basamak artar kendisi ise tekrar 0’a geri döner. Sayımızı 20 oldu. Bu böyle 99’a kadar gittiğinde onlar basamağı da dolar ve 3. Basamak olan yüzler basamağı açılır, kendinden önceki basamak sıfırlanır ve sayımız 100 olur. Bu böyle devam eder.<br><br>
+                            Her sayı sisteminde basamakları üstel olarak ifade edebiliriz. Örneğin:
+                        </p>
+                        <ul>
+                            <li><b>Birler Basamağı:</b> 10⁰*n=1*n</li>
+                            <li><b>Onlar Basamağı:</b> 10¹*n=10*n</li>
+                            <li><b>Yüzler Basamağı:</b> 10²*n=100*n gibi (n=basamaktaki rakam)</li>
+                        </ul>
+                        <img src="img/dataStructures1.png" class="w-75 d-block m-auto rounded">
+                        <h3 class="mt-3"><b>2’lik Sayı Sistemi:</b></h3>
+                        <p>
+                            Sayı sistemlerinin mantığını yukarıda belirttik. Bu mantık her sayı sisteminde geçerlidir. Şimdi bu işlemleri 2’lik sayı sisteminde gösterelim.<br><br>
+                            2’lik sayı sisteminde bir basamağa 2 rakam yazılabilir: 0 veya 1. Eğer 1’den daha fazla şey ifade etmek istersek yeni bir basamak açılır ve bir önceki basamak sıfırlanır. Sayımız 10 oldu. Daha sonrasında 11, 100, 101, 110, 111, 1000 diye gider. Sayı sistemi ne kadar düşükse ifadeler o kadar uzar.
+                        </p>
+                        <h3 class="mt-3"><b>2’lik Sayı Sistemini 10’luk Sayı Sistemine Çevirme</b></h3>
+                        <p>
+                            Bunun için 2’lik sayı sistemini üstel olarak ifade etmek yeterlidir. Örneğin:
+                        </p>
+                        <ul>
+                            <li><b>Birlik Basamak:</b> 2⁰*n=1*n</li>
+                            <li><b>İkilik Basamak:</b> 2¹*n=2*n</li>
+                            <li><b>Dörtlük Basamak:</b> 2²*n=4*n gibi (n=basamaktaki rakam)</li>
+                        </ul>
+                        <img src="img/dataStructures2.png" class="w-75 d-block m-auto rounded">
+                        <p>
+                            Burada (101)2 ifadesi (5)10 ‘e eşittir.
+                        </p>
+                        <h3 class="mt-3"><b>10’lik Sayı Sistemini 2’luk Sayı Sistemine Çevirme</b></h3>
+                        <p>
+                            Bunun için 10’luk sistemdeki sayının içinde 2’nin üstel ifadelerine bakılır. Eğer varsa o basamağa 1 konulur, yoksa 0 konulur:
+                        </p>
+                        <img src="img/dataStructures3.png" class="w-75 d-block m-auto rounded">
+                        <p>
+                            Burada (135)10 ifadesi (10000111)2’e eşittir.
+                        </p>
+
+                        <h2 class="mt-5"><b>Sayısal Olmayan Verilerin Tutulması</b></h2>
+                        <p>
+                            Bilgisayarlarda sayıların 2’lik sistem ile ifade edildiğini öğrendik peki ya harfler?<br><br>
+                            İnsanlar harfleri ifade edebilmek için bazı sayıları harflerle ilişkilendirmiştir. En yaygın kullanılan alfabelendirme ASCII’dir. Örneğin ASCII’ye göre A harfi 65 sayısına denktir.
+                        </p>
+
+                        <h2 class="mt-5"><b>Verilerin Tutulması</b></h2>
+                        <p>
+                            Bilgisayar dilinin 0 ve 1’lerden oluştuğunu öğrendik. Yani bu bizim her türlü verimizin 0 ve 1’lerden oluştuğunu gösteriyor. Peki bu veriler nasıl tutuluyor?<br><br>
+                            Bildiğimiz gibi bilgisayarlarımızın bir depolama alanı var ve verilerimizi bu alanlarda saklıyoruz. Verilerimiz arttıkça bu alan azalıyor.<br><br>
+                            Verilerimizin anlamlı olması için 0 ve 1’lerin sayısının fazla olması gerekir. Bu verilerin en küçük yapı taşı bitlerdir. Her bit bir tane 0 veya 1’e denktir. Yani bir bitin 2 olası sonucu vardır.<br><br>
+                            8 bitin yan yana gelmesiyle bir byte oluşur. Buradan bir byte’ın 2⁸=256 farklı ifadesi olduğu anlamına gelir.
+                        </p>
+
+                        <h2 class="mt-5"><b>Özyineleme</b></h2>
+                        <p>
+                            Özyineleme, bir problemin tekrar tekrar küçük parçalara bölünerek çözülmesine denir. Problem küçüle küçüle bir noktada bitecek ve sonuç oluşacaktır.<br><br>
+                            En yaygın özyineleme örneği faktöriyel konusudur. Örneğin 5!’i hesaplamak istersek 5*4*3*2*1 işlemini hesaplamalıyız. Fakat bu soru özyinelemeli şekilde çözülürse aşağıdaki gibi olur:
+                        </p>
+                        <ul>
+                            <li>5*4!</li>
+                            <li>5*4*3!</li>
+                            <li>5*4*3*2!</li>
+                            <li>5*4*3*2*1!</li>
+                        </ul>
+                        <p>
+                            Burada 5! küçüle küçüle en son 1!’e inmiş ve 1!’den sonra küçülecek başka parça kalmayınca problem çözülmüştür.<br><br>
+                            Bunun günlük hayatta ne önemi var diyebilirsiniz fakat programlamada özyinelemeli fonksiyonlar yani kendi kendini çağıran fonksiyonlar zamandan tasarruf etmemizi sağlar.
+                        </p>
+
+                        <h2 class="mt-5"><b>Diziler</b></h2>
+                        <p>
+                            Elimizde birbiriyle alakalı veriler olsun ve bu verileri toplu şekilde tutmak istiyoruz. Bunun için 2 tür yapımız vardır: diziler ve listeler<br><br>
+                            Örneğin bir sinemadaki arkadaş grubunun koltuk numaralarını toplu bir şekilde tutmak istiyoruz. Bu numaraları bir dizide tutabiliriz. Bu dizinin elemanları hafızada yan yana durur ve bu elemanlara direkt ulaşılabilir.<br><br>
+                            İşin dezavantajı ise diyelim ki gruba yeni bir arkadaş geldi. Dizilerde dizinin boyutu aşılamaz çünkü elemanlar hafızada yan yana dizilmiştir ve etrafında yer kalmamıştır. Bu yüzden bütün grup dizisinin yeni ve daha büyük bir diziye aktarılması ve yeni gelen arkadaşın da bu yeni diziye eklenmesi gerekir. Bu bir zaman kaybıdır.<br><br>
+                            Bu sorunu çözmek için dinamik diziler kullanılabilir. Fakat dinamik dizilerin de dezavantajları vardır. Dinamik diziler yeni bir eleman gelmesine hazırlanmak için boş elemanlara sahiptir. Yeni bir eleman geldiğinde boş yere tutulan elemanlara yerleşir ama yeni bir eleman gelmezse boş yere alan kaplar. Bu da bir alan kaybıdır.
+                        </p>
+
+                        <h2 class="mt-5"><b>Bağlı Listeler</b></h2>
+                        <p>
+                            Bağlı listeler, dizilerin dezavantajına farklı bir bakış açısı sağlar. Bağlı listelerde listenin elemanları yan yana durmak zorunda değildir. Örneğimizden devam edersek sinemaya yeni gelen arkadaş salonda istediği boş bir yere oturabilir.<br><br>
+                            Peki bu dizinin elemanlarına nasıl ulaşılır? Sonuçta bütün elemanlar farklı yerdedir. Bunun için listenin elemanları kendisinden bir sonraki elemanın yer bilgisini tutar. Bu sayede bağ kopmaz.
+                        </p>
+
+                        <h2 class="mt-5"><b>Diziler VS Listeler</b></h2>
+                        <ul>
+                            <li>Dizilerde her elemana eşit sürede erişilirken listelerde herhangi bir elemana ulaşmak için 1. Elemandan başlayıp istenen elemana kadar tek tek ilerlenmelidir. Çünkü herkes sadece önündeki elemanın yerini bilir.</li>
+                            <li>Diziler sadece elemanlardan oluştuğu için daha az yer kaplar. Listeler hem elemanları hem de elemanların yer bilgisini tuttuğu için daha fazla alan kaplar.</li>
+                            <li>Eğer çok fazla ekleme, silme, taşıma işlemi yapılmıyorsa diziler kullanılır fakat tam tersi durumlarda listeler kullanılır.</li>
+                        </ul>
+
+                        <h2 class="mt-5"><b>Listelerden Eleman Ekleme ve Çıkarma</b></h2>
+                        <p>
+                            Listelerde her elemanın önündeki elemanın yerini tuttuğunu öğrenmiştik. Liste 1. Elemandan başlayıp sonuncu elemana kadar böyle tren gibi birbirine bağlıdır. Sonuncu elemanın önünde bir şey olmadığı için adres değişkeni null’dır.<br><br>
+                            Eğer bu listenin sonuna bir eleman eklemek istersek sonuncu elemanın null olan adres değişkenine eklenecek olan elemanın adresi yazılır. Bu sayede listeye yeni bir eleman eklenmiş olur. Yeni eleman artık sonuncu eleman olduğu için adres değişkeni null’dır.<br><br>
+                            Peki listenin ortasına yeni bir eleman nasıl eklenir? Mantıken bu yeni eleman, 2 elemanın arasına yerleşmelidir. Bunun için gerideki elemanın adres değişkeni yeni elemanın adresi ile değiştirilir. Yeni elemanın adres değişkeni ise öndeki elemanı gösterir.<br><br>
+                            Listede silme işlemi yapmak için silinecek elemanı gösteren bir önceki elemanın adres değişkeni, silinecek elemanın bir önündeki elemanı göstermelidir. Bu sayede silinecek eleman açıkta kalır ve kullanılamaz hale gelir.
+                        </p>
+
+                        <h2 class="mt-5"><b>Stack (Yığın)</b></h2>
+                        <p>
+                            Stack yapısı diziler veya listeler ile yapılan bir eleman topluluğudur. Bu yapının mantığı LIFO(last in first out) ile gösterilir. Yani bu yapıda son giren eleman ilk çıkar.<br><br>
+                            Örnek olarak bir koliye konulan kitaplara bakarsak ilk konulan kitap en aşağıda kalır ve ulaşılamaz. Fakat koli dolduğunda son giren kitap daha sonra koli açıldığında ilk çıkan kitaptır.<br><br>
+                            Bu yapıda eleman sadece baştan eklenir, ortadan veya sondan eleman eklenemez. Eleman ekleme işlemine push, çıkarma işlemine pop denir.
+                        </p>
+
+                        <h2 class="mt-5"><b>Queue (Kuyruk)</b></h2>
+                        <p>
+                            Kuyruk yapısı da diziler ve listeler ile oluşturulan eleman topluluğudur. Bu yapının mantığı ise FIFO(first in first out) ile gösterilir. Yani ilk giren ilk çıkar.<br><br>
+                            Örnek olarak bir banka kuyruğu verilebilir. Sırayı oluşturan yani ilk eleman işini bitirince yapıdan çıkan ilk insandır.<br><br>
+                            Bu yapıda da ortadan eleman ekleme veya silme yapılamaz. Eleman sondan eklenirken, baştan silinir. Eleman ekleme işlemine enqueue, silme işlemine dequeue denir.
+                        </p>
+
+                        <h2 class="mt-5"><b>Hash Table</b></h2>
+                        <p>
+                            Diyelim ki elimizde ürünler ve fiyat listesi var ve bunlara hızlıca erişmek istiyoruz. Bunun için key-value yapısı kullanılır.<br><br>
+                            Key-value prensibine sahip yapılarda elimizdeki verilerin değerini hızlıca bulmak için veri bir fonksiyondan geçer ve bir index(eleman yeri) numarası verir. Bu index ile verinin değeri dizide hızlıca bulunur.<br><br>
+                            Burada verinin girdiği fonksiyona Hash Function, verilerin değerlerinin bulunduğu diziye ise Hash Table denir.
+                        </p>
+                        <img src="img/dataStructures4.png" class="w-75 d-block m-auto rounded">
+
+                        <h2 class="mt-5"><b>Hash Function</b></h2>
+                        <p>
+                            Yukarıda denildiği gibi verinin girdiği fonksiyona Hash Function denir. Hash Function’ın geçerli bir index numarası vermesi için bazı kurallar vardır:
+                        </p>
+                        <ul>
+                            <li>Her verinin index numarası farklı olmalıdır.</li>
+                            <li>Bir verinin bir index numarası olmalıdır.</li>
+                            <li>Index numarasının Hash Table uzunluğundan fazla olmamalıdır.</li>
+                        </ul>
+
+                        <h2 class="mt-5"><b>Hash Collision</b></h2>
+                        <p>
+                            Yukarıdaki şartların gerçekleşmesi için Hash Function’ın kaliteli olması gerekir. Aksi takdirde hatalar meydana gelir. Örneğin farklı verilerin aynı değere karşılık gelmesine Hash Collision denir. Yani 2 farklı veri fonksiyona giriyor ama sonuç aynı çıkıyor.<br><br>
+                            Bu duruma çare olarak aynı index numarasını bir listeye dönüştürebiliriz ve bu index numarasına birden fazla veri atayabiliriz. Fakat bu Hash Table konusunun temeli olan hız faktörünü es geçiyor. Çünkü listelerde elemanlara ulaşmak yavaştı.<br><br>
+                            Bunun için Hash Function’ın aynı index numarasını vermeyecek şekilde tasarlanması önemlidir.
+                        </p>
+
+                        <h2 class="mt-5"><b>Algoritma Analizi</b></h2>
+                        <p>
+                            Elimizde bir problem var ve çözülmesi gerek. Bu problemlerin çözüm aşamalarına algoritma denir. Fakat her insan probleme farklı çözümler geliştirebilir. Bu noktada hangi çözümün daha iyi çalıştığını belirlemeye algoritma analizi denir.<br><br>
+                            Bilgisayarda bir problemi çözen algoritmayı tasarlamak için 3 etkene bakılır:
+                        </p>
+                        <ul>
+                            <li>Algoritmanın kurulması için gereken zaman</li>
+                            <li>Kurulan algoritmanın uzunluğu</li>
+                            <li>Algoritmanın çalışma süresi</li>
+                        </ul>
+                        <p>
+                            Bu esnada en iyi algoritmayı seçmek için bazı faktörlerin bağımsız olmasına dikkat edilmesi gerekir.<br><br>
+                            Örneğin bir algoritma her cihazda farklı hızda çalışabilir. Bunun için algoritma geliştirilirken çalışma süresinin aynı cihazda test edilmesi önemlidir.<br><br>
+                            Ya da bir algoritma farklı programlama dillerinde daha uzun veya daha kısa yazılabilir ya da çalıştırılabilir. Bu faktöre de dikkat edilmelidir.<br><br>
+                            Bu 2 faktörden bağımsız algoritma kurmak için büyüme hızına bakılabiliir. Yani aynı cihazda ve aynı programlama dilinde çalışan algoritmaların farklı değerlerde çalışma süresine bakmak en iyi algoritmayı seçmek için bir seçenek olabilir.
+                        </p>
+
+                        <h2 class="mt-5"><b>Ram Modeli</b></h2>
+                        <p>
+                            Algoritmaların her cihazda farklı sürede çalıştığını öğrendik ve bunun bir algoritma analizi olamayacağını söyledik. Peki ya bütün algoritmaları aynı cihazda kullansaydık?<br><br>
+                            Bu cihaz algoritmaları karşılaştırmak için bir araç olabilirdi. Algoritmada gerçekleşen işlemlere birer birim zaman tanımlasarsak algoritmaları birbiriyle karşılaştıracak ölçüye sahip olurduk. İşte buna RAM Modeli denir.
+                        </p>
+
+                        <h2 class="mt-5"><b>Zaman Karmaşıklığı</b></h2>
+                        <p>
+                            Bir problemi çözmek için algoritmalar geliştirilir ve algoritma sürecinde bu problem çözülür. Fakat bu algoritmaya farklı problemler verildiğinde çözme süresi probleme göre değişiklik gösterir. Bazı problemleri daha uzun sürede çözerken bazılarını daha kısa sürede çözer. Algoritma tasarlanırken bu durum dikkate alınır.<br>
+                            Algoritma çalışma süresine göre 3’ ayrılır: En iyi zaman, ortalama zaman ve en kötü zaman.
+                        </p>
+                        <ul>
+                            <li><b>En İyi Zaman:</b> Bu durumda algoritma problemi en hızlı şekilde çözer.</li>
+                            <li><b>Ortalama Zaman:</b> Bu durumda algoritmaya sunulan problemlerin çözüm süresinin ortalaması alınır. Burada dikkat edilen ortalama zamanın en iyi ve en kötü zamanın ortası olmamasıdır. Çünkü bazen problemlerde kolay olanlar çoğunluktayken bazen zor olanlar çoğunluktadır. Bu durumda ortalama zamanı bulmak zorlaşır ve önemleşir.</li>
+                            <li><b>En Kötü Zaman:</b> Bu durum yaşanacak en uzun zamandır ve şirketler algoritma tasarlarken bu duruma en çok dikkat eder.</li>
+                        </ul>
+
+                        <h2 class="mt-5"><b>Big O Notation</b></h2>
+                        <p>
+                            Bir algoritmanın problemleri çözme süresine göre sınıflandığını gördük. Peki ya çözme şekli?<br><br>
+                            Algoritma bir problemi farklı şekillerde çözebilir. Buna Big O Notation denir. Bu yapıda algoritmanın çözüm şekli denklem şeklinde yazılır ve O(n) ile gösterilir. Burada n parametredir.<br><br>
+                            Örneğin bir sözlükte z harflerine sayfa sayfa gitmek en kötü zaman ve O(n) yani doğrusal olurken, önce sözlüğü ortadan açmak daha sonra z’nin sağda mı solda mı olduğunu kontrol etmek ve z’nin olduğu kısmın tekrar yarısını açmak ve bu şekilde gitmek daha hızlı bir çözüm şeklidir. Bu yöntem logaritmik olarak gittiği için O(logn) ile gösterilir.<br><br>
+                            Farklı O grafikleri:
+                        </p>
+                        <img src="img/dataStructures5.png" class="w-75 d-block m-auto rounded">
+                        <p>
+                            O denklemi çizilirken denklemde parametre, en büyük üs seçilir. Örneğin x²+x+5 denklemi O(n²) olarak çizilir. Diğer terimler görmezden gelinir.
+                        </p>
+
+                        <h2 class="mt-5"><b>Sorting (Sıralama)</b></h2>
+                        <p>
+                            Bir dizi veya listede verilerin belirli bir kurala göre sıralanması verilere erişimi kolaylaştırır. En popüler sıralama çeşitleri büyükten küçüğe, küçükten büyüğe veya alfabeye göre sıralamalardır. Sıralama yapmanın faydaları:
+                        </p>
+                        <ul>
+                            <li><b>Arama:</b> Bir veriyi aramak için dizileri veya listeleri sıralamak işleri hızlandırır.</li>
+                            <li><b>Birbirine Yakın Elemanları Bulmak:</b> Eğer art arda olan verileri bulmak istiyorsak diziyi veya listeyi sıralayabiliriz.</li>
+                            <li><b>Aynı Elemanları Bulmak:</b> Eğer birden fazla aynı veriyi bulmak istiyorsak diziyi veya listeyi sıraladığımızda otomatik veriler ortaya çıkacaktır.</li>
+                            <li><b>Mod Bulma:</b> Dizide veya listede en çok bulunan elemanları bulmak için sıralama yapmak işleri hızlandırır.</li>
+                        </ul>
+                        <h3 class="mt-3"><b>Selection Sort</b></h3>
+                        <p>
+                            En basit sıralama algoritmalarından biridir. Bir dizideki elemanları küçükten büyüğe sıralamak için kullanılır. Aşağıdaki örneğe bakalım:
+                        </p>
+                        <img src="img/dataStructures6.png" class="w-50 d-block m-auto rounded">
+                        <p class="mt-3">
+                            Elimizde bir dizi ve içinde rastgele elemanlar var. Bu elemanları sıralamak için:
+                        </p>
+                        <ol>
+                            <li>Dizideki en küçük eleman bulunur ve yeri ilk sıradaki eleman ile değiştirilir.</li>
+                            <li>Artık ilk sırada en küçük eleman olduğu bilindiğinden ilk elemana bakılmaz. İlk eleman hariç dizideki en küçük eleman 2. Sıradaki elemanla yer değiştirir.</li>
+                            <li>Bu böyle devam eder ve bütün dizi sıralanır.</li>
+                        </ol>
+                        <p>
+                            Bu algoritmadaki işlem sayısına bakarsak 1. Aşamada en küçük elemanı bulmak için bütün dizi taranır. Yani dizinin eleman sayısı(n) kadar işlem yapılır. Daha sonra ilk elemana bakılmadığı için n-1 tane, daha sonra n-2 tane ve böyle son elemana kadar işlem yapılır. Bu işlemleri toplamak için 1’den n’e kadar sayılar toplanır yani (n*(n+1))/2=(n²+n)/2. Bu da O(n²) ile gösterilir.
+                        </p>
+                        <h3 class="mt-3"><b>Merge Sort</b></h3>
+                        <p>
+                            Selection sort algoritmasının O(n²) ile çalıştığını öğrenmiştik. Bu dizinin eleman sayısı arttığında her seferinde dizi tekrar tarandığı için büyük bir zaman kaybıdır.<br><br>
+                            Merge sort algoritmasının temeli ise diziyi önce parçala ve sonra sıraladır. Aşağıdaki örneğe bakalım:
+                        </p>
+                        <img src="img/dataStructures7.png" class="w-50 d-block m-auto rounded">
+                        <p class="mt-3">
+                            Elimizdeki dizide rastgele elemanlar var. Bunun selection sort ile nasıl sıralandığını öğrendik. Merge sort’ta ise 2 aşama vardır:
+                        </p>
+                        <ol>
+                            <li>Dizinin elemanları tek haneye gelecek şekilde hep 2’ye bölünür. En sonda her eleman tek kalır.</li>
+                            <li>Tek kalan elemanlar önceki kümeleriyle sıralanmaya başlar. Dizi aynı bölündüğü gibi toplanmaya başlar fakat toplanırken sıralanır.</li>
+                        </ol>
+                        <p>
+                            Böyle bakıldığında selection sort çok daha kolay gibi gözüküyor fakat verim olarak merge sort daha verimlidir. Çünkü dizi toplanmaya başlayıp sıralanırken eleman çok daha az veriyle karşılaştırılır. Oysaki selection sort’ta her eleman için dizi sona kadar karşılaştırılırdı.<br><br>
+                            İşlem sayısına bakarsak dizi sürekli 2’ye bölündüğü için logaritmik bir artış olur. Ayrıca dizi her birleştiğinde n kadar işlem yapılır. Yani bu algoritma O(n*logn) ile gösterilir. Bu O(n²)’den çok daha hızlıdır.
+                        </p>
+                        <h3 class="mt-3"><b>Quick Sort</b></h3>
+                        <p>
+                            Quick sort mantık olarak merge sort’a benzerdir. Önce diziyi parçalar, sonra birleştirirken sıralar. Farkı ise diziyi rastgele ortadan 2’ye parçalamaz.<br><br>
+                            Önce dizide bir eleman seçelir ve ortaya konulur. Bu elemandan küçük olanlar sola, büyük olanlar sağa yerleştirilir. Daha sonra oluşan dizilerden yine elemanlar seçilir ve küçükler sola, büyükler sağa şeklinde diziler oluşur. Bu böyle herkes tek eleman kalacak şekilde devam eder. Dizide herkes tek eleman kaldığında zaten herkes sıralanmış olur. Aşağıdaki örneğe bakalım:
+                        </p>
+                        <img src="img/dataStructures8.png" class="w-50 d-block m-auto rounded">
+                        <p class="mt-3">
+                            Elimizdeki dizide rastgele elemanlar var. Bunu quick sort ile sıralamak için önce bir eleman seçilir. Buna pivot denir. Bu örnekte 3 seçilmiş. Daha sonra 3’ten küçük olanlar solda, büyük olanlar sağda bir dizi oluşturur. Bu diziler de kendi arasında bir pivot seçer ve aynı işlem tekrar eder. Herkes tek kaldığında zaten dizi otomatik sıralanmış olur.<br><br>
+                            Quick sort’un işlem sayısı değişkenlik gösterir. Çünkü seçilen pivot ortada olmaz ise dizi ortadan 2’ye bölünemez. Bir taraf daha uzun olur.<br><br>
+                            Dizilerin tam ortadan bölündüğü durumlarda algoritma O(n*logn) ile ifade edilirken ortadan bölünemediği zaman O(n²) ile ifade edilir.<br><br>
+                            Quick sort, ortalama olarak merge sort’tan daha hızlıdır. İkisi de O(n*logn) ile ifade edilse de katsayı farkından dolayı quick sort daha hızlıdır.
+                        </p>
+
+                        <h2 class="mt-5"><b>Searching (Arama)</b></h2>
+                        <p>
+                            Gün geçtikçe bilgisayarlarımızda daha çok veriyi depolamaya başladık. Bu büyük veri havuzunda istediğimiz verileri bulmak ise güçleşti. Bu problemi çözmek için ise searching(arama) algoritmaları geliştirildi.
+                        </p>
+                        <h3 class="mt-3"><b>Linear Search</b></h3>
+                        <p>
+                            En basit arama algoritmalarından birisidir. Dizinin 1. elemanından başlayıp istenilen veriye ulaşıncaya kadar arama yapan bir algoritmadır.
+                        </p>
+                        <img src="img/dataStructures9.png" class="w-75 d-block m-auto rounded">
+                        <p class="mt-3">
+                            Dizide içeriği 30 olan elemanı bulmak için 1. Elemandan başlanıp ilerlenmiştir. İstenen eleman 3. Eleman olduğu için eleman bulunmuştur.<br><br>
+                            İşlem sayısına bakacak olursak algoritmanın adından da anlaşılacağı gibi O(n) ile ifade edilir.
+                        </p>
+                        <h3 class="mt-3"><b>Binary Search</b></h3>
+                        <p>
+                            Bu arama algoritmasını uygulamak için dizimizin sıralı olması gerekiyor. Sıralanmış dizide istediğimiz eleman ile dizinin ortasındaki eleman karşılaştırılır. Eğer istediğimiz eleman daha küçükse dizinin sol yarısına, değilse sağ yarısına bakılır. Yeni dizide tekrar ortadaki eleman ile istediğimiz eleman karşılaştırılır ve buna göre dizi yarıya ayrılır. Bu şekilde istediğimiz elemana gelene dek devam eder. Aşağıdaki örneğe bakalım:
+                        </p>
+                        <img src="img/dataStructures10.png" class="w-75 d-block m-auto rounded">
+                        <p class="mt-3">
+                            Yukarıdaki dizide 2 elemanını aranıyor. Bunun için ortadaki eleman yani 5 ile bir karşılaştırma yapılır. 2, 5’ten küçük olduğu için sol yarıya bakılır. Daha sonra ortadaki eleman 3 ile karşılaştırma yapılır. 2, 3’ten küçük olduğu için sol yarıya bakılır. Ortanca eleman, aradığımız eleman olduğunda ise algoritma sonlanır.<br><br>
+                            İşlem sayısına bakılırsa dizi her seferinde 2’ye bölündüğünden algoritma O(logn) ile ifade edilir.
+                        </p>
+                        <h3 class="mt-3"><b>Binary Search Tree</b></h3>
+                        <p>
+                            Bu yapı ağaç şeklinde bir listeden oluşuyor. Bu yapı sayesinde hem searching yapılırken hem de eleman ekleme gibi işlemler aynı anda yapılabiliyor. Aşağıdaki örneğe bakalım:
+                        </p>
+                        <img src="img/dataStructures11.png" class="w-75 d-block m-auto rounded">
+                        <p class="mt-3">
+                            Yukarıdaki yapıya bakıldığında listenin 1. Elemanı kök olarak adlandırılıyor. Kökten büyük elemanlar sağa kök salarken, küçük elemanlar sola kök salıyor. Mantık aşağıdaki elemanlar için de geçerlidir. Kendinden büyük elemanlar sağa, küçük elemanlar sola uzar.<br><br>
+                            Bir eleman eklenmek istendiğinde 1. Elemandan başlayıp aşağıya kendine bir yer buluncaya kadar devam eder ve yerleşir.<br><br>
+                            Bir eleman aranmak istendiğinde de 1. Elemandan başlayıp aşağıya doğru o eleman bulunana kadar sorgulama yapılır.<br><br>
+                            İşlem sayısına bakarsak eğer ağaç simetrik bir şekilde 2’ye ayrılarak aşağı inmişsse O(logn) ile ifade edilir. Eğer simetrik olmazsa ve bir tarafa doğru yoğunluk varsa O(n) ile ifade edilir.<br><br>
+                            Binary Search Tree bir liste gibi çalıştığından elemanlara erişim diziler kadar hızlı olmaz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>        
+
+    </main>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e562692f21.js" crossorigin="anonymous"></script>
+  </body>
+</html>

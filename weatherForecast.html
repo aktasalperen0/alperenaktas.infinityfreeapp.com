@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+
+        body{
+            font-family: sans-serif;
+            background-color: #E7DFD8;
+            font-size: 20px;
+        }
+
+        ::-webkit-scrollbar{
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb{
+            background-color: #333333;
+        }
+
+        @media(min-width: 768px){
+            #mobile{
+                display: none;
+            }
+
+            main{
+                display: block;
+            }
+        }
+
+        @media(max-width: 768px){
+            #mobile{
+                display: block;
+                font-size: 15px;
+            }    
+
+            main{
+                display: none;
+            }
+        }
+        
+    </style>
+
+    <link rel="icon" type="png" href="img/icon.png">
+    <title>Hava Durumu</title>
+  </head>
+  <body>
+    
+    <main class="container">
+        
+        <nav class="mt-5 text-center">
+            <div class="row px-5">
+                <div class="col-3 text-center">
+                    <a href="index.html" class="text-dark"><b>ANA SAYFA</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="ozgecmis.html" class="text-dark"><b>ÖZ GEÇMİŞ</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="calismalar.html" class="text-dark"><b>ÇALIŞMALAR</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="iletisim.html" class="text-dark"><b>İLETİŞİM</b></a>
+                </div>
+            </div>
+        </nav>
+
+        <article class="mt-5 mb-5 mx-auto" style="border-style: solid; border-width: 1px;">
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h1 class="text-center display-4"><b>HAVA DURUMU</b></h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 px-5">
+                    <form id="searchForm">
+                        <div class="input-group mt-4">
+                            <input type="text" class="form-control text-dark" placeholder="Şehir Giriniz" id="searchInput" name="input" style="background-color: #E7DFD8; border-color: #000000; border-radius: 0px;">
+                            <div class="input-group-append">
+                              <button class="input-group-text border-dark" id="searchButton" type="submit" style="background-color: #E7DFD8; border-radius: 0px;">Ara</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="row mt-5 px-5">
+                <div class="col-6">
+                    <h1 id="cityName">İstanbul</h1>           
+                </div>
+                <div class="col-6">
+                    <h1 id="date" class="float-right">26/12/2023</h1><br><br>
+                    <h2 id="day" class="float-right">Salı</h2>
+                </div>
+            </div>
+            <div class="row mb-5 px-5">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-4 text-center">
+                            <i id="img" class="fa-solid fa-sun fa-5x" style="color: #000000;"></i>
+                        </div>
+                        <div class="col-8">
+                            <h1 id="desc">Güneşli</h1>
+                            <h2 id="temp">14 °C</h2>
+                            <p id="maxmin">14 °C / 12 °C </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-12 mt-4">
+                            <ul class="list-unstyled float-right">
+                                <li id="rain">Yağış: 0%</li>
+                                <li id="humidity">Nem: 18%</li>
+                                <li id="gust">Rüzgar: 18km/s</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row mb-5 px-5">
+                <div class="col-4 text-center">
+                    <h2 id="day2">Çarşamba</h2>
+                    <i id="img2" class="fa-solid fa-cloud-sun fa-3x" style="color: #000000;"></i>
+                    <h2 id="temp2" class="mt-2">13 °C</h2>
+                    <p id="maxmin2">13 °C / 7 °C</p>
+                </div>
+                <div class="col-4 text-center">
+                    <h2 id="day3">Perşembe</h2>
+                    <i id="img3" class="fa-solid fa-sun fa-3x" style="color: #000000;"></i>
+                    <h2 id="temp3" class="mt-2">14 °C</h2>
+                    <p id="maxmin3">14 °C / 7 °C</p>
+                </div>
+                <div class="col-4 text-center">
+                    <h2 id="day4">Cuma</h2>
+                    <i id="img4" class="fa-solid fa-cloud fa-3x" style="color: #000000;"></i>
+                    <h2 id="temp4" class="mt-2">12 °C</h2>
+                    <p id="maxmin4">12 °C / 8 °C</p>
+                </div>
+            </div>
+        </article>       
+
+    </main>
+
+    <main id="mobile" class="container">
+        
+        <nav class="text-center">
+            <div class="row mt-3" style="border-style: solid; border-width: 0px 0px 1px 0px;">
+                <div class="col-2">
+                    <div class="dropdown float-left">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
+                        </button>
+                        <div class="dropdown-menu" style="background-color: #E7DFD8;">
+                          <a class="dropdown-item" href="index.html">Ana Sayfa</a>
+                          <a class="dropdown-item" href="ozgecmis.html">Öz Geçmiş</a>
+                          <a class="dropdown-item" href="calismalar.html">Çalışmalar</a>
+                          <a class="dropdown-item" href="iletisim.html">İletişim</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 text-center">
+                    <h1><b>İletişim</b></h1>
+                </div>
+            </div>
+        </nav>
+
+        <article class="mt-5 mb-5 mx-auto" style="border-style: solid; border-width: 1px;">
+            <div class="row p-5">
+                <div class="col-xs-12 text-center">
+                    <h1 class="display-4 text-center pb-3" style="border-style: solid; border-width: 0px 0px 1px 0px; text-align: center;">Sosyal Medya</h1>
+                    <ul class="list-unstyled mt-5 text-center">
+                        <li class="list-inline-item px-3"><a href="https://www.instagram.com/alperen_052/"><i class="fa-brands fa-square-instagram fa-2xl" style="color: #000000;"></i></a></li>
+                        <li class="list-inline-item px-3"><a href="https://twitter.com/alperenaktas05"><i class="fa-brands fa-twitter fa-2xl" style="color: #000000;"></i></a></li>
+                        <li class="list-inline-item px-3"><a href="https://www.youtube.com/channel/UCHCTpptQRvm0CsetKqTyPQg"><i class="fa-brands fa-youtube fa-2xl" style="color: #000000;"></i></a></li>
+                    </ul>
+                    <ul class="list-unstyled mt-5 text-center">
+                        <li class="list-inline-item px-3"><a href="https://www.linkedin.com/in/alperen-akta%C5%9F-77bb94253/"><i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i></a></li>
+                        <li class="list-inline-item px-3"><a href="https://github.com/AlperenAktas05"><i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i></a></li>
+                        <li class="list-inline-item px-3"><a href="https://medium.com/@aktasalperen0"><i class="fa-brands fa-medium fa-2xl" style="color: #000000;"></i></a></li>                       
+                    </ul>
+                </div>
+            </div>
+        </article>       
+
+    </main>
+
+
+    <script src="js/weatherForecast.js"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e562692f21.js" crossorigin="anonymous"></script>
+  </body>
+</html>

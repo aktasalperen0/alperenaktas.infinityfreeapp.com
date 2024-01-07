@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+
+        body{
+            font-family: sans-serif;
+            background-color: #E7DFD8;
+            font-size: 20px;
+        }
+
+        ::-webkit-scrollbar{
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb{
+            background-color: #333333;
+        }
+
+        @media(min-width: 768px){
+            #mobile{
+                display: none;
+            }
+
+            main{
+                display: block;
+            }
+        }
+
+        @media(max-width: 768px){
+            #mobile{
+                display: block;
+                font-size: 15px;
+            }    
+
+            main{
+                display: none;
+            }
+        }
+        
+    </style>
+
+    <link rel="icon" type="png" href="img/icon.png">
+    <title>CSS</title>
+  </head>
+  <body>
+    
+    <main class="container">
+        
+        <nav class="mt-5 text-center">
+            <div class="row px-5">
+                <div class="col-3 text-center">
+                    <a href="index.html" class="text-dark"><b>ANA SAYFA</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="ozgecmis.html" class="text-dark"><b>ÖZ GEÇMİŞ</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="calismalar.html" class="text-dark"><b>ÇALIŞMALAR</b></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="iletisim.html" class="text-dark"><b>İLETİŞİM</b></a>
+                </div>
+            </div>
+        </nav>
+
+        <article class="mt-5 mx-auto" style="border-style: solid; border-width: 1px;">
+            <div class="row m-5">
+                <div class="col-12">
+                    <h1 class="display-4 text-center" id="head">CSS</h1>
+                    <div id="text" class="mt-5">
+                        <h2><b>CSS NEDİR?</b></h2>
+                        <p>
+                            CSS, HTML dilinde yazılmış elementleri özelleştirmemizi sağlayan bir dildir.
+                        </p>
+
+                        <h2 class="mt-5"><b>CSS NASIL KULLANILIR?</b></h2>
+                        <p>
+                            CSS kodları, HTML sayfasında &lt;style&gt etiketi içine yazılır. Bunun için 3 yol vardır:
+                        </p>
+                        <ul>
+                            <li><b>Etiketin İçi:</b> En öncelikli ve en ilkel CSS kodu yazış biçimidir. Yazılan kodlar bir süre sonra karmaşık hale gelir. Anlaşılamazlar.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="128.79998779296875" data-theme-id="dark" data-default-tab="html" data-slug-hash="gOqVPMY" data-user="Alperen-Akta" style="height: 128.79998779296875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/gOqVPMY">
+                                Untitled</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Dosyanın İçi:</b> Orta öncelikli CSS kodu yazış biçimidir. Bütün CSS kodları &lt;head&gt etiketi içerisine açılan &lt;style&gt etiketine içerisine yazılır.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="234.4000244140625" data-theme-id="dark" data-default-tab="html" data-slug-hash="wvNVMzK" data-user="Alperen-Akta" style="height: 234.4000244140625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/wvNVMzK">
+                                CSS2</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>CSS Sayfasının İçi:</b> En gelişmiş CSS kodu yazış biçimidir. Yazılan kodlar düzenli durur ve karışmaz. En son önceliğe sahiptir. Bunun için proje klasörü içine bir .css dosyası eklenir. Bu CSS dosyasını HTML dosyasıyla eşleştirmek için &lt;link rel="stylesheet" href="dosya.css"&gt yazılır.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="163.99996948242188" data-theme-id="dark" data-default-tab="css" data-slug-hash="JjxgGba" data-user="Alperen-Akta" style="height: 163.99996948242188px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/JjxgGba">
+                                CSS3</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            Son 2 stilde bütün CSS kodları aynı yere yazılır. Bu kodların hangi elemente uygulanması gerektiğini seçiciler ile ayırt ederiz. Yukarıda da görüldüğü üzere özellik atanması istenen etiketler yazılmış ve özellikler o etiketin parantezleri arasına yazılmıştır.<br><br>
+                            Seçiciler farklı şekillerde ifade edilebilir. Önceki konulardan ID ve Classlar burada önem kazanır.
+                        </p>
+
+                        <h2 class="mt-5"><b>CSS AÇIKLAMA SATIRI VE FONT ÖZELLİKLERİ</b></h2>
+                        <p>
+                            CSS’te açıklama satırını /* ile açıp */ ile kapatabiliriz. Bu işaretlerin arasında kalan kodlar geçersiz olacaktır.<br><br>
+                            CSS’te yazılarımızı biçimlendirmek için aşağıdaki kodlar kullanılır:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="199.19998168945312" data-theme-id="dark" data-default-tab="css" data-slug-hash="wvNVVLo" data-user="Alperen-Akta" style="height: 199.19998168945312px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/wvNVVLo">
+                                CSS4</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            Harici bir fontu eklemek için bir font sitesinden CSS linki alınır. Bu CSS linki hazır olarak &lt;head&gt etiketinin içine yazılır.
+                        </p>
+
+                        <h2 class="mt-5"><b>CSS CLASS VE ID</b></h2>
+                        <p>
+                            HTML dersinde class ve id oluşturmayı göstermiştik ve işlevinin CSS’te anlatılacağını söylemiştik.<br><br>
+                            Class’lar CSS’te hazır bir özellik yazmak için kullanılır. Örneğin daha önceden bir kırmızı yazı class’ı yazıp sonradan HTML etiketlerine uygulayabiliriz. CSS dosyasında bir class açmak için . kullanırız, daha sonra class adı gireriz ve parantezin arasına kodlarımızı yazarız:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="164.7999267578125" data-theme-id="dark" data-default-tab="css" data-slug-hash="RwdbbbN" data-user="Alperen-Akta" style="height: 164.7999267578125px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/RwdbbbN">
+                                CSS5</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            Daha sonrasında HTML etiketinin içerisine class=”class-adi” şeklinde yazarız.<br><br>
+                            ID’ler ise belli bir elemente kod yazmak için kullanılır. ID’ler bir elementin kimliği olacağı için her yere yazılmaz ve CSS’te yazılan kodlar sadece o elemente etki eder. CSS dosyasında bir ID açmak için # kullanırız, daha sonrasında id adı gireriz ve parantezin arasına kodlarımızı yazarız:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="164" data-theme-id="dark" data-default-tab="css" data-slug-hash="rNRBBBr" data-user="Alperen-Akta" style="height: 164px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/rNRBBBr">
+                                CSS6</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            Daha sonrasında ID’nin sahibi olan etikete id=”id-adi” şeklinde yazarız.
+                        </p>
+
+                        <h2 class="mt-5"><b>CSS SEÇİCİLER</b></h2>
+                        <p>
+                            HTML kodlarını biçimlendirmek için CSS’i nasıl kulllanacığımızı öğrendik. Seçiciler, CSS kodlarının hangi elemente etki edeceğini belirtir. Örneğin p{} parantezleri arasına yazılanlar paragraflara etki eder.<br><br>
+                            Seçicileri etkin kullanmak zamandan tasarruf sağlar. Bunun için seçicileri pratik kullanmanın yolları vardır:
+                        </p>
+                        <ul>
+                            <li><b>Genel Seçiciler:</b> Bir seçicinin yanına * sembolü konursa o seçicinin hepsini ifade eder.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="164.79998779296875" data-theme-id="dark" data-default-tab="css" data-slug-hash="BabBByQ" data-user="Alperen-Akta" style="height: 164.79998779296875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/BabBByQ">
+                                CSS7</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Element Seçiciler:</b> Bu zamana kadar kullandığımız seçici türüdür. Bir elemente etki etmek için o element yazılır ve parantezleri arasına kodlar yazılır.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="164.7999267578125" data-theme-id="dark" data-default-tab="css" data-slug-hash="BabBBNQ" data-user="Alperen-Akta" style="height: 164.7999267578125px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/BabBBNQ">
+                                CSS8</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Class Seçiciler:</b> Belirli özellikleri elementlere atamak için yazılan seçicilerdir. . ile başlarlar.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="164.7999267578125" data-theme-id="dark" data-default-tab="css" data-slug-hash="MWxggwV" data-user="Alperen-Akta" style="height: 164.7999267578125px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/MWxggwV">
+                                CSS9</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>ID Seçiciler:</b> Kimliği belirli bir elementi biçimlendirmek için kullanılır. # ile başlarlar.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="164.79998779296875" data-theme-id="dark" data-default-tab="css" data-slug-hash="GReKKpZ" data-user="Alperen-Akta" style="height: 164.79998779296875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/GReKKpZ">
+                                CSS10</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Grup Seçiciler:</b> Aynı anda birden fazla elementi biçimlendirmek için kullanılır. Elementler arasına , konulur.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="164.80001831054688" data-theme-id="dark" data-default-tab="css" data-slug-hash="eYXOOpj" data-user="Alperen-Akta" style="height: 164.80001831054688px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/eYXOOpj">
+                                CSS11</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Çocuk Seçiciler:</b> Bir elementin içindeki elementleri biçimlendirmek için kullanılır. Emmet diliyle kullanılır. Element arasına > konulur.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="165.60000610351562" data-theme-id="dark" data-default-tab="css" data-slug-hash="dyrbbGb" data-user="Alperen-Akta" style="height: 165.60000610351562px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/dyrbbGb">
+                                CSS12</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Sahte Seçiciler:</b> Elementlerin durumlarına göre çalışan seçicilerdir. Birçok sahte seçici vardır:</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="199.199951171875" data-theme-id="dark" data-default-tab="css" data-slug-hash="gOEYYrM" data-user="Alperen-Akta" style="height: 199.199951171875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/gOEYYrM">
+                                CSS13</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>CSS KUTU ÖZELLİKLERİ</b></h2>
+                        <p>
+                            Geldik zurnanın zırt dediği yere. Benim için CSS’in en önemli konusu çünkü artık her elementi hareket ettirip istediğimiz tasarımı gerçekleştirebiliriz. HTML’in tasarımsızlığından kurtuluyoruz.<br><br>
+                            HTML’de her şey birer kutudur. Daha öncesinde blok ve inline elementler konusunda bahsetmiştik. Biz bu kutuların boyutunu ve pozisyonlarını değiştirebiliriz.
+                        </p>
+                        <ul>
+                            <li><b>İçerik:</b> HTML kodlarımızın bulunduğu kısımdır.</li>
+                            <li><b>Padding:</b> İçerik ile sınır arası boşluktur.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="128.79998779296875" data-theme-id="dark" data-default-tab="css" data-slug-hash="wvOwwWd" data-user="Alperen-Akta" style="height: 128.79998779296875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/wvOwwWd">
+                                CSS14</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Border:</b> Kutunun sınırıdır.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="182.4000244140625" data-theme-id="dark" data-default-tab="css" data-slug-hash="LYaPPZw" data-user="Alperen-Akta" style="height: 182.4000244140625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/LYaPPZw">
+                                CSS15</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Margin:</b> Kutunun diğer kutular arası uzaklığını belirler.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="146.4000244140625" data-theme-id="dark" data-default-tab="css" data-slug-hash="ZEPzzpj" data-user="Alperen-Akta" style="height: 146.4000244140625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/ZEPzzpj">
+                                CSS16</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            Kutuların boyutunu ayarlarmak için ise width ve height özellikleri kullanılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="147.199951171875" data-theme-id="dark" data-default-tab="css" data-slug-hash="wvOwwod" data-user="Alperen-Akta" style="height: 147.199951171875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/wvOwwod">
+                                CSS17</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            HTML’de kutular birer blok olduğu için tüm satırı kaplarlar ve yan yana sıralanmazlar, aşağı satıra geçerler. Bunun önlenmesi için float özelliği kullanılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="128.80001831054688" data-theme-id="dark" data-default-tab="css" data-slug-hash="OJqLLpp" data-user="Alperen-Akta" style="height: 128.80001831054688px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/OJqLLpp">
+                                CSS18</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>SON KISIM</b></h2>
+                        <p>
+                            CSS’in özellikleri saymakla bitmez fakat temel yapılar bunlar. Zaten bütün özellikleri bilmek ve ezberlemek imkansız. Burada önemli olan şey istediğimiz özellikleri internetten kolayca bulabilmemiz.
+                        </p>
+                    </div>  
+                </div>
+            </div>
+        </article>       
+
+    </main>
+
+    <main id="mobile" class="container">
+        
+        <nav class="text-center">
+            <div class="row mt-3" style="border-style: solid; border-width: 0px 0px 1px 0px;">
+                <div class="col-2">
+                    <div class="dropdown float-left">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
+                        </button>
+                        <div class="dropdown-menu" style="background-color: #E7DFD8;">
+                          <a class="dropdown-item" href="index.html">Ana Sayfa</a>
+                          <a class="dropdown-item" href="ozgecmis.html">Öz Geçmiş</a>
+                          <a class="dropdown-item" href="calismalar.html">Çalışmalar</a>
+                          <a class="dropdown-item" href="iletisim.html">İletişim</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 text-center">
+                    <h1><b>Çalışmalar</b></h1>
+                </div>
+            </div>
+        </nav>
+
+        <article class="mt-5 mb-5 mx-auto">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-4 text-center" id="head">CSS</h1>
+                    <div id="text" class="mt-5">
+                        <h2><b>CSS Nedir?</b></h2>
+                        <p>
+                            CSS, HTML dilinde yazılmış elementleri özelleştirmemizi sağlayan bir dildir.
+                        </p>
+
+                        <h2 class="mt-5"><b>CSS Nasıl Kullanılır?</b></h2>
+                        <p>
+                            CSS kodları, HTML sayfasında &lt;style&gt etiketi içine yazılır. Bunun için 3 yol vardır:
+                        </p>
+                        <ul>
+                            <li><b>Etiketin İçi:</b> En öncelikli ve en ilkel CSS kodu yazış biçimidir. Yazılan kodlar bir süre sonra karmaşık hale gelir. Anlaşılamazlar.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="128.79998779296875" data-theme-id="dark" data-default-tab="html" data-slug-hash="gOqVPMY" data-user="Alperen-Akta" style="height: 128.79998779296875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/gOqVPMY">
+                                Untitled</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Dosyanın İçi:</b> Orta öncelikli CSS kodu yazış biçimidir. Bütün CSS kodları &lt;head&gt etiketi içerisine açılan &lt;style&gt etiketine içerisine yazılır.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="234.4000244140625" data-theme-id="dark" data-default-tab="html" data-slug-hash="wvNVMzK" data-user="Alperen-Akta" style="height: 234.4000244140625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/wvNVMzK">
+                                CSS2</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>CSS Sayfasının İçi:</b> En gelişmiş CSS kodu yazış biçimidir. Yazılan kodlar düzenli durur ve karışmaz. En son önceliğe sahiptir. Bunun için proje klasörü içine bir .css dosyası eklenir. Bu CSS dosyasını HTML dosyasıyla eşleştirmek için &lt;link rel="stylesheet" href="dosya.css"&gt yazılır.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="163.99996948242188" data-theme-id="dark" data-default-tab="css" data-slug-hash="JjxgGba" data-user="Alperen-Akta" style="height: 163.99996948242188px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/JjxgGba">
+                                CSS3</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            Son 2 stilde bütün CSS kodları aynı yere yazılır. Bu kodların hangi elemente uygulanması gerektiğini seçiciler ile ayırt ederiz. Yukarıda da görüldüğü üzere özellik atanması istenen etiketler yazılmış ve özellikler o etiketin parantezleri arasına yazılmıştır.<br><br>
+                            Seçiciler farklı şekillerde ifade edilebilir. Önceki konulardan ID ve Classlar burada önem kazanır.
+                        </p>
+
+                        <h2 class="mt-5"><b>CSS Açıklama Satırı ve Font Özellikleri</b></h2>
+                        <p>
+                            CSS’te açıklama satırını /* ile açıp */ ile kapatabiliriz. Bu işaretlerin arasında kalan kodlar geçersiz olacaktır.<br><br>
+                            CSS’te yazılarımızı biçimlendirmek için aşağıdaki kodlar kullanılır:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="199.19998168945312" data-theme-id="dark" data-default-tab="css" data-slug-hash="wvNVVLo" data-user="Alperen-Akta" style="height: 199.19998168945312px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/wvNVVLo">
+                                CSS4</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            Harici bir fontu eklemek için bir font sitesinden CSS linki alınır. Bu CSS linki hazır olarak &lt;head&gt etiketinin içine yazılır.
+                        </p>
+
+                        <h2 class="mt-5"><b>CSS Class ve ID</b></h2>
+                        <p>
+                            HTML dersinde class ve id oluşturmayı göstermiştik ve işlevinin CSS’te anlatılacağını söylemiştik.<br><br>
+                            Class’lar CSS’te hazır bir özellik yazmak için kullanılır. Örneğin daha önceden bir kırmızı yazı class’ı yazıp sonradan HTML etiketlerine uygulayabiliriz. CSS dosyasında bir class açmak için . kullanırız, daha sonra class adı gireriz ve parantezin arasına kodlarımızı yazarız:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="164.7999267578125" data-theme-id="dark" data-default-tab="css" data-slug-hash="RwdbbbN" data-user="Alperen-Akta" style="height: 164.7999267578125px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/RwdbbbN">
+                                CSS5</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            Daha sonrasında HTML etiketinin içerisine class=”class-adi” şeklinde yazarız.<br><br>
+                            ID’ler ise belli bir elemente kod yazmak için kullanılır. ID’ler bir elementin kimliği olacağı için her yere yazılmaz ve CSS’te yazılan kodlar sadece o elemente etki eder. CSS dosyasında bir ID açmak için # kullanırız, daha sonrasında id adı gireriz ve parantezin arasına kodlarımızı yazarız:
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="164" data-theme-id="dark" data-default-tab="css" data-slug-hash="rNRBBBr" data-user="Alperen-Akta" style="height: 164px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/rNRBBBr">
+                                CSS6</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            Daha sonrasında ID’nin sahibi olan etikete id=”id-adi” şeklinde yazarız.
+                        </p>
+
+                        <h2 class="mt-5"><b>CSS Seçiciler</b></h2>
+                        <p>
+                            HTML kodlarını biçimlendirmek için CSS’i nasıl kulllanacığımızı öğrendik. Seçiciler, CSS kodlarının hangi elemente etki edeceğini belirtir. Örneğin p{} parantezleri arasına yazılanlar paragraflara etki eder.<br><br>
+                            Seçicileri etkin kullanmak zamandan tasarruf sağlar. Bunun için seçicileri pratik kullanmanın yolları vardır:
+                        </p>
+                        <ul>
+                            <li><b>Genel Seçiciler:</b> Bir seçicinin yanına * sembolü konursa o seçicinin hepsini ifade eder.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="164.79998779296875" data-theme-id="dark" data-default-tab="css" data-slug-hash="BabBByQ" data-user="Alperen-Akta" style="height: 164.79998779296875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/BabBByQ">
+                                CSS7</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Element Seçiciler:</b> Bu zamana kadar kullandığımız seçici türüdür. Bir elemente etki etmek için o element yazılır ve parantezleri arasına kodlar yazılır.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="164.7999267578125" data-theme-id="dark" data-default-tab="css" data-slug-hash="BabBBNQ" data-user="Alperen-Akta" style="height: 164.7999267578125px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/BabBBNQ">
+                                CSS8</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Class Seçiciler:</b> Belirli özellikleri elementlere atamak için yazılan seçicilerdir. . ile başlarlar.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="164.7999267578125" data-theme-id="dark" data-default-tab="css" data-slug-hash="MWxggwV" data-user="Alperen-Akta" style="height: 164.7999267578125px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/MWxggwV">
+                                CSS9</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>ID Seçiciler:</b> Kimliği belirli bir elementi biçimlendirmek için kullanılır. # ile başlarlar.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="164.79998779296875" data-theme-id="dark" data-default-tab="css" data-slug-hash="GReKKpZ" data-user="Alperen-Akta" style="height: 164.79998779296875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/GReKKpZ">
+                                CSS10</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Grup Seçiciler:</b> Aynı anda birden fazla elementi biçimlendirmek için kullanılır. Elementler arasına , konulur.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="164.80001831054688" data-theme-id="dark" data-default-tab="css" data-slug-hash="eYXOOpj" data-user="Alperen-Akta" style="height: 164.80001831054688px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/eYXOOpj">
+                                CSS11</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Çocuk Seçiciler:</b> Bir elementin içindeki elementleri biçimlendirmek için kullanılır. Emmet diliyle kullanılır. Element arasına > konulur.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="165.60000610351562" data-theme-id="dark" data-default-tab="css" data-slug-hash="dyrbbGb" data-user="Alperen-Akta" style="height: 165.60000610351562px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/dyrbbGb">
+                                CSS12</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Sahte Seçiciler:</b> Elementlerin durumlarına göre çalışan seçicilerdir. Birçok sahte seçici vardır:</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="199.199951171875" data-theme-id="dark" data-default-tab="css" data-slug-hash="gOEYYrM" data-user="Alperen-Akta" style="height: 199.199951171875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/gOEYYrM">
+                                CSS13</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>CSS Kutu Özellikleri</b></h2>
+                        <p>
+                            Geldik zurnanın zırt dediği yere. Benim için CSS’in en önemli konusu çünkü artık her elementi hareket ettirip istediğimiz tasarımı gerçekleştirebiliriz. HTML’in tasarımsızlığından kurtuluyoruz.<br><br>
+                            HTML’de her şey birer kutudur. Daha öncesinde blok ve inline elementler konusunda bahsetmiştik. Biz bu kutuların boyutunu ve pozisyonlarını değiştirebiliriz.
+                        </p>
+                        <ul>
+                            <li><b>İçerik:</b> HTML kodlarımızın bulunduğu kısımdır.</li>
+                            <li><b>Padding:</b> İçerik ile sınır arası boşluktur.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="128.79998779296875" data-theme-id="dark" data-default-tab="css" data-slug-hash="wvOwwWd" data-user="Alperen-Akta" style="height: 128.79998779296875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/wvOwwWd">
+                                CSS14</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Border:</b> Kutunun sınırıdır.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="182.4000244140625" data-theme-id="dark" data-default-tab="css" data-slug-hash="LYaPPZw" data-user="Alperen-Akta" style="height: 182.4000244140625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/LYaPPZw">
+                                CSS15</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <ul class="mt-3">
+                            <li><b>Margin:</b> Kutunun diğer kutular arası uzaklığını belirler.</li>
+                        </ul>
+                        <div>
+                            <p class="codepen" data-height="146.4000244140625" data-theme-id="dark" data-default-tab="css" data-slug-hash="ZEPzzpj" data-user="Alperen-Akta" style="height: 146.4000244140625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/ZEPzzpj">
+                                CSS16</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            Kutuların boyutunu ayarlarmak için ise width ve height özellikleri kullanılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="147.199951171875" data-theme-id="dark" data-default-tab="css" data-slug-hash="wvOwwod" data-user="Alperen-Akta" style="height: 147.199951171875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/wvOwwod">
+                                CSS17</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        <p class="mt-3">
+                            HTML’de kutular birer blok olduğu için tüm satırı kaplarlar ve yan yana sıralanmazlar, aşağı satıra geçerler. Bunun önlenmesi için float özelliği kullanılır.
+                        </p>
+                        <div>
+                            <p class="codepen" data-height="128.80001831054688" data-theme-id="dark" data-default-tab="css" data-slug-hash="OJqLLpp" data-user="Alperen-Akta" style="height: 128.80001831054688px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Alperen-Akta/pen/OJqLLpp">
+                                CSS18</a> by Alperen Aktaş (<a href="https://codepen.io/Alperen-Akta">@Alperen-Akta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+
+                        <h2 class="mt-5"><b>Son Kısım</b></h2>
+                        <p>
+                            CSS’in özellikleri saymakla bitmez fakat temel yapılar bunlar. Zaten bütün özellikleri bilmek ve ezberlemek imkansız. Burada önemli olan şey istediğimiz özellikleri internetten kolayca bulabilmemiz.
+                        </p>
+                    </div>  
+                </div>
+            </div>
+        </article>       
+
+    </main>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e562692f21.js" crossorigin="anonymous"></script>
+  </body>
+</html>
