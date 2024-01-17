@@ -23,5 +23,3 @@ function addProcess(item){
     process = process + item.innerText
     displayDOM.innerText = process
 }
-
-
